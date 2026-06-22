@@ -9,9 +9,9 @@ export default function Footer() {
     { name: "What we do", href: "/what-we-do" },
     { name: "Tranche 2", href: "#tranche-2" },
     { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
+    { name: "About", href: "/about" },
     { name: "Our Team", href: "#team" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "Contact Us", href: "/contactus" },
     { name: "Blogs", href: "#blogs" },
   ];
 
@@ -115,7 +115,7 @@ export default function Footer() {
             © 2026 Cleared Advisory · ABN 28 867 326 033
           </p>
           <Link
-            href="#privacy"
+            href="/privacypolicy"
             className="font-space-grotesk font-normal text-sm md:text-base text-white/80 hover:text-white transition-colors duration-300"
           >
             Privacy Policy

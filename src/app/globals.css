@@ -1,7 +1,20 @@
 @import "tailwindcss";
+@import "./typography.css";
 
 @theme {
   --font-gelasio: var(--font-gelasio), serif;
   --font-space-grotesk: var(--font-space-grotesk), sans-serif;
   --font-inter: var(--font-inter), sans-serif;
+}
+
+.container--boxed {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1540px;
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+.section-2xl {
+  padding: 120px 40px;
 }

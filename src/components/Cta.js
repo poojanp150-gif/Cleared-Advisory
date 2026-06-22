@@ -28,8 +28,8 @@ export default function Cta() {
   ];
 
   return (
-    <section className="w-full bg-white py-20 lg:py-24 text-slate-900 relative" style={{ marginTop: "-1px" }}>
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
+    <section className="w-full bg-white container--boxed text-slate-900 relative" style={{ marginTop: "-1px" }}>
+      <div className="max-w-[1440px] mx-auto section-2xl">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
           {/* Left Side Content */}

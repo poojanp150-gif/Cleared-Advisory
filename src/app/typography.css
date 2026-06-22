@@ -1,0 +1,43 @@
+.text--2xs {
+    font-size: 16px;
+}
+
+.text--xs {
+    font-size: 14px;
+}
+
+.text--base {
+    font-size: 16px;
+}
+
+.text--lg {
+    font-size: 18px;
+}
+
+.text--xl {
+    font-size: 20px;
+}
+
+.text--2xl {
+    font-size: 32px;
+}
+
+.text--3xl {
+    font-size: 40px;
+}
+
+.text--4xl {
+    font-size: 48px;
+}
+
+.text--5xl {
+    font-size: 56px;
+}
+
+.text--6xl {
+    font-size: 66px;
+}
+
+.text--7xl {
+    font-size: 72px;
+}

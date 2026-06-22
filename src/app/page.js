@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Faq from "@/components/Faq";
-import Footer from "@/components/Footer";
 import Cta from "@/components/Cta";
 
 
@@ -739,10 +738,10 @@ export default function Home() {
                     <ul className="flex flex-col gap-4">
                       {credentials.map((cred, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <span className="font-inter font-normal text-base text-white/50 select-none">
+                          <span className="font-inter font-normal text-base text-white select-none">
                             •
                           </span>
-                          <span className="font-space-grotesk font-normal text-sm sm:text-base text-white leading-tight">
+                          <span className="font-space-grotesk font-normal text-sm tracking-[1.1px] text-white/70">
                             {cred}
                           </span>
                         </li>

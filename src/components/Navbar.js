@@ -37,13 +37,13 @@ export default function Navbar() {
                 <Link href="#tranche-2" className="hover:text-amber-400 transition-colors duration-200">
                     Tranche 2
                 </Link>
-                <Link href="#services" className="hover:text-amber-400 transition-colors duration-200">
+                <Link href="/services" className="hover:text-amber-400 transition-colors duration-200">
                     Services
                 </Link>
-                <Link href="#about" className="hover:text-amber-400 transition-colors duration-200">
+                <Link href="/about" className="hover:text-amber-400 transition-colors duration-200">
                     About
                 </Link>
-                <Link href="#team" className="hover:text-amber-400 transition-colors duration-200">
+                <Link href="/our-team" className="hover:text-amber-400 transition-colors duration-200">
                     Our Team
                 </Link>
             </nav>
@@ -143,7 +143,7 @@ export default function Navbar() {
                         Services
                     </Link>
                     <Link
-                        href="#about"
+                        href="/about"
                         onClick={() => setIsOpen(false)}
                         className="font-space-grotesk text-lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >

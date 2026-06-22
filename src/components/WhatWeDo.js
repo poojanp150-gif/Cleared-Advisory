@@ -77,8 +77,8 @@ export default function WhatWeDo() {
             </div>
 
             {/* ── Who We Work With (3 Cards Section) ── */}
-            <section className="w-full bg-white py-20 lg:py-[120px] text-slate-900 flex flex-col items-center">
-                <div className="max-w-[1440px] mx-auto px-6 lg:px-20 w-full">
+            <section className="w-full bg-white container--boxed text-slate-900 flex flex-col items-center">
+                <div className="max-w-[1440px] mx-auto section-2xl w-full">
                     {/* Header */}
                     <div className="max-w-[1200px] mx-auto flex flex-col items-start text-left mb-12 sm:mb-16">
                         <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-[#666666] uppercase">
