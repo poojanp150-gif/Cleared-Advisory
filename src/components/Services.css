@@ -1,0 +1,30 @@
+.services__highlight-text-gold {
+  background: linear-gradient(271.02deg, #CCAB51 0.83%, #D5B45F 51.73%, #E7C77C 99.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.services__highlight-text-blue {
+  background: linear-gradient(180deg, #010132 0%, #1D1D81 100%);
+}
+
+.services__shadow-gold {
+  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.08);
+}
+
+.services__shadow-gold-hover:hover {
+  box-shadow: 0 25px 60px rgba(212, 175, 55, 0.15);
+}
+
+.services__shadow-card-hover:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+}
+
+.services__shadow-card-dark-hover:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.services__shadow-badge {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

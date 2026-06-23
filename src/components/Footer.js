@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
@@ -16,19 +15,19 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-gradient-to-b from-[#010132] to-[#1D1D81] text-white pt-20 pb-8 relative overflow-hidden">
+    <footer className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 text-white pt-20 pb-8 relative overflow-hidden">
       {/* Top Main Section */}
-      <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20">
-        <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8 pb-16">
+      <div className="max-w-360 mx-auto px-6 md:px-10 lg:px-20">
+        <div className="max-w-320 mx-auto flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8 pb-16">
 
           {/* Column 1: Brand & Tagline */}
-          <div className="flex flex-col gap-6 max-w-[381px] w-full">
+          <div className="flex flex-col gap-6 max-w-95 w-full">
             <Link href="/" className="flex items-center gap-3 group w-fit">
               {/* Logo Mark: matching Navbar */}
-              <div className="w-[35px] h-[40px] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+              <div className="w-9 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                 <Image src={Logo} alt="Logo" width={35} height={40} />
               </div>
-              <span className="font-gelasio font-semibold text--xl tracking-[-0.48px] text-white">
+              <span className="font-gelasio font-semibold text--xl tracking--0.48px text-white">
                 Cleared Advisory
               </span>
             </Link>
@@ -43,7 +42,7 @@ export default function Footer() {
 
             {/* Column 2: Company Links */}
             <div className="flex flex-col gap-6">
-              <h4 className="font-inter font-semibold text--xs tracking-[1.1px] text-white uppercase">
+              <h4 className="font-inter font-semibold text--xs tracking-1.1px text-white uppercase">
                 COMPANY
               </h4>
               <ul className="flex flex-col gap-4">
@@ -51,7 +50,7 @@ export default function Footer() {
                   <li key={idx}>
                     <Link
                       href={link.href}
-                      className="font-space-grotesk font-normal text--base text-white/60 hover:text-white transition-all duration-300 hover:translate-x-[2px] inline-block"
+                      className="font-space-grotesk font-normal text--base text-white/60 hover:text-white transition-all duration-300 hover:translate-x-0.5 inline-block"
                     >
                       {link.name}
                     </Link>
@@ -62,13 +61,13 @@ export default function Footer() {
 
             {/* Column 3: Connect Info */}
             <div className="flex flex-col gap-6">
-              <h4 className="font-inter font-semibold text--xs tracking-[1.1px] text-white uppercase">
+              <h4 className="font-inter font-semibold text--xs tracking-1.1px text-white uppercase">
                 CONNECT
               </h4>
               <div className="flex flex-col gap-6">
                 {/* Email */}
                 <div className="flex flex-col gap-1">
-                  <span className="font-space-grotesk font-medium text--2xs tracking-[1.1px] text-white/40 uppercase">
+                  <span className="font-space-grotesk font-medium text--2xs tracking-1.1px text-white/40 uppercase">
                     EMAIL
                   </span>
                   <Link
@@ -81,7 +80,7 @@ export default function Footer() {
 
                 {/* Phone */}
                 <div className="flex flex-col gap-1">
-                  <span className="font-space-grotesk font-medium text--2xs tracking-[1.1px] text-white/40 uppercase">
+                  <span className="font-space-grotesk font-medium text--2xs tracking-1.1px text-white/40 uppercase">
                     PHONE
                   </span>
                   <Link
@@ -94,7 +93,7 @@ export default function Footer() {
 
                 {/* Location */}
                 <div className="flex flex-col gap-1">
-                  <span className="font-space-grotesk font-medium text--2xs tracking-[1.1px] text-white/40 uppercase">
+                  <span className="font-space-grotesk font-medium text--2xs tracking-1.1px text-white/40 uppercase">
                     LOCATION
                   </span>
                   <span className="font-space-grotesk font-normal text--base text-white/60">
@@ -109,8 +108,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright & Border Section */}
-      <div className="max-w-[1440px] mx-auto border-t border-white/10 pt-8 mt-2 rounded-3xl px-6 md:px-10 lg:px-20">
-        <div className="max-w-[1280px] mx-auto  flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-360 mx-auto border-t border-white/10 pt-8 mt-2 rounded-3xl px-6 md:px-10 lg:px-20">
+        <div className="max-w-320 mx-auto  flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-space-grotesk font-normal text--xs md:text--base text-white/80 text-center md:text-left">
             © 2026 Cleared Advisory · ABN 28 867 326 033
           </p>

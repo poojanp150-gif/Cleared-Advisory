@@ -1,4 +1,6 @@
 "use client";
+import './Faq.css';
+
 import { useState } from "react";
 
 export default function Faq() {
@@ -40,24 +42,24 @@ export default function Faq() {
   };
 
   return (
-    <section className="w-full bg-gradient-to-b from-[#010132] to-[#1D1D81]  text-white relative">
+    <section className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800  text-white relative">
       <div className="container--boxed">
 
 
-        <div className="max-w-[1440px] mx-auto section-2xl">
+        <div className="max-w-360 mx-auto section-2xl">
 
           {/* Header Container */}
-          <div className="max-w-[1280px] mx-auto flex flex-col items-center text-center mb-16">
-            <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-white/70 uppercase">
+          <div className="max-w-320 mx-auto flex flex-col items-center text-center mb-16">
+            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-white/70 uppercase">
               COMMON QUESTIONS
             </span>
-            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight md:leading-[57.6px] tracking-[-0.01em] text-white mt-6 max-w-[600px]">
+            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-57.6px tracking--0.01em text-white mt-6 max-w-150">
               Got questions? <br className="xs:hidden" />We have answers.
             </h2>
           </div>
 
           {/* Accordion Container */}
-          <div className="max-w-[800px] mx-auto w-full border-t border-b border-white/10 divide-y divide-white/10">
+          <div className="max-w-200 mx-auto w-full border-t border-b border-white/10 divide-y divide-white/10">
             {faqs.map((faq, idx) => {
               const isOpen = openIndex === idx;
               return (
@@ -73,27 +75,27 @@ export default function Faq() {
                     {/* Circular Button */}
                     <div
                       className={`w-9 h-9 rounded-full shrink-0 flex items-center justify-center transition-all duration-300 ${isOpen
-                        ? "bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] text-black border border-transparent"
+                        ? "bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 text-black border border-transparent"
                         : "border border-white/20 text-white group-hover:border-white"
                         }`}
                     >
                       {isOpen ? (
                         // Minus sign
-                        <span className="text--xl font-bold leading-none select-none -translate-y-[2px]">-</span>
+                        <span className="text--xl font-bold leading-none select-none -translate-y-0.5">-</span>
                       ) : (
                         // Plus sign
-                        <span className="text--lg font-normal leading-none select-none -translate-y-[1px]">+</span>
+                        <span className="text--lg font-normal leading-none select-none -translate-y-px">+</span>
                       )}
                     </div>
                   </button>
 
                   {/* Animated Answer Body */}
                   <div
-                    className={`grid transition-[grid-template-rows,margin-top] duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] mt-6" : "grid-rows-[0fr] mt-0"
+                    className={`grid faq__transition-grid duration-300 ease-in-out ${isOpen ? "grid-rows-1fr mt-6" : "grid-rows-0fr mt-0"
                       }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="font-inter font-normal text--base text-white/80 leading-[25.6px] max-w-[680px]">
+                      <p className="font-inter font-normal text--base text-white/80 leading-25.6px max-w-170">
                         {faq.answer}
                       </p>
                     </div>

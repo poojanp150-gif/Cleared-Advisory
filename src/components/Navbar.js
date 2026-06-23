@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,21 +22,21 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className={`w-full h-[89px] border-b flex items-stretch text-white fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled
+        <header className={`w-full h-22 border-b flex items-stretch text-white fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled
             ? "bg-slate-950/85 backdrop-blur-md border-white/10 shadow-lg"
             : "bg-transparent border-white/20"
             }`}>
             {/* Column 1: Logo & Brand */}
             <Link
                 href="/"
-                className="flex items-center pl-6 xl:pl-20 w-[240px] md:w-[280px] lg:w-[398px] flex-shrink-0 border-r border-white/20 group"
+                className="flex items-center pl-6 xl:pl-20 w-60 md:w-70 lg:w-100 flex-shrink-0 border-r border-white/20 group"
             >
                 <div className="flex items-center gap-3">
                     {/* Logo Mark: Premium stylized check/shield representing compliance & security */}
-                    <div className="w-[35px] h-[40px] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                    <div className="w-9 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                         <Image src={Logo} alt="Logo" width={35} height={40} />
                     </div>
-                    <span className="font-gelasio font-semibold text--xl md:text--xl tracking-[-0.02em] text-white">
+                    <span className="font-gelasio font-semibold text--xl md:text--xl tracking--0.02em text-white">
                         Cleared Advisory
                     </span>
                 </div>
@@ -66,7 +65,7 @@ export default function Navbar() {
             </nav>
 
             {/* Column 3: Call to Action (Desktop) */}
-            <div className="hidden lg:block w-[240px] xl:w-[309px] flex-shrink-0 border-l border-white/20">
+            <div className="hidden lg:block w-60 xl:w-77 flex-shrink-0 border-l border-white/20">
                 <Link
                     href="#book-call"
                     className="flex h-full items-center justify-between px-6 xl:px-20 group hover:bg-white/[0.02] transition-colors duration-200"
@@ -81,7 +80,7 @@ export default function Navbar() {
                             viewBox="0 0 12 12"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="transition-transform duration-300 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
+                            className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
                         >
                             <path
                                 d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
@@ -131,7 +130,7 @@ export default function Navbar() {
 
             {/* Mobile Drawer Overlay */}
             {isOpen && (
-                <div className="absolute top-[89px] left-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-white/20 flex flex-col py-6 px-8 gap-4 lg:hidden animate-in fade-in slide-in-from-top-5 duration-200">
+                <div className="absolute top-22 left-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-white/20 flex flex-col py-6 px-8 gap-4 lg:hidden animate-in fade-in slide-in-from-top-5 duration-200">
                     <Link
                         href="/why-cleared"
                         onClick={() => setIsOpen(false)}

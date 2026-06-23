@@ -1,0 +1,6 @@
+.why-cleared__highlight-text-gold {
+  background: linear-gradient(271.02deg, #CCAB51 0.83%, #D5B45F 51.73%, #E7C77C 99.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

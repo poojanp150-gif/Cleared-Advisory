@@ -5,6 +5,22 @@
   --font-gelasio: var(--font-gelasio), serif;
   --font-space-grotesk: var(--font-space-grotesk), sans-serif;
   --font-inter: var(--font-inter), sans-serif;
+  
+  --color-brand-900: #1A1A1A;
+  --color-brand-gold-500: #CCAB51;
+  --color-brand-gold-400: #D5B45F;
+  --color-brand-gold-300: #E7C77C;
+  --color-brand-gold-600: #D4AF37;
+  --color-brand-blue-900: #010132;
+  --color-brand-blue-800: #1D1D81;
+  --color-brand-gray-800: #111827;
+  --color-brand-gray-600: #4B5563;
+  --color-brand-gray-500: #666666;
+  --color-brand-gray-200: #E5E7EB;
+  --color-brand-gray-100: #F8F9FA;
+  --color-brand-red-600: #B91C1C;
+  --color-brand-bg-light: #D9D6CE;
+  --color-brand-bg-white: #FDFDF9;
 }
 
 .container--boxed {

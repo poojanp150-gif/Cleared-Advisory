@@ -1,0 +1,3 @@
+.faq__transition-grid {
+  transition-property: grid-template-rows, margin-top;
+}
