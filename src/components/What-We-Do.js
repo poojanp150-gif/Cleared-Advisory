@@ -57,19 +57,19 @@ export default function WhatWeDo() {
                     <div className="flex flex-col items-center text-center gap-6 max-w-[844px] w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
 
                         {/* Tagline: "What we do" — gold gradient */}
-                        <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] uppercase bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] bg-clip-text text-transparent">
+                        <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] uppercase bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] bg-clip-text text-transparent">
                             What we do
                         </span>
 
                         {/* Heading: Mixed Roman + Italic */}
-                        <h1 className="font-gelasio font-medium text-4xl sm:text-5xl md:text-[64px] leading-tight md:leading-[75px] tracking-[-0.48px] text-white">
+                        <h1 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-[75px] tracking-[-0.48px] text-white">
                             End-to-end AML/CTF{" "}
                             <br className="hidden sm:inline" />
                             <span className="italic font-medium bg-[linear-gradient(271.02deg,#CCAB51_0.83%,#D5B45F_51.73%,#E7C77C_99.06%)] bg-clip-text text-transparent">compliance.</span>
                         </h1>
 
                         {/* Subtitle / Description */}
-                        <p className="font-space-grotesk font-medium text-base sm:text-lg md:text-[18px] leading-[27px] text-white/80 max-w-[844px]">
+                        <p className="font-space-grotesk font-medium text--base sm:text--lg md:text-[18px] leading-[27px] text-white/80 max-w-[844px]">
                             Three client types. One consistent standard of service. No disappearing.
                         </p>
                     </div>
@@ -84,13 +84,13 @@ export default function WhatWeDo() {
                     <div className="max-w-[1440px] mx-auto section-2xl w-full">
                         {/* Header */}
                         <div className="max-w-[1200px] mx-auto flex flex-col items-start text-left mb-12 sm:mb-16">
-                            <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-[#666666] uppercase">
+                            <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-[#666666] uppercase">
                                 Our clients
                             </span>
-                            <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight tracking-[-0.48px] text-[#1A1A1A] mt-4">
+                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight tracking-[-0.48px] text-[#1A1A1A] mt-4">
                                 Who we work with
                             </h2>
-                            <p className="font-space-grotesk font-normal text-base sm:text-lg md:text-[18px] leading-[26px] text-[#666666] max-w-[780px] mt-4">
+                            <p className="font-space-grotesk font-normal text--base sm:text--lg md:text-[18px] leading-[26px] text-[#666666] max-w-[780px] mt-4">
                                 For 20 years, businesses needing compliance help had three options. None of them worked particularly well.
                             </p>
                         </div>
@@ -111,18 +111,18 @@ export default function WhatWeDo() {
                                     <div className="flex-1 flex flex-col gap-3">
                                         {/* Title & Tag */}
                                         <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-                                            <h3 className="font-gelasio font-medium text-2xl text-[#1A1A1A] tracking-[-0.24px]">
+                                            <h3 className="font-gelasio font-medium text--xl text-[#1A1A1A] tracking-[-0.24px]">
                                                 {client.title}
                                             </h3>
                                             {client.tag && (
-                                                <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-[#B91C1C] uppercase">
+                                                <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-[#B91C1C] uppercase">
                                                     {client.tag}
                                                 </span>
                                             )}
                                         </div>
 
                                         {/* Description */}
-                                        <p className="font-space-grotesk font-normal text-base text-[#666666] leading-6 max-w-[995px]">
+                                        <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6 max-w-[995px]">
                                             {client.description}
                                         </p>
                                     </div>
@@ -141,13 +141,13 @@ export default function WhatWeDo() {
                     <div className="max-w-[1440px] mx-auto section-2xl w-full flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
                         {/* Left Column (Sticky Header Content) */}
                         <div className="flex flex-col lg:w-[45%] w-full lg:sticky lg:top-[120px]">
-                            <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] uppercase text-white/60">
+                            <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] uppercase text-white/60">
                                 Our three pillars
                             </span>
-                            <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-white mt-4">
+                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-white mt-4">
                                 Advisory. Operations. Audit.
                             </h2>
-                            <p className="font-inter font-normal text-base sm:text-lg leading-[26px] text-white/80 max-w-[480px] mt-6">
+                            <p className="font-inter font-normal text--base sm:text--lg leading-[26px] text-white/80 max-w-[480px] mt-6">
                                 End-to-end AML/CTF solutions designed to build, run, and verify your compliance program with absolute confidence.
                             </p>
                         </div>
@@ -168,18 +168,18 @@ export default function WhatWeDo() {
                                     <div className="flex-1 flex flex-col gap-3">
                                         {/* Title & Tag */}
                                         <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-                                            <h3 className="font-gelasio font-medium text-2xl text-[#1A1A1A] tracking-[-0.24px]">
+                                            <h3 className="font-gelasio font-medium text--xl text-[#1A1A1A] tracking-[-0.24px]">
                                                 {pillar.title}
                                             </h3>
                                             {pillar.tag && (
-                                                <span className="font-space-grotesk font-medium text-xs sm:text-sm tracking-[1.1px] bg-gradient-to-r from-[#010132] to-[#1D1D81] bg-clip-text text-transparent uppercase select-none">
+                                                <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-[1.1px] bg-gradient-to-r from-[#010132] to-[#1D1D81] bg-clip-text text-transparent uppercase select-none">
                                                     {pillar.tag}
                                                 </span>
                                             )}
                                         </div>
 
                                         {/* Description */}
-                                        <p className="font-inter font-normal text-base text-[#666666] leading-6">
+                                        <p className="font-inter font-normal text--base text-[#666666] leading-6">
                                             {pillar.description}
                                         </p>
                                     </div>

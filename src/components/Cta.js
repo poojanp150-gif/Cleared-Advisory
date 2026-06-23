@@ -35,11 +35,11 @@ export default function Cta() {
 
             {/* Left Side Content */}
             <div className="flex flex-col justify-start max-w-[568px] w-full">
-              <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-slate-500/60 uppercase">
+              <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-slate-500/60 uppercase">
                 GET STARTED
               </span>
 
-              <h2 className="font-gelasio font-medium text-4xl sm:text-5xl md:text-[64px] leading-tight md:leading-[70.4px] tracking-[-0.01em] text-[#1A1A1A] mt-6">
+              <h2 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-[70.4px] tracking-[-0.01em] text-[#1A1A1A] mt-6">
                 Book a free <br className="hidden sm:inline" />
                 <span className="italic font-normal bg-[linear-gradient(271.02deg,#CCAB51_0.83%,#D5B45F_51.73%,#E7C77C_99.06%)] bg-clip-text text-transparent">
                   30-minute
@@ -47,7 +47,7 @@ export default function Cta() {
                 consultation.
               </h2>
 
-              <p className="font-space-grotesk font-normal text-base text-slate-500 mt-6 leading-relaxed max-w-[482px]">
+              <p className="font-space-grotesk font-normal text--base text-slate-500 mt-6 leading-relaxed max-w-[482px]">
                 No sales pitch. No commitment. A plain-English conversation about where you stand and what you need to do before 1 July 2026. You'll leave with at least 3 practical actions.
               </p>
 
@@ -56,7 +56,7 @@ export default function Cta() {
                 {contactInfo.map((item, idx) => (
                   <div key={idx} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0">
                     {/* Label */}
-                    <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-slate-500/60 uppercase w-[112px] shrink-0">
+                    <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-slate-500/60 uppercase w-[112px] shrink-0">
                       {item.label}
                     </span>
 
@@ -64,12 +64,12 @@ export default function Cta() {
                     {item.href ? (
                       <Link
                         href={item.href}
-                        className="font-space-grotesk font-normal text-sm sm:text-base text-slate-900 hover:text-[#CCAB51] hover:underline transition-colors duration-300"
+                        className="font-space-grotesk font-normal text--xs sm:text--base text-slate-900 hover:text-[#CCAB51] hover:underline transition-colors duration-300"
                       >
                         {item.value}
                       </Link>
                     ) : (
-                      <span className="font-space-grotesk font-normal text-sm sm:text-base text-slate-900">
+                      <span className="font-space-grotesk font-normal text--xs sm:text--base text-slate-900">
                         {item.value}
                       </span>
                     )}
@@ -80,7 +80,7 @@ export default function Cta() {
 
             {/* Right Side Dark Card */}
             <div className="w-full bg-gradient-to-b from-[#010132] to-[#1D1D81] border border-white/10 p-8 sm:p-12 shadow-2xl text-white">
-              <h3 className="font-gelasio font-medium text-2xl text-white tracking-[-0.01em]">
+              <h3 className="font-gelasio font-medium text--xl text-white tracking-[-0.01em]">
                 What To Expect on The Call
               </h3>
 
@@ -93,7 +93,7 @@ export default function Cta() {
                       <div className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] shrink-0" />
 
                       {/* Text */}
-                      <span className="font-space-grotesk font-normal text-base text-white/90 leading-normal">
+                      <span className="font-space-grotesk font-normal text--base text-white/90 leading-normal">
                         {text}
                       </span>
                     </li>
@@ -107,7 +107,7 @@ export default function Cta() {
                   href="mailto:ritesh@clearedadvisory.com.au"
                   className="group flex w-full h-[57px] items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-white shadow-md hover:scale-[1.01] transition-transform duration-300"
                 >
-                  <span className="font-space-grotesk text-base font-medium text-[#1A1A1A]">
+                  <span className="font-space-grotesk text--base font-medium text-[#1A1A1A]">
                     Send us an email now
                   </span>
 
@@ -136,7 +136,7 @@ export default function Cta() {
               <div className="mt-6 text-center">
                 <Link
                   href="tel:+61410450511"
-                  className="inline-block font-space-grotesk font-medium text-base tracking-[0.5px] text-white/80 hover:text-white hover:underline transition-colors duration-300"
+                  className="inline-block font-space-grotesk font-medium text--base tracking-[0.5px] text-white/80 hover:text-white hover:underline transition-colors duration-300"
                 >
                   OR CALL +61 410 450 511
                 </Link>

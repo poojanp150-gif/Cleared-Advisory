@@ -11,15 +11,15 @@ export default function OurTeam() {
             <div className="w-full min-h-[589px] bg-gradient-to-b from-[#010132] to-[#1D1D81] flex flex-col relative overflow-hidden pt-[89px]">
                 <div className="flex-1 flex items-center justify-center px-6 lg:px-20 py-16 lg:py-[120px]">
                     <div className="flex flex-col items-center text-center gap-6 max-w-[844px] w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
-                        <span className="font-space-grotesk font-bold text-sm tracking-[1.4px] uppercase text-[#D4AF37]">
+                        <span className="font-space-grotesk font-bold text--xs tracking-[1.4px] uppercase text-[#D4AF37]">
                             OUR TEAM
                         </span>
-                        <h1 className="font-gelasio font-medium text-4xl sm:text-5xl md:text-[64px] leading-tight md:leading-[75px] tracking-[-0.48px] text-white">
+                        <h1 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-[75px] tracking-[-0.48px] text-white">
                             Our Practitioners.{" "}
                             <br className="hidden sm:inline" />
                             <span className="italic font-medium bg-[linear-gradient(271.02deg,#CCAB51_0.83%,#D5B45F_51.73%,#E7C77C_99.06%)] bg-clip-text text-transparent">Not Theorists.</span>
                         </h1>
-                        <p className="font-space-grotesk font-medium text-base sm:text-lg md:text-[18px] leading-[27px] text-white max-w-[806px]">
+                        <p className="font-space-grotesk font-medium text--base sm:text--lg md:text-[18px] leading-[27px] text-white max-w-[806px]">
                             We&apos;ve held the roles. Been accountable. Built programs under real regulatory scrutiny.
                         </p>
                     </div>
@@ -46,10 +46,10 @@ export default function OurTeam() {
                                     </div>
                                 </div>
 
-                                <h3 className="font-gelasio font-semibold text-2xl tracking-[-0.24px] text-white text-center">
+                                <h3 className="font-gelasio font-semibold text--xl tracking-[-0.24px] text-white text-center">
                                     Ritesh Singh
                                 </h3>
-                                <span className="font-space-grotesk font-normal text-sm tracking-[1.1px] text-white/80 text-center mt-2 uppercase">
+                                <span className="font-space-grotesk font-normal text--xs tracking-[1.1px] text-white/80 text-center mt-2 uppercase">
                                     FOUNDER, CLEARED ADVISORY
                                 </span>
 
@@ -58,30 +58,30 @@ export default function OurTeam() {
                                 <ul className="flex flex-col gap-4 w-full">
                                     <li className="flex items-start gap-3">
                                         <span className="text-white/50 mt-[2px]">•</span>
-                                        <span className="font-space-grotesk font-normal text-sm tracking-[1.1px] text-white/70">CAMS — ACAMS 2019</span>
+                                        <span className="font-space-grotesk font-normal text--xs tracking-[1.1px] text-white/70">CAMS — ACAMS 2019</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="text-white/50 mt-[2px]">•</span>
-                                        <span className="font-space-grotesk font-normal text-sm tracking-[1.1px] text-white/70">CAMS-Audit — in progress</span>
+                                        <span className="font-space-grotesk font-normal text--xs tracking-[1.1px] text-white/70">CAMS-Audit — in progress</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="text-white/50 mt-[2px]">•</span>
-                                        <span className="font-space-grotesk font-normal text-sm tracking-[1.1px] text-white/70">MBA — Melbourne Business School 2025</span>
+                                        <span className="font-space-grotesk font-normal text--xs tracking-[1.1px] text-white/70">MBA — Melbourne Business School 2025</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="text-white/50 mt-[2px]">•</span>
-                                        <span className="font-space-grotesk font-normal text-sm tracking-[1.1px] text-white/70">Former MLRO: AUSTRAC · DIA · AFSL</span>
+                                        <span className="font-space-grotesk font-normal text--xs tracking-[1.1px] text-white/70">Former MLRO: AUSTRAC · DIA · AFSL</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="text-white/50 mt-[2px]">•</span>
-                                        <span className="font-space-grotesk font-normal text-sm tracking-[1.1px] text-white/70">22 years APAC compliance</span>
+                                        <span className="font-space-grotesk font-normal text--xs tracking-[1.1px] text-white/70">22 years APAC compliance</span>
                                     </li>
                                 </ul>
                             </div>
                             {/* Right Content */}
                             <div className="flex-1 flex flex-col gap-8 lg:gap-16 pt-4 lg:pt-8">
                                 <div className="border-l-4 border-l-[#010132] pl-8">
-                                    <h2 className="font-gelasio font-medium text-3xl sm:text-[32px] leading-tight sm:leading-[50.4px] tracking-[-0.36px] text-[#1A1A1A] max-w-[733px]">
+                                    <h2 className="font-gelasio font-medium text--2xl sm:text-[32px] leading-tight sm:leading-[50.4px] tracking-[-0.36px] text-[#1A1A1A] max-w-[733px]">
                                         &quot;I didn&apos;t build {" "}
                                         <span className="font-normal bg-[linear-gradient(271.02deg,#CCAB51_0.83%,#D5B45F_51.73%,#E7C77C_99.06%)] bg-clip-text text-transparent">
                                             Cleared Advisory
@@ -91,10 +91,10 @@ export default function OurTeam() {
                                 </div>
 
                                 <div className="flex flex-col gap-6 max-w-[719px] ml-9">
-                                    <p className="font-inter font-normal text-base leading-[25.6px] text-[#666666]">
+                                    <p className="font-inter font-normal text--base leading-[25.6px] text-[#666666]">
                                         22 years. Multiple MLRO roles. AUSTRAC, DIA, AFSL. Built programs from zero. Been audited against them. Turned around loss-making businesses. Managed de-banking threats. Built teams from 8 to 60 people across 4 countries.
                                     </p>
-                                    <p className="font-inter font-normal text-base leading-[25.6px] text-[#666666]">
+                                    <p className="font-inter font-normal text--base leading-[25.6px] text-[#666666]">
                                         I&apos;ve seen what happens when compliance is treated as a cost centre. And what&apos;s possible when it&apos;s built into the business from day one. That&apos;s what Cleared Advisory delivers.
                                     </p>
                                 </div>
@@ -130,13 +130,13 @@ export default function OurTeam() {
                                     <h3 className="font-gelasio font-medium text-[28px] text-[#111827] leading-snug tracking-[-0.28px] mb-4">
                                         Advisory Board — Forming
                                     </h3>
-                                    <p className="font-space-grotesk font-normal text-base text-[#4B5563] leading-[25.6px]">
+                                    <p className="font-space-grotesk font-normal text--base text-[#4B5563] leading-[25.6px]">
                                         Senior practitioners across legal, payments, and regulatory affairs joining the Cleared Advisory Advisory Board in Q3 2026. Announcements coming.
                                     </p>
                                 </div>
                                 <Link
                                     href="/contact"
-                                    className="group font-space-grotesk font-bold text-base text-[#D4AF37] inline-flex items-center mt-6 "
+                                    className="group font-space-grotesk font-bold text--base text-[#D4AF37] inline-flex items-center mt-6 "
                                 >
                                     <div className="border-b border-[#D4AF37]">
                                         <span className=" ">
@@ -155,7 +155,7 @@ export default function OurTeam() {
                                     <h3 className="font-gelasio font-medium text-[28px] text-[#111827] leading-snug tracking-[-0.28px] mb-4">
                                         Associate Compliance Practitioners
                                     </h3>
-                                    <p className="font-space-grotesk font-normal text-base text-[#4B5563] leading-[25.6px]">
+                                    <p className="font-space-grotesk font-normal text--base text-[#4B5563] leading-[25.6px]">
                                         Our network of CAMS-certified associate practitioners is available for specialist engagements and surge capacity. All associates are individually vetted.
                                     </p>
                                 </div>
@@ -172,13 +172,13 @@ export default function OurTeam() {
 
                     <div className="max-w-[1440px] mx-auto section-2xl w-full flex flex-col items-center">
                         <div className="flex flex-col items-center text-center max-w-[800px] mb-12 sm:mb-16">
-                            <span className="font-space-grotesk font-bold text-sm tracking-[1.4px] text-[#D4AF37] uppercase">
+                            <span className="font-space-grotesk font-bold text--xs tracking-[1.4px] text-[#D4AF37] uppercase">
                                 OUR NETWORK
                             </span>
-                            <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight text-white mt-4">
+                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight text-white mt-4">
                                 Built over 22 years. Not overnight.
                             </h2>
-                            <p className="font-space-grotesk font-normal text-base sm:text-lg text-white/80 leading-[25.6px] mt-6 max-w-[700px]">
+                            <p className="font-space-grotesk font-normal text--base sm:text--lg text-white/80 leading-[25.6px] mt-6 max-w-[700px]">
                                 Relationships across regulators, banks, fintechs, and compliance professionals in Australia, New Zealand, Singapore, UAE, and India.
                             </p>
                         </div>

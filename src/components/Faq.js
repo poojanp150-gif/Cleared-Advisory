@@ -48,10 +48,10 @@ export default function Faq() {
 
           {/* Header Container */}
           <div className="max-w-[1280px] mx-auto flex flex-col items-center text-center mb-16">
-            <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-white/70 uppercase">
+            <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-white/70 uppercase">
               COMMON QUESTIONS
             </span>
-            <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight md:leading-[57.6px] tracking-[-0.01em] text-white mt-6 max-w-[600px]">
+            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight md:leading-[57.6px] tracking-[-0.01em] text-white mt-6 max-w-[600px]">
               Got questions? <br className="xs:hidden" />We have answers.
             </h2>
           </div>
@@ -66,7 +66,7 @@ export default function Faq() {
                     onClick={() => toggleFaq(idx)}
                     className="w-full flex justify-between items-center text-left group gap-6 focus:outline-none cursor-pointer"
                   >
-                    <span className="font-gelasio font-medium text-lg sm:text-xl md:text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">
+                    <span className="font-gelasio font-medium text--lg sm:text--xl md:text--xl text-white group-hover:text-amber-300 transition-colors duration-300">
                       {faq.question}
                     </span>
 
@@ -79,10 +79,10 @@ export default function Faq() {
                     >
                       {isOpen ? (
                         // Minus sign
-                        <span className="text-xl font-bold leading-none select-none -translate-y-[2px]">-</span>
+                        <span className="text--xl font-bold leading-none select-none -translate-y-[2px]">-</span>
                       ) : (
                         // Plus sign
-                        <span className="text-lg font-normal leading-none select-none -translate-y-[1px]">+</span>
+                        <span className="text--lg font-normal leading-none select-none -translate-y-[1px]">+</span>
                       )}
                     </div>
                   </button>
@@ -93,7 +93,7 @@ export default function Faq() {
                       }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="font-inter font-normal text-base text-white/80 leading-[25.6px] max-w-[680px]">
+                      <p className="font-inter font-normal text--base text-white/80 leading-[25.6px] max-w-[680px]">
                         {faq.answer}
                       </p>
                     </div>

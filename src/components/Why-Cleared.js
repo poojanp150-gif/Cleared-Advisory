@@ -18,20 +18,20 @@ export default function WhyCleared() {
 
                         {/* Subtitle: "Why Cleared" — gold gradient, small-caps */}
                         <span
-                            className="font-space-grotesk font-medium text-sm tracking-[1.1px] uppercase bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] bg-clip-text text-transparent"
+                            className="font-space-grotesk font-medium text--xs tracking-[1.1px] uppercase bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] bg-clip-text text-transparent"
                         >
                             Why Cleared
                         </span>
 
                         {/* Heading: mixed roman + italic */}
-                        <h1 className="font-gelasio font-medium text-4xl sm:text-5xl md:text-[64px] leading-tight md:leading-[75px] tracking-[-0.48px] text-white">
+                        <h1 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-[75px] tracking-[-0.48px] text-white">
                             The traditional compliance{" "}
                             <br className="hidden sm:inline" />
                             <span className="not-italic font-medium italic bg-[linear-gradient(271.02deg,#CCAB51_0.83%,#D5B45F_51.73%,#E7C77C_99.06%)] bg-clip-text text-transparent">model is broken.</span>
 
                         </h1>
                         {/* Description */}
-                        <p className="font-space-grotesk font-medium text-base sm:text-lg md:text-[18px] leading-[27px] text-white/90 max-w-[844px]">
+                        <p className="font-space-grotesk font-medium text--base sm:text--lg md:text-[18px] leading-[27px] text-white/90 max-w-[844px]">
                             Here's what businesses have been told to do — and why it's been failing them for 20 years.
                         </p>
                     </div>
@@ -46,13 +46,13 @@ export default function WhyCleared() {
                     <div className="max-w-[1440px] mx-auto section-2xl w-full">
                         {/* Header */}
                         <div className="max-w-[1280px] mx-auto flex flex-col items-center text-center mb-12 sm:mb-16">
-                            <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-[#666666] uppercase">
+                            <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-[#666666] uppercase">
                                 OUR DIFFERENCE
                             </span>
-                            <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-[#1A1A1A] mt-6">
+                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-[#1A1A1A] mt-6">
                                 What businesses have always been told to do.
                             </h2>
-                            <p className="font-space-grotesk font-normal text-base sm:text-lg md:text-[18px] leading-[26px] text-[#666666] max-w-[780px] mx-auto mt-6">
+                            <p className="font-space-grotesk font-normal text--base sm:text--lg md:text-[18px] leading-[26px] text-[#666666] max-w-[780px] mx-auto mt-6">
                                 For 20 years, businesses needing compliance help had three options. None of them worked particularly well.
                             </p>
                         </div>
@@ -61,10 +61,10 @@ export default function WhyCleared() {
                         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch w-full">
                             {/* Card 1 */}
                             <div className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
-                                <h3 className="font-gelasio font-medium text-2xl text-[#1A1A1A]">
+                                <h3 className="font-gelasio font-medium text--xl text-[#1A1A1A]">
                                     Hire a law firm
                                 </h3>
-                                <p className="font-space-grotesk font-normal text-base text-[#666666] leading-6">
+                                <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6">
                                     $400–$600/hour. Lawyers who understand the legal framework but have never run a compliance program, never been the MLRO, never sat across the table from AUSTRAC when something went wrong. Beautiful documents. Handsome invoices. Then they disappear.
                                 </p>
                                 <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#CCAB51] to-[#E7C77C] group-hover:w-full transition-all duration-300" />
@@ -72,10 +72,10 @@ export default function WhyCleared() {
 
                             {/* Card 2 */}
                             <div className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
-                                <h3 className="font-gelasio font-medium text-2xl text-[#1A1A1A]">
+                                <h3 className="font-gelasio font-medium text--xl text-[#1A1A1A]">
                                     Hire a big consulting firm
                                 </h3>
-                                <p className="font-space-grotesk font-normal text-base text-[#666666] leading-6">
+                                <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6">
                                     A junior consultant reads the AUSTRAC guidance and builds something generic with your logo on it. It looks professional. It ticks boxes. Nobody in your business actually understands it, uses it, or knows what to do when a suspicious transaction lands on their desk.
                                 </p>
                                 <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#CCAB51] to-[#E7C77C] group-hover:w-full transition-all duration-300" />
@@ -83,10 +83,10 @@ export default function WhyCleared() {
 
                             {/* Card 3 */}
                             <div className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
-                                <h3 className="font-gelasio font-medium text-2xl text-[#1A1A1A]">
+                                <h3 className="font-gelasio font-medium text--xl text-[#1A1A1A]">
                                     Rely on software alone
                                 </h3>
-                                <p className="font-space-grotesk font-normal text-base text-[#666666] leading-6">
+                                <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6">
                                     Templates, checklists, a help centre, maybe a webinar. But nobody to call when a real regulatory question arises. Nobody who has been through an AUSTRAC audit and knows what they really look for.
                                 </p>
                                 <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#CCAB51] to-[#E7C77C] group-hover:w-full transition-all duration-300" />
@@ -122,17 +122,17 @@ export default function WhyCleared() {
 
                                 {/* Name & Designation */}
                                 <div className="flex flex-col gap-1">
-                                    <h3 className="font-gelasio font-semibold text-2xl text-white tracking-[-0.24px]">
+                                    <h3 className="font-gelasio font-semibold text--xl text-white tracking-[-0.24px]">
                                         Ritesh Singh
                                     </h3>
-                                    <span className="font-space-grotesk font-normal text-sm tracking-[1.1px] text-white/80 uppercase">
+                                    <span className="font-space-grotesk font-normal text--xs tracking-[1.1px] text-white/80 uppercase">
                                         FOUNDER, CLEARED ADVISORY
                                     </span>
                                 </div>
                             </div>
 
                             {/* Quote Text */}
-                            <blockquote className="font-gelasio font-medium text-xl sm:text-2xl md:text-[32px] leading-relaxed md:leading-[50.4px] tracking-[-0.36px] text-white">
+                            <blockquote className="font-gelasio font-medium text--xl sm:text--xl md:text-[32px] leading-relaxed md:leading-[50.4px] tracking-[-0.36px] text-white">
                                 "The dirty secret of the compliance industry is that{" "}
                                 <span className="text-[#CCAB51]">
                                     most compliance programs are built by people who have never actually been accountable to a regulator.
@@ -152,10 +152,10 @@ export default function WhyCleared() {
                     <div className="max-w-[1440px] mx-auto section-2xl w-full">
                         {/* Header */}
                         <div className="max-w-[1280px] mx-auto flex flex-col items-center text-center mb-12 sm:mb-16">
-                            <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-[#666666] uppercase">
+                            <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-[#666666] uppercase">
                                 THE CLEARED ADVISORY DIFFERENCE
                             </span>
-                            <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-[#1A1A1A] mt-6">
+                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-[#1A1A1A] mt-6">
                                 What we do differently. <span className="font-normal italic">And why it matters.</span>
                             </h2>
                         </div>
@@ -171,7 +171,7 @@ export default function WhyCleared() {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="font-gelasio font-medium text-3xl text-[#1A1A1A]">
+                                <h3 className="font-gelasio font-medium text--2xl text-[#1A1A1A]">
                                     The Traditional Model
                                 </h3>
 
@@ -187,7 +187,7 @@ export default function WhyCleared() {
                                     ].map((item, idx, arr) => (
                                         <li
                                             key={idx}
-                                            className={`py-6 w-full font-space-grotesk font-normal text-base text-[#1A1A1A] leading-6 ${idx !== arr.length - 1 ? "border-b border-black/10" : ""
+                                            className={`py-6 w-full font-space-grotesk font-normal text--base text-[#1A1A1A] leading-6 ${idx !== arr.length - 1 ? "border-b border-black/10" : ""
                                                 }`}
                                         >
                                             {item}
@@ -204,7 +204,7 @@ export default function WhyCleared() {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="font-gelasio font-medium text-3xl text-white">
+                                <h3 className="font-gelasio font-medium text--2xl text-white">
                                     The Cleared Advisory Model
                                 </h3>
 
@@ -222,7 +222,7 @@ export default function WhyCleared() {
                                             className={`py-6 w-full ${idx !== arr.length - 1 ? "border-b border-white/10" : ""
                                                 }`}
                                         >
-                                            <span className="font-space-grotesk font-normal text-base text-white leading-6">
+                                            <span className="font-space-grotesk font-normal text--base text-white leading-6">
                                                 {item}
                                             </span>
                                         </li>
@@ -248,17 +248,17 @@ export default function WhyCleared() {
                             {/* Left Column: Heading Content */}
                             <div className="flex flex-col  lg:sticky lg:top-24 max-w-[576px] w-full ">
                                 {/* Tagline */}
-                                <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-white/70 uppercase">
+                                <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-white/70 uppercase">
                                     OUR PROMISES
                                 </span>
 
                                 {/* Heading */}
-                                <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-white mt-6">
+                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-white mt-6">
                                     Three things we promise. Every client. Every time.
                                 </h2>
 
                                 {/* Description */}
-                                <p className="font-inter font-normal text-base sm:text-lg text-white/80 mt-6 leading-relaxed">
+                                <p className="font-inter font-normal text--base sm:text--lg text-white/80 mt-6 leading-relaxed">
                                     Most consultants deal entirely in theory, leaving you to figure out the execution.
                                     We bring boots-on-the-ground reality to your compliance, building operational
                                     frameworks that actually protect your business.
@@ -289,16 +289,16 @@ export default function WhyCleared() {
                                         className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-md border border-black/5 hover:border-amber-400/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-6"
                                     >
                                         {/* Big faint number */}
-                                        <div className="font-space-grotesk font-medium text-5xl leading-none text-slate-900/10 group-hover:text-amber-500/20 transition-colors duration-300">
+                                        <div className="font-space-grotesk font-medium text--4xl leading-none text-slate-900/10 group-hover:text-amber-500/20 transition-colors duration-300">
                                             {card.number}
                                         </div>
 
                                         {/* Content */}
                                         <div className="flex flex-col gap-4">
-                                            <h3 className="font-gelasio font-medium text-2xl text-[#1A1A1A]">
+                                            <h3 className="font-gelasio font-medium text--xl text-[#1A1A1A]">
                                                 {card.title}
                                             </h3>
-                                            <p className="font-inter font-normal text-base text-slate-500 leading-relaxed">
+                                            <p className="font-inter font-normal text--base text-slate-500 leading-relaxed">
                                                 {card.text}
                                             </p>
                                         </div>
@@ -324,13 +324,13 @@ export default function WhyCleared() {
 
                             {/* Header Content */}
                             <div className="flex flex-col items-start text-left w-full gap-4 sm:gap-6">
-                                <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-[#666666] uppercase">
+                                <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-[#666666] uppercase">
                                     WHAT GOOD LOOKS LIKE
                                 </span>
-                                <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-[#1A1A1A]">
+                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] leading-tight md:leading-[58px] tracking-[-0.48px] text-[#1A1A1A]">
                                     What makes a compliance program that actually survives an AUSTRAC audit.
                                 </h2>
-                                <p className="font-space-grotesk font-normal text-base sm:text-[16px] leading-relaxed text-[#666666] max-w-[700px]">
+                                <p className="font-space-grotesk font-normal text--base sm:text-[16px] leading-relaxed text-[#666666] max-w-[700px]">
                                     Most AML/CTF programs fail in practice — not because they don't exist, but because they
                                     were built for the shelf, not the business. Here's what we build instead.
                                 </p>
@@ -365,14 +365,14 @@ export default function WhyCleared() {
                                         className={`flex gap-[16px] p-[24px] ${idx !== 4 ? "border-b border-black/10" : ""
                                             }`}
                                     >
-                                        <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] flex items-center justify-center flex-shrink-0 text-white font-sans text-xs shadow-sm">
+                                        <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] flex items-center justify-center flex-shrink-0 text-white font-sans text--2xs shadow-sm">
                                             ✓
                                         </div>
                                         <div className="flex flex-col gap-2">
                                             <h4 className="font-gelasio font-medium text-[24px] leading-tight tracking-[-0.24px] text-[#1A1A1A]">
                                                 {item.title}
                                             </h4>
-                                            <p className="font-space-grotesk font-normal text-base text-[#666666] leading-6">
+                                            <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6">
                                                 {item.desc}
                                             </p>
                                         </div>
@@ -383,7 +383,7 @@ export default function WhyCleared() {
 
                             {/* Warning Box: Signs your current program isn't working */}
                             <div className="w-full bg-[#F9F9F9] border border-slate-200 rounded-[4px] p-8 sm:p-12 flex flex-col gap-8 mt-4">
-                                <h3 className="font-gelasio font-medium text-2xl text-[#B91C1C] tracking-[-0.24px]">
+                                <h3 className="font-gelasio font-medium text--xl text-[#B91C1C] tracking-[-0.24px]">
                                     SIGNS YOUR CURRENT PROGRAM ISN'T WORKING
                                 </h3>
                                 <div className="flex flex-col w-full">
@@ -403,7 +403,7 @@ export default function WhyCleared() {
                                             <div className="w-5 h-5 rounded-[4px] bg-[#B91C1C]/10 flex items-center justify-center flex-shrink-0 text-[#B91C1C] font-sans text-[10px] font-bold">
                                                 ✗
                                             </div>
-                                            <span className="font-space-grotesk font-normal text-base text-[#1A1A1A] leading-6">
+                                            <span className="font-space-grotesk font-normal text--base text-[#1A1A1A] leading-6">
                                                 {sign}
                                             </span>
                                         </div>

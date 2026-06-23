@@ -48,19 +48,19 @@ export default function Tranche2Explained() {
                         <div className="flex flex-col items-center text-center gap-6 max-w-[844px] w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
 
                             {/* Tagline: "About us" — gold gradient */}
-                            <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] uppercase bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] bg-clip-text text-transparent">
+                            <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] uppercase bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] bg-clip-text text-transparent">
                                 Tranche 2 explained
                             </span>
 
                             {/* Heading: Mixed Roman + Italic */}
-                            <h1 className="font-gelasio font-medium text-4xl sm:text-5xl md:text-[64px] leading-tight md:leading-[75px] tracking-[-0.48px] text-white">
+                            <h1 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-[75px] tracking-[-0.48px] text-white">
                                 What is Tranche 2 and {" "}
                                 <br className="hidden sm:inline" />
                                 <span className="italic font-medium bg-[linear-gradient(271.02deg,#CCAB51_0.83%,#D5B45F_51.73%,#E7C77C_99.06%)] bg-clip-text text-transparent">do you need to act?</span>
                             </h1>
 
                             {/* Subtitle / Description */}
-                            <p className="font-space-grotesk font-medium text-base sm:text-lg md:text-[18px] leading-[27px] text-white/80 max-w-[844px]">
+                            <p className="font-space-grotesk font-medium text--base sm:text--lg md:text-[18px] leading-[27px] text-white/80 max-w-[844px]">
                                 Australia's AML/CTF laws just expanded to five new sectors. Plain English. No jargon.
                             </p>
                         </div>
@@ -113,13 +113,13 @@ export default function Tranche2Explained() {
 
                             {/* Section Header */}
                             <div className="flex flex-col mb-12 md:mb-16 gap-[16px]">
-                                <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-slate-500 uppercase mb-3">
+                                <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-slate-500 uppercase mb-3">
                                     Our clients
                                 </span>
-                                <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] text-slate-900 tracking-[-0.48px] mb-4">
+                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text-[48px] text-slate-900 tracking-[-0.48px] mb-4">
                                     Who we work with
                                 </h2>
-                                <p className="font-space-grotesk font-normal text-base sm:text-lg text-slate-500 leading-relaxed ">
+                                <p className="font-space-grotesk font-normal text--base sm:text--lg text-slate-500 leading-relaxed ">
                                     For 20 years, businesses needing compliance help had three options. None of them worked particularly well.
                                 </p>
                             </div>
@@ -140,18 +140,18 @@ export default function Tranche2Explained() {
                                         <div className="flex-1 flex flex-col gap-3">
                                             {/* Title & Tag */}
                                             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-                                                <h3 className="font-gelasio font-medium text-2xl text-[#1A1A1A] tracking-[-0.24px]">
+                                                <h3 className="font-gelasio font-medium text--xl text-[#1A1A1A] tracking-[-0.24px]">
                                                     {client.title}
                                                 </h3>
                                                 {client.tag && (
-                                                    <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-[#B91C1C] uppercase">
+                                                    <span className="font-space-grotesk font-medium text--xs tracking-[1.1px] text-[#B91C1C] uppercase">
                                                         {client.tag}
                                                     </span>
                                                 )}
                                             </div>
 
                                             {/* Description */}
-                                            <p className="font-space-grotesk font-normal text-sm md:text-base text-slate-600 leading-relaxed max-w-[719px]">
+                                            <p className="font-space-grotesk font-normal text--xs md:text--base text-slate-600 leading-relaxed max-w-[719px]">
                                                 {client.description}
                                             </p>
                                         </div>
@@ -171,7 +171,7 @@ export default function Tranche2Explained() {
                             <div className="flex justify-center mt-16">
                                 <a
                                     href="/contactus"
-                                    className="group inline-flex items-center  bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] text-slate-900 font-space-grotesk font-medium text-base rounded-full py-3 pl-6 pr-4 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer max-w-[320px] sm:max-w-[480px]"
+                                    className="group inline-flex items-center  bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] text-slate-900 font-space-grotesk font-medium text--base rounded-full py-3 pl-6 pr-4 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer max-w-[320px] sm:max-w-[480px]"
                                 >
                                     <span>Book a free call to confirm your obligations</span>
                                     <div className="bg-slate-900 w-8 h-8 rounded-full flex items-center justify-center shrink-0 ml-4 transition-transform group-hover:translate-x-1 duration-300">

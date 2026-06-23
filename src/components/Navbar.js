@@ -37,14 +37,14 @@ export default function Navbar() {
                     <div className="w-[35px] h-[40px] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                         <Image src={Logo} alt="Logo" width={35} height={40} />
                     </div>
-                    <span className="font-gelasio font-semibold text-xl md:text-2xl tracking-[-0.02em] text-white">
+                    <span className="font-gelasio font-semibold text--xl md:text--xl tracking-[-0.02em] text-white">
                         Cleared Advisory
                     </span>
                 </div>
             </Link>
 
             {/* Column 2: Nav Links (Desktop) */}
-            <nav className="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8 font-space-grotesk text-base font-medium text-white/90">
+            <nav className="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8 font-space-grotesk text--base font-medium text-white/90">
                 <Link href="/why-cleared" className="hover:text-amber-400 transition-colors duration-200">
                     Why Cleared
                 </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
                     href="#book-call"
                     className="flex h-full items-center justify-between px-6 xl:px-20 group hover:bg-white/[0.02] transition-colors duration-200"
                 >
-                    <span className="font-space-grotesk text-base font-bold text-white transition-colors duration-200 group-hover:text-amber-400">
+                    <span className="font-space-grotesk text--base font-bold text-white transition-colors duration-200 group-hover:text-amber-400">
                         Book Free Call
                     </span>
                     <div className="w-7 h-7 rounded-full border border-white flex items-center justify-center transition-all duration-300 group-hover:border-amber-400 group-hover:bg-amber-400">
@@ -101,7 +101,7 @@ export default function Navbar() {
             <div className="flex lg:hidden items-center justify-end flex-1 pr-6 gap-4">
                 <Link
                     href="#book-call"
-                    className="px-4 py-2 rounded-full border border-white/50 text-sm font-bold font-space-grotesk hover:border-amber-400 hover:text-amber-400 transition-all duration-200"
+                    className="px-4 py-2 rounded-full border border-white/50 text--xs font-bold font-space-grotesk hover:border-amber-400 hover:text-amber-400 transition-all duration-200"
                 >
                     Book Call
                 </Link>
@@ -135,42 +135,42 @@ export default function Navbar() {
                     <Link
                         href="/why-cleared"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text-lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >
                         Why Cleared
                     </Link>
                     <Link
                         href="/what-we-do"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text-lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >
                         What We Do
                     </Link>
                     <Link
                         href="#tranche-2"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text-lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >
                         Tranche 2
                     </Link>
                     <Link
                         href="#services"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text-lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >
                         Services
                     </Link>
                     <Link
                         href="/about"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text-lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >
                         About
                     </Link>
                     <Link
                         href="#team"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text-lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >
                         Our Team
                     </Link>

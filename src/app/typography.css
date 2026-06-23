@@ -1,43 +1,43 @@
-.text--2xs {
-    font-size: 16px;
+@utility text--2xs {
+    font-size: 12px;
 }
 
-.text--xs {
+@utility text--xs {
     font-size: 14px;
 }
 
-.text--base {
+@utility text--base {
     font-size: 16px;
 }
 
-.text--lg {
+@utility text--lg {
     font-size: 18px;
 }
 
-.text--xl {
+@utility text--xl {
     font-size: 20px;
 }
 
-.text--2xl {
+@utility text--2xl {
     font-size: 32px;
 }
 
-.text--3xl {
+@utility text--3xl {
     font-size: 40px;
 }
 
-.text--4xl {
+@utility text--4xl {
     font-size: 48px;
 }
 
-.text--5xl {
+@utility text--5xl {
     font-size: 56px;
 }
 
-.text--6xl {
-    font-size: 66px;
+@utility text--6xl {
+    font-size: 64px;
 }
 
-.text--7xl {
+@utility text--7xl {
     font-size: 72px;
 }
