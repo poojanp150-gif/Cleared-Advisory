@@ -1,4 +1,4 @@
-import PrivacyPolicy from "@/components/PrivacyPolicy";
+import PrivacyPolicy from "@/components/Privacy-Policy";
 
 export const metadata = {
     title: "Privacy Policy | Cleared Advisory",

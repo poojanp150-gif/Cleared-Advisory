@@ -1,4 +1,4 @@
-import OurTeam from "@/components/OurTeam";
+import OurTeam from "@/components/Our-Team";
 
 export const metadata = {
     title: "Our Team | Cleared Advisory",

@@ -1,4 +1,4 @@
-import WhatWeDo from "@/components/WhatWeDo";
+import WhatWeDo from "@/components/What-We-Do";
 
 export const metadata = {
   title: "What We Do | Cleared Advisory",

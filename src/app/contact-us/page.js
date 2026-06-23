@@ -1,4 +1,4 @@
-import Contactus from "@/components/Contactus";
+import Contactus from "@/components/Contact-us";
 
 export const metadata = {
     title: "Contactus | Cleared Advisory",

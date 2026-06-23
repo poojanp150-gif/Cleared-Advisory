@@ -7,11 +7,11 @@ export default function Footer() {
   const companyLinks = [
     { name: "Why Cleared", href: "/why-cleared" },
     { name: "What we do", href: "/what-we-do" },
-    { name: "Tranche 2", href: "#tranche-2" },
+    { name: "Tranche 2", href: "/tranche-2" },
     { name: "Services", href: "#services" },
     { name: "About", href: "/about" },
     { name: "Our Team", href: "#team" },
-    { name: "Contact Us", href: "/contactus" },
+    { name: "Contact Us", href: "/contact-us" },
     { name: "Blogs", href: "#blogs" },
   ];
 
@@ -109,13 +109,13 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright & Border Section */}
-      <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-20">
-        <div className="max-w-[1280px] mx-auto border-t border-white/10 pt-8 mt-2 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-[1440px] mx-auto border-t border-white/10 pt-8 mt-2 rounded-3xl px-6 md:px-10 lg:px-20">
+        <div className="max-w-[1280px] mx-auto  flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-space-grotesk font-normal text-sm md:text-base text-white/80 text-center md:text-left">
             © 2026 Cleared Advisory · ABN 28 867 326 033
           </p>
           <Link
-            href="/privacypolicy"
+            href="/privacy"
             className="font-space-grotesk font-normal text-sm md:text-base text-white/80 hover:text-white transition-colors duration-300"
           >
             Privacy Policy

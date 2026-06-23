@@ -1,4 +1,4 @@
-import Aboutus from "@/components/Aboutus";
+import Aboutus from "@/components/About-us";
 
 export const metadata = {
   title: "About Us | Cleared Advisory",

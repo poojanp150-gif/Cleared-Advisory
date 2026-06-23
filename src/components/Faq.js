@@ -40,68 +40,70 @@ export default function Faq() {
   };
 
   return (
-    <section className="w-full bg-gradient-to-b from-[#010132] to-[#1D1D81] py-20 lg:py-28 text-white relative">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
-        
-        {/* Header Container */}
-        <div className="max-w-[1280px] mx-auto flex flex-col items-center text-center mb-16">
-          <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-white/70 uppercase">
-            COMMON QUESTIONS
-          </span>
-          <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight md:leading-[57.6px] tracking-[-0.01em] text-white mt-6 max-w-[600px]">
-            Got questions? <br className="xs:hidden" />We have answers.
-          </h2>
-        </div>
+    <section className="w-full bg-gradient-to-b from-[#010132] to-[#1D1D81]  text-white relative">
+      <div className="container--boxed">
 
-        {/* Accordion Container */}
-        <div className="max-w-[800px] mx-auto w-full border-t border-b border-white/10 divide-y divide-white/10">
-          {faqs.map((faq, idx) => {
-            const isOpen = openIndex === idx;
-            return (
-              <div key={idx} className="py-8 transition-all duration-300">
-                <button
-                  onClick={() => toggleFaq(idx)}
-                  className="w-full flex justify-between items-center text-left group gap-6 focus:outline-none cursor-pointer"
-                >
-                  <span className="font-gelasio font-medium text-lg sm:text-xl md:text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">
-                    {faq.question}
-                  </span>
-                  
-                  {/* Circular Button */}
-                  <div
-                    className={`w-9 h-9 rounded-full shrink-0 flex items-center justify-center transition-all duration-300 ${
-                      isOpen
+
+        <div className="max-w-[1440px] mx-auto section-2xl">
+
+          {/* Header Container */}
+          <div className="max-w-[1280px] mx-auto flex flex-col items-center text-center mb-16">
+            <span className="font-space-grotesk font-medium text-sm tracking-[1.1px] text-white/70 uppercase">
+              COMMON QUESTIONS
+            </span>
+            <h2 className="font-gelasio font-medium text-3xl sm:text-4xl md:text-[48px] leading-tight md:leading-[57.6px] tracking-[-0.01em] text-white mt-6 max-w-[600px]">
+              Got questions? <br className="xs:hidden" />We have answers.
+            </h2>
+          </div>
+
+          {/* Accordion Container */}
+          <div className="max-w-[800px] mx-auto w-full border-t border-b border-white/10 divide-y divide-white/10">
+            {faqs.map((faq, idx) => {
+              const isOpen = openIndex === idx;
+              return (
+                <div key={idx} className="py-8 transition-all duration-300">
+                  <button
+                    onClick={() => toggleFaq(idx)}
+                    className="w-full flex justify-between items-center text-left group gap-6 focus:outline-none cursor-pointer"
+                  >
+                    <span className="font-gelasio font-medium text-lg sm:text-xl md:text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">
+                      {faq.question}
+                    </span>
+
+                    {/* Circular Button */}
+                    <div
+                      className={`w-9 h-9 rounded-full shrink-0 flex items-center justify-center transition-all duration-300 ${isOpen
                         ? "bg-gradient-to-r from-[#CCAB51] via-[#D5B45F] to-[#E7C77C] text-black border border-transparent"
                         : "border border-white/20 text-white group-hover:border-white"
-                    }`}
-                  >
-                    {isOpen ? (
-                      // Minus sign
-                      <span className="text-xl font-bold leading-none select-none -translate-y-[2px]">-</span>
-                    ) : (
-                      // Plus sign
-                      <span className="text-lg font-normal leading-none select-none -translate-y-[1px]">+</span>
-                    )}
-                  </div>
-                </button>
+                        }`}
+                    >
+                      {isOpen ? (
+                        // Minus sign
+                        <span className="text-xl font-bold leading-none select-none -translate-y-[2px]">-</span>
+                      ) : (
+                        // Plus sign
+                        <span className="text-lg font-normal leading-none select-none -translate-y-[1px]">+</span>
+                      )}
+                    </div>
+                  </button>
 
-                {/* Animated Answer Body */}
-                <div
-                  className={`grid transition-[grid-template-rows,margin-top] duration-300 ease-in-out ${
-                    isOpen ? "grid-rows-[1fr] mt-6" : "grid-rows-[0fr] mt-0"
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <p className="font-inter font-normal text-base text-white/80 leading-[25.6px] max-w-[680px]">
-                      {faq.answer}
-                    </p>
+                  {/* Animated Answer Body */}
+                  <div
+                    className={`grid transition-[grid-template-rows,margin-top] duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] mt-6" : "grid-rows-[0fr] mt-0"
+                      }`}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="font-inter font-normal text-base text-white/80 leading-[25.6px] max-w-[680px]">
+                        {faq.answer}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
 
+        </div>
       </div>
     </section>
   );

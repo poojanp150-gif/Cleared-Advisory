@@ -1,4 +1,4 @@
-import WhyCleared from "@/components/WhyCleared";
+import WhyCleared from "@/components/Why-Cleared";
 
 export const metadata = {
   title: "Why Cleared | Cleared Advisory",

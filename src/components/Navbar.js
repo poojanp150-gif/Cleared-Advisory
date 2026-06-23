@@ -1,15 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
-
+import arrow from "../../public/button_arrow.svg"
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 20) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <header className="w-full h-[89px] border-b border-white/20 flex items-stretch text-white absolute top-0 left-0 z-50">
+        <header className={`w-full h-[89px] border-b flex items-stretch text-white fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled
+            ? "bg-slate-950/85 backdrop-blur-md border-white/10 shadow-lg"
+            : "bg-transparent border-white/20"
+            }`}>
             {/* Column 1: Logo & Brand */}
             <Link
                 href="/"
@@ -34,7 +51,7 @@ export default function Navbar() {
                 <Link href="/what-we-do" className="hover:text-amber-400 transition-colors duration-200">
                     What We Do
                 </Link>
-                <Link href="#tranche-2" className="hover:text-amber-400 transition-colors duration-200">
+                <Link href="/tranche-2" className="hover:text-amber-400 transition-colors duration-200">
                     Tranche 2
                 </Link>
                 <Link href="/services" className="hover:text-amber-400 transition-colors duration-200">
@@ -58,7 +75,7 @@ export default function Navbar() {
                         Book Free Call
                     </span>
                     <div className="w-7 h-7 rounded-full border border-white flex items-center justify-center transition-all duration-300 group-hover:border-amber-400 group-hover:bg-amber-400">
-                        <svg
+                        {/* <svg
                             width="12"
                             height="12"
                             viewBox="0 0 12 12"
@@ -74,7 +91,8 @@ export default function Navbar() {
                                 strokeLinejoin="round"
                                 className="transition-colors duration-300 group-hover:stroke-slate-900"
                             />
-                        </svg>
+                        </svg> */}
+                        <Image src={arrow} />
                     </div>
                 </Link>
             </div>
