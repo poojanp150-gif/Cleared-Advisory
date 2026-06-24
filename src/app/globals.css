@@ -5,7 +5,7 @@
   --font-gelasio: var(--font-gelasio), serif;
   --font-space-grotesk: var(--font-space-grotesk), sans-serif;
   --font-inter: var(--font-inter), sans-serif;
-  
+
   --color-brand-900: #1A1A1A;
   --color-brand-gold-500: #CCAB51;
   --color-brand-gold-400: #D5B45F;
@@ -33,4 +33,18 @@
 
 .section-2xl {
   padding: 120px 40px;
+}
+
+.logo-text {
+  font-size: 24px;
+}
+
+@media (max-width: 1220px) {
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .width-lg {
+    width: 270px;
+  }
 }

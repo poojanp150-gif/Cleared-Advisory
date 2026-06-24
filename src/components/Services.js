@@ -125,12 +125,12 @@ export default function Aboutus() {
           <div className="flex flex-col items-center text-center gap-6 max-w-211 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
 
             {/* Tagline: "About us" — gold gradient */}
-            <span className="font-space-grotesk font-medium text--xs tracking-1.1px uppercase bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent">
+            <span className="font-space-grotesk font-medium text--xs tracking-1.1px uppercase bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent">
               Services
             </span>
 
             {/* Heading: Mixed Roman + Italic */}
-            <h1 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-19 tracking--0.48px text-white">
+            <h1 className="font-gelasio font-medium text--2xl sm:text--7xl md:text--9xl leading-tight md:leading-19 tracking--0.48px text-white">
               Transparent pricing.{" "}
               <br className="hidden sm:inline" />
               <span className="italic font-medium services__highlight-text-gold bg-clip-text text-transparent">No surprises.</span>
@@ -155,7 +155,7 @@ export default function Aboutus() {
               <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
                 Phase 1 — Get Cleared
               </span>
-              <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight tracking--0.48px text-brand-900 mt-4">
+              <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight tracking--0.48px text-brand-900 mt-4">
                 Advisory services
               </h2>
             </div>
@@ -183,7 +183,7 @@ export default function Aboutus() {
 
                     <div className="flex flex-col gap-6">
                       {/* Title */}
-                      <h3 className="font-gelasio font-medium text--xl sm:text-28px text-brand-900 tracking--0.28px leading-snug">
+                      <h3 className="font-gelasio font-medium text--2xl sm:text--3xl text-brand-900 tracking--0.28px leading-snug">
                         {service.title}
                       </h3>
 
@@ -199,14 +199,14 @@ export default function Aboutus() {
                     <div className="mt-8 flex flex-col gap-6">
                       <div className="flex flex-col gap-3">
                         <div className="border-l-3px border-brand-gold-600 bg-brand-900/[0.02] p-5 flex flex-col gap-2 rounded-r-sm">
-                          <span className="font-space-grotesk font-bold text--2xs tracking-1.4px text-brand-900 uppercase">
+                          <span className="font-space-grotesk font-bold text--2xs tracking--1.4px text-brand-900 uppercase">
                             BEST FOR:
                           </span>
                           <span className="font-space-grotesk font-normal text--xs text-brand-gray-600 leading-22.4px">
                             {service.bestFor}
                           </span>
                         </div>
-                        <span className="pt-8 font-space-grotesk font-bold text--2xl sm:text-32px text-brand-900 leading-none">
+                        <span className="pt-8 font-space-grotesk font-bold text--2xl sm:text--4xl text-brand-900 leading-none">
                           {service.price}
                         </span>
                         {service.priceSub && (
@@ -234,7 +234,7 @@ export default function Aboutus() {
                             className="transition-transform duration-300 group-hover/btn:translate-x-px group-hover/btn:-translate-y-px"
                           >
                             <path
-                              d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
+                              d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                               stroke="currentColor"
                               className="text-brand-900 group-hover/btn:text-white transition-colors duration-300"
                               strokeWidth="1.5"
@@ -242,6 +242,7 @@ export default function Aboutus() {
                               strokeLinejoin="round"
                             />
                           </svg>
+
                         </div>
                       </Link>
                     </div>
@@ -260,10 +261,10 @@ export default function Aboutus() {
 
           <div className="max-w-360 mx-auto section-2xl w-full flex flex-col items-center">
             <div className="flex flex-col items-center w-full max-w-300 mb-12 sm:mb-16">
-              <span className="font-space-grotesk font-bold text--xs tracking-1.4px text-brand-gold-600 uppercase">
+              <span className="font-space-grotesk font-bold text--xs tracking--1.4px text-brand-gold-600 uppercase">
                 PHASE 2 — STAY CLEARED
               </span>
-              <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight text-white mt-4">
+              <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight text-white mt-4">
                 Ongoing services
               </h2>
             </div>
@@ -287,7 +288,7 @@ export default function Aboutus() {
 
                     <div className="flex flex-col gap-6">
                       {/* Title */}
-                      <h3 className="font-gelasio font-medium text--xl sm:text-28px text-white tracking--0.28px leading-snug">
+                      <h3 className="font-gelasio font-medium text--2xl sm:text--3xl text-white tracking--0.28px leading-snug">
                         {service.title}
                       </h3>
 
@@ -304,15 +305,15 @@ export default function Aboutus() {
                     <div className="mt-8 flex flex-col gap-6">
                       <div className="pt-6  flex flex-col gap-1">
                         <div className="border-l-3px border-brand-gold-600 bg-white/5 py-4 px-6 flex flex-col gap-2 rounded-r-sm">
-                          <span className="font-space-grotesk font-bold text--2xs tracking-1.4px text-white/60 uppercase">
+                          <span className="font-space-grotesk font-bold text--2xs tracking--1.4px text-white/60 uppercase">
                             BEST FOR:
                           </span>
-                          <span className="font-space-grotesk font-medium text--xs text-white/90 leading-22.4px">
+                          <span className="font-space-grotesk font-medium text--xs text-white/90 leading-5">
                             {service.bestFor}
                           </span>
                         </div>
 
-                        <span className="pt-8 font-space-grotesk font-bold text--2xl sm:text-32px text-white leading-none">
+                        <span className="pt-8 font-space-grotesk font-bold text--2xl sm:text--4xl text-white leading-none">
                           {service.price}
                         </span>
                         {service.priceSub && (
@@ -324,7 +325,7 @@ export default function Aboutus() {
 
                       <Link
                         href={`mailto:ritesh@clearedadvisory.com.au?subject=Inquiry regarding ${encodeURIComponent(service.title)}`}
-                        className="group/btn flex w-full h-13 items-center justify-center gap-2 pl-6 pr-3 rounded-full bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 transition-all duration-300"
+                        className="group/btn flex w-full h-13 items-center justify-center gap-2 pl-6 pr-3 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 transition-all duration-300"
                       >
                         <span className="font-space-grotesk text--xs sm:text--base font-semibold text-brand-900">
                           Get Started
@@ -340,7 +341,7 @@ export default function Aboutus() {
                             className="transition-transform duration-300 group-hover/btn:translate-x-px group-hover/btn:-translate-y-px"
                           >
                             <path
-                              d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
+                              d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                               stroke="currentColor"
                               className="text-white group-hover/btn:text-brand-900 transition-colors duration-300"
                               strokeWidth="1.5"

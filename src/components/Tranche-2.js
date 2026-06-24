@@ -50,12 +50,12 @@ export default function Tranche2Explained() {
                         <div className="flex flex-col items-center text-center gap-6 max-w-211 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
 
                             {/* Tagline: "About us" — gold gradient */}
-                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px uppercase bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent">
+                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px uppercase bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent">
                                 Tranche 2 explained
                             </span>
 
                             {/* Heading: Mixed Roman + Italic */}
-                            <h1 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-19 tracking--0.48px text-white">
+                            <h1 className="font-gelasio font-medium text--2xl sm:text--7xl md:text--9xl leading-tight md:leading-19 tracking--0.48px text-white">
                                 What is Tranche 2 and {" "}
                                 <br className="hidden sm:inline" />
                                 <span className="italic font-medium tranche-2__highlight-text-gold bg-clip-text text-transparent">do you need to act?</span>
@@ -70,35 +70,35 @@ export default function Tranche2Explained() {
                 </div>
 
                 {/* ── Stats Banner (Frame 691) ── */}
-                <div className="w-full bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 py-7">
+                <div className="w-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 py-7">
                     <div className="max-w-360 mx-auto w-full px-6 lg:px-20">
                         <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black/10">
                             {/* Card 1 */}
                             <div className="py-4 md:py-0 flex flex-col items-center justify-center text-center">
-                                <span className="font-space-grotesk font-medium text-36px leading-12 tracking--1.44px text-slate-900">
+                                <span className="font-space-grotesk font-medium text--5xl leading-12 tracking--1.44px text-slate-900">
                                     80,000+
                                 </span>
-                                <span className="font-space-grotesk font-medium text-14px tracking-1.1px text-slate-800/70 uppercase mt-2">
+                                <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-800/70 uppercase mt-2">
                                     BUSINESSES CAPTURED
                                 </span>
                             </div>
 
                             {/* Card 2 */}
                             <div className="py-4 md:py-0 flex flex-col items-center justify-center text-center">
-                                <span className="font-space-grotesk font-medium text-36px leading-12 tracking--1.44px text-slate-900">
+                                <span className="font-space-grotesk font-medium text--5xl leading-12 tracking--1.44px text-slate-900">
                                     1 Jul 2026
                                 </span>
-                                <span className="font-space-grotesk font-medium text-14px tracking-1.1px text-slate-800/70 uppercase mt-2">
+                                <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-800/70 uppercase mt-2">
                                     Obligations commence
                                 </span>
                             </div>
 
                             {/* Card 3 */}
                             <div className="py-4 md:py-0 flex flex-col items-center justify-center text-center">
-                                <span className="font-space-grotesk font-medium text-36px leading-12 tracking--1.44px text-slate-900">
+                                <span className="font-space-grotesk font-medium text--5xl leading-12 tracking--1.44px text-slate-900">
                                     29 Jul 2026
                                 </span>
-                                <span className="font-space-grotesk font-medium text-14px tracking-1.1px text-slate-800/70 uppercase mt-2">
+                                <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-800/70 uppercase mt-2">
                                     Enrolment deadline
                                 </span>
                             </div>
@@ -118,7 +118,7 @@ export default function Tranche2Explained() {
                                 <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-500 uppercase mb-3">
                                     Our clients
                                 </span>
-                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl text-slate-900 tracking--0.48px mb-4">
+                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl text-slate-900 tracking--0.48px mb-4">
                                     Who we work with
                                 </h2>
                                 <p className="font-space-grotesk font-normal text--base sm:text--lg text-slate-500 leading-relaxed ">
@@ -134,7 +134,7 @@ export default function Tranche2Explained() {
                                         className="group relative bg-white p-8 sm:p-10 md:p-12  border border-b border-slate-200 rounded-sm   z-10 flex flex-col md:flex-row gap-6 md:gap-12 items-start"
                                     >
                                         {/* Large Muted Number */}
-                                        <span className="font-space-grotesk font-medium text-48px leading-none tracking--1.44px text-black/10 select-none ">
+                                        <span className="font-space-grotesk font-medium text--7xl leading-none tracking--1.44px text-black/10 select-none ">
                                             {client.number}
                                         </span>
 
@@ -142,12 +142,12 @@ export default function Tranche2Explained() {
                                         <div className="flex-1 flex flex-col gap-3">
                                             {/* Title & Tag */}
                                             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-                                                <h3 className="font-gelasio font-medium text--xl text-brand-900 tracking--0.24px">
+                                                <h3 className="font-gelasio font-medium text--2xl text-brand-900 tracking--0.24px">
                                                     {client.title}
                                                 </h3>
-                                                {client.tag && (
+                                                {client.badge && (
                                                     <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-red-600 uppercase">
-                                                        {client.tag}
+                                                        {client.badge}
                                                     </span>
                                                 )}
                                             </div>
@@ -172,13 +172,26 @@ export default function Tranche2Explained() {
                             {/* Call to Action Button */}
                             <div className="flex justify-center mt-16">
                                 <a
-                                    href="/contactus"
-                                    className="group inline-flex items-center  bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 text-slate-900 font-space-grotesk font-medium text--base rounded-full py-3 pl-6 pr-4 hover:shadow-lg hover:scale-1.02 active:scale-0.98 transition-all duration-300 cursor-pointer max-w-80 sm:max-w-120"
+                                    href="/contact-us"
+                                    className="group inline-flex items-center gap-3 justify-center bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 text-slate-900 font-space-grotesk font-medium text--base rounded-full pt-3 pr-4 pb-3 pl-6 hover:shadow-lg hover:scale-1.02 active:scale-0.98 transition-all duration-300 cursor-pointer max-w-80 sm:max-w-150 w-full"
                                 >
                                     <span>Book a free call to confirm your obligations</span>
                                     <div className="bg-slate-900 w-8 h-8 rounded-full flex items-center justify-center shrink-0 ml-4 transition-transform group-hover:translate-x-1 duration-300">
-                                        <svg className="w-3 h-3 text-white stroke-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                        <svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
+                                        >
+                                            <path
+                                                d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
+                                                stroke="white"
+                                                strokeWidth="1.5"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
                                         </svg>
                                     </div>
                                 </a>

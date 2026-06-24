@@ -20,13 +20,13 @@ export default function WhyCleared() {
 
                         {/* Subtitle: "Why Cleared" — gold gradient, small-caps */}
                         <span
-                            className="font-space-grotesk font-medium text--xs tracking-1.1px uppercase bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent"
+                            className="font-space-grotesk font-medium text--xs tracking-1.1px uppercase bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent"
                         >
                             Why Cleared
                         </span>
 
                         {/* Heading: mixed roman + italic */}
-                        <h1 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-19 tracking--0.48px text-white">
+                        <h1 className="font-gelasio font-medium text--2xl sm:text--7xl md:text--9xl leading-tight md:leading-19 tracking--0.48px text-white">
                             The traditional compliance{" "}
                             <br className="hidden sm:inline" />
                             <span className="not-italic font-medium italic why-cleared__highlight-text-gold bg-clip-text text-transparent">model is broken.</span>
@@ -51,7 +51,7 @@ export default function WhyCleared() {
                             <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
                                 OUR DIFFERENCE
                             </span>
-                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-15 tracking--0.48px text-brand-900 mt-6">
+                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.48px text-brand-900 mt-6">
                                 What businesses have always been told to do.
                             </h2>
                             <p className="font-space-grotesk font-normal text--base sm:text--lg md:text-18px leading-7 text-brand-gray-500 max-w-195 mx-auto mt-6">
@@ -60,38 +60,38 @@ export default function WhyCleared() {
                         </div>
 
                         {/* Cards Grid */}
-                        <div className="max-w-300 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch w-full">
+                        <div className="max-w-300 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch w-full">
                             {/* Card 1 */}
-                            <div className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
-                                <h3 className="font-gelasio font-medium text--xl text-brand-900">
+                            <div className="group relative bg-white rounded-sm p-8 sm:p-12 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
+                                <h3 className="font-gelasio font-medium text--2xl text-brand-900">
                                     Hire a law firm
                                 </h3>
                                 <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6">
                                     $400–$600/hour. Lawyers who understand the legal framework but have never run a compliance program, never been the MLRO, never sat across the table from AUSTRAC when something went wrong. Beautiful documents. Handsome invoices. Then they disappear.
                                 </p>
-                                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
+                                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-l from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
                             </div>
 
                             {/* Card 2 */}
-                            <div className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
-                                <h3 className="font-gelasio font-medium text--xl text-brand-900">
+                            <div className="group relative bg-white rounded-sm p-8 sm:p-12 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
+                                <h3 className="font-gelasio font-medium text--2xl text-brand-900">
                                     Hire a big consulting firm
                                 </h3>
                                 <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6">
                                     A junior consultant reads the AUSTRAC guidance and builds something generic with your logo on it. It looks professional. It ticks boxes. Nobody in your business actually understands it, uses it, or knows what to do when a suspicious transaction lands on their desk.
                                 </p>
-                                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
+                                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-l from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
                             </div>
 
                             {/* Card 3 */}
-                            <div className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
-                                <h3 className="font-gelasio font-medium text--xl text-brand-900">
+                            <div className="group relative bg-white rounded-sm p-8 sm:p-12 shadow-sm border border-black/10 hover:border-amber-400/30  flex flex-col gap-6 h-full overflow-hidden">
+                                <h3 className="font-gelasio font-medium text--2xl text-brand-900">
                                     Rely on software alone
                                 </h3>
                                 <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6">
                                     Templates, checklists, a help centre, maybe a webinar. But nobody to call when a real regulatory question arises. Nobody who has been through an AUSTRAC audit and knows what they really look for.
                                 </p>
-                                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
+                                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-l from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
                             </div>
                         </div>
                     </div>
@@ -109,8 +109,8 @@ export default function WhyCleared() {
                             {/* Profile Info (Header) */}
                             <div className="flex items-center gap-6">
                                 {/* Avatar with Outside Gold Gradient Border */}
-                                <div className="w-26 h-26 rounded-full p-5.25px bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 flex items-center justify-center shadow-md flex-shrink-0">
-                                    <div className="w-full h-full rounded-full overflow-hidden relative bg-slate-950">
+                                <div className="w-26 h-26 rounded-full p-[5px] bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 flex items-center justify-center flex-shrink-0">
+                                    <div className="w-full h-full rounded-full overflow-hidden bg-slate-950 relative">
                                         <Image
                                             src="/ritesh_singh.png"
                                             alt="Ritesh Singh"
@@ -124,7 +124,7 @@ export default function WhyCleared() {
 
                                 {/* Name & Designation */}
                                 <div className="flex flex-col gap-1">
-                                    <h3 className="font-gelasio font-semibold text--xl text-white tracking--0.24px">
+                                    <h3 className="font-gelasio font-semibold text--2xl text-white tracking--0.24px">
                                         Ritesh Singh
                                     </h3>
                                     <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/80 uppercase">
@@ -134,7 +134,7 @@ export default function WhyCleared() {
                             </div>
 
                             {/* Quote Text */}
-                            <blockquote className="font-gelasio font-medium text--xl sm:text--xl md:text-32px leading-relaxed md:leading-50.4px tracking--0.36px text-white">
+                            <blockquote className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-relaxed md:leading-50.4px tracking--0.36px text-white">
                                 "The dirty secret of the compliance industry is that{" "}
                                 <span className="text-brand-gold-500">
                                     most compliance programs are built by people who have never actually been accountable to a regulator.
@@ -157,7 +157,7 @@ export default function WhyCleared() {
                             <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
                                 THE CLEARED ADVISORY DIFFERENCE
                             </span>
-                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-15 tracking--0.48px text-brand-900 mt-6">
+                            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.48px text-brand-900 mt-6">
                                 What we do differently. <span className="font-normal italic">And why it matters.</span>
                             </h2>
                         </div>
@@ -255,7 +255,7 @@ export default function WhyCleared() {
                                 </span>
 
                                 {/* Heading */}
-                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-15 tracking--0.48px text-white mt-6">
+                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.48px text-white mt-6">
                                     Three things we promise. Every client. Every time.
                                 </h2>
 
@@ -291,13 +291,13 @@ export default function WhyCleared() {
                                         className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-md border border-black/5 hover:border-amber-400/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-6"
                                     >
                                         {/* Big faint number */}
-                                        <div className="font-space-grotesk font-medium text--4xl leading-none text-slate-900/10 group-hover:text-amber-500/20 transition-colors duration-300">
+                                        <div className="font-space-grotesk font-medium text--7xl leading-none text-slate-900/10 group-hover:text-amber-500/20 transition-colors duration-300">
                                             {card.number}
                                         </div>
 
                                         {/* Content */}
                                         <div className="flex flex-col gap-4">
-                                            <h3 className="font-gelasio font-medium text--xl text-brand-900">
+                                            <h3 className="font-gelasio font-medium text--2xl text-brand-900">
                                                 {card.title}
                                             </h3>
                                             <p className="font-inter font-normal text--base text-slate-500 leading-relaxed">
@@ -306,7 +306,7 @@ export default function WhyCleared() {
                                         </div>
 
                                         {/* Bottom gold gradient border line */}
-                                        <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
+                                        <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-l from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
                                     </div>
                                 ))}
                             </div>
@@ -329,10 +329,10 @@ export default function WhyCleared() {
                                 <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
                                     WHAT GOOD LOOKS LIKE
                                 </span>
-                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-15 tracking--0.48px text-brand-900">
+                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.48px text-brand-900">
                                     What makes a compliance program that actually survives an AUSTRAC audit.
                                 </h2>
-                                <p className="font-space-grotesk font-normal text--base sm:text-16px leading-relaxed text-brand-gray-500 max-w-175">
+                                <p className="font-space-grotesk font-normal text--base sm:text--base leading-relaxed text-brand-gray-500 max-w-175">
                                     Most AML/CTF programs fail in practice — not because they don't exist, but because they
                                     were built for the shelf, not the business. Here's what we build instead.
                                 </p>
@@ -364,14 +364,14 @@ export default function WhyCleared() {
                                 ].map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className={`flex gap-4 p-6 ${idx !== 4 ? "border-b border-black/10" : ""
+                                        className={`flex gap-4 py-6 ${idx !== 4 ? "border-b border-black/10" : ""
                                             }`}
                                     >
-                                        <div className="w-6 h-6 rounded-full bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 flex items-center justify-center flex-shrink-0 text-white font-sans text--2xs shadow-sm">
+                                        <div className="w-6 h-6 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 flex items-center justify-center flex-shrink-0 text-white font-sans text--2xs shadow-sm">
                                             ✓
                                         </div>
                                         <div className="flex flex-col gap-2">
-                                            <h4 className="font-gelasio font-medium text-24px leading-tight tracking--0.24px text-brand-900">
+                                            <h4 className="font-gelasio font-medium text--2xl leading-tight tracking--0.24px text-brand-900">
                                                 {item.title}
                                             </h4>
                                             <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6">
@@ -384,8 +384,8 @@ export default function WhyCleared() {
                             </div>
 
                             {/* Warning Box: Signs your current program isn't working */}
-                            <div className="w-full bg-#F9F9F9 border border-slate-200 rounded-4px p-8 sm:p-12 flex flex-col gap-8 mt-4">
-                                <h3 className="font-gelasio font-medium text--xl text-brand-red-600 tracking--0.24px">
+                            <div className="w-full bg-#F9F9F9 border border-slate-200 rounded-4px p-8 sm:p-12 flex flex-col gap-8 mt-4 bg-gray-50">
+                                <h3 className="font-gelasio font-medium text--2xl text-brand-red-600 tracking--0.24px">
                                     SIGNS YOUR CURRENT PROGRAM ISN'T WORKING
                                 </h3>
                                 <div className="flex flex-col w-full">

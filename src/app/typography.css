@@ -19,25 +19,85 @@
 }
 
 @utility text--2xl {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 @utility text--3xl {
-    font-size: 40px;
+    font-size: 28px;
 }
 
 @utility text--4xl {
-    font-size: 48px;
+    font-size: 32px;
 }
 
 @utility text--5xl {
-    font-size: 56px;
+    font-size: 36px;
 }
 
 @utility text--6xl {
-    font-size: 64px;
+    font-size: 40px;
 }
 
 @utility text--7xl {
+    font-size: 48px;
+}
+
+@utility text--8xl {
+    font-size: 56px;
+}
+
+@utility text--9xl {
+    font-size: 64px;
+}
+
+@utility text--10xl {
     font-size: 72px;
+}
+
+@utility tracking--0.01em {
+    letter-spacing: 0.01em;
+}
+
+@utility tracking--0.02em {
+    letter-spacing: 0.02em;
+}
+
+@utility tracking--0.03em {
+    letter-spacing: 0.03em;
+}
+
+@utility tracking--0.04em {
+    letter-spacing: 0.04em;
+}
+
+@utility tracking--0.4px {
+    letter-spacing: 0.4px;
+}
+
+@utility tracking--0.24px {
+    letter-spacing: 0.24px;
+}
+
+@utility tracking--0.28px {
+    letter-spacing: 0.28px;
+}
+
+@utility tracking--0.32px {
+    letter-spacing: 0.32px;
+}
+
+@utility tracking--0.48px {
+    letter-spacing: 0.48px;
+}
+
+@utility tracking--0.64px {
+    letter-spacing: 0.64px;
+}
+
+@utility tracking--1.4px {
+    letter-spacing: 1.4px;
+}
+
+@utility tracking--1.44px {
+    letter-spacing: 1.44px;
 }

@@ -29,52 +29,60 @@ export default function Navbar() {
             {/* Column 1: Logo & Brand */}
             <Link
                 href="/"
-                className="flex items-center pl-6 xl:pl-20 w-60 md:w-70 lg:w-100 flex-shrink-0 border-r border-white/20 group"
+                className="flex items-center pl-6 xl:pl-20 width-lg  xl:w-100 flex-shrink-0 border-r border-white/20 group"
             >
                 <div className="flex items-center gap-3">
                     {/* Logo Mark: Premium stylized check/shield representing compliance & security */}
                     <div className="w-9 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                         <Image src={Logo} alt="Logo" width={35} height={40} />
                     </div>
-                    <span className="font-gelasio font-semibold text--xl md:text--xl tracking--0.02em text-white">
+                    <span className="font-gelasio font-semibold  logo-text tracking--0.02em text-white">
                         Cleared Advisory
                     </span>
                 </div>
             </Link>
 
             {/* Column 2: Nav Links (Desktop) */}
-            <nav className="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8 font-space-grotesk text--base font-medium text-white/90">
+            {/* Desktop Navigation */}
+            <nav className="hidden min-[1100px]:flex flex-1 items-center justify-center gap-6 xl:gap-8 font-space-grotesk text--base font-medium text-white/90">
                 <Link href="/why-cleared" className="hover:text-amber-400 transition-colors duration-200">
                     Why Cleared
                 </Link>
+
                 <Link href="/what-we-do" className="hover:text-amber-400 transition-colors duration-200">
                     What We Do
                 </Link>
+
                 <Link href="/tranche-2" className="hover:text-amber-400 transition-colors duration-200">
                     Tranche 2
                 </Link>
+
                 <Link href="/services" className="hover:text-amber-400 transition-colors duration-200">
                     Services
                 </Link>
+
                 <Link href="/about" className="hover:text-amber-400 transition-colors duration-200">
                     About
                 </Link>
+
                 <Link href="/our-team" className="hover:text-amber-400 transition-colors duration-200">
                     Our Team
                 </Link>
             </nav>
 
             {/* Column 3: Call to Action (Desktop) */}
-            <div className="hidden lg:block w-60 xl:w-77 flex-shrink-0 border-l border-white/20">
+            {/* Desktop CTA */}
+            <div className="hidden min-[1100px]:block w-60 xl:w-77 flex-shrink-0 border-l border-white/20">
                 <Link
-                    href="#book-call"
+                    href="/contact-us"
                     className="flex h-full items-center justify-between px-6 xl:px-20 group hover:bg-white/[0.02] transition-colors duration-200"
                 >
                     <span className="font-space-grotesk text--base font-bold text-white transition-colors duration-200 group-hover:text-amber-400">
                         Book Free Call
                     </span>
+
                     <div className="w-7 h-7 rounded-full border border-white flex items-center justify-center transition-all duration-300 group-hover:border-amber-400 group-hover:bg-amber-400">
-                        {/* <svg
+                        <svg
                             width="12"
                             height="12"
                             viewBox="0 0 12 12"
@@ -83,27 +91,28 @@ export default function Navbar() {
                             className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
                         >
                             <path
-                                d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
+                                d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                                 stroke="white"
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                                 className="transition-colors duration-300 group-hover:stroke-slate-900"
                             />
-                        </svg> */}
-                        <Image src={arrow} />
+                        </svg>
                     </div>
                 </Link>
             </div>
 
+
             {/* Mobile Right Controls */}
-            <div className="flex lg:hidden items-center justify-end flex-1 pr-6 gap-4">
+            <div className="flex min-[1100px]:hidden items-center justify-end flex-1 pr-6 gap-4">
                 <Link
-                    href="#book-call"
+                    href="/contact-us"
                     className="px-4 py-2 rounded-full border border-white/50 text--xs font-bold font-space-grotesk hover:border-amber-400 hover:text-amber-400 transition-all duration-200"
                 >
                     Book Call
                 </Link>
+
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle menu"
@@ -130,7 +139,8 @@ export default function Navbar() {
 
             {/* Mobile Drawer Overlay */}
             {isOpen && (
-                <div className="absolute top-22 left-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-white/20 flex flex-col py-6 px-8 gap-4 lg:hidden animate-in fade-in slide-in-from-top-5 duration-200">
+                <div className="absolute top-22 left-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-white/20 flex flex-col py-6 px-8 gap-4 min-[1100px]:hidden animate-in fade-in slide-in-from-top-5 duration-200">
+
                     <Link
                         href="/why-cleared"
                         onClick={() => setIsOpen(false)}
@@ -146,14 +156,14 @@ export default function Navbar() {
                         What We Do
                     </Link>
                     <Link
-                        href="#tranche-2"
+                        href="/tranche-2"
                         onClick={() => setIsOpen(false)}
                         className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >
                         Tranche 2
                     </Link>
                     <Link
-                        href="#services"
+                        href="/services"
                         onClick={() => setIsOpen(false)}
                         className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >
@@ -167,7 +177,7 @@ export default function Navbar() {
                         About
                     </Link>
                     <Link
-                        href="#team"
+                        href="/our-team"
                         onClick={() => setIsOpen(false)}
                         className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
                     >

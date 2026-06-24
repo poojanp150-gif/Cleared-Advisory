@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Faq from "@/components/Faq";
 import Cta from "@/components/Cta";
-import arrow from "../../public/button_arrow.svg"
+import unipayce from "../../public/unipayce.png"
 
 export default function Home() {
   const phase1Services = [
@@ -192,7 +192,7 @@ export default function Home() {
           <div className="w-full flex flex-col items-center text-center px-6 lg:px-20 py-20 lg:py-26 max-w-360 mx-auto relative z-10">
             {/* Frame 687: Heading & Subheading */}
             <div className="max-w-320 w-full flex flex-col items-center gap-6">
-              <h1 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--5xl lg:text-72px lg:leading-75.6px tracking--0.01em text-white">
+              <h1 className="font-gelasio font-medium text--2xl sm:text--7xl md:text--8xl lg:text--10xl lg:leading-tight tracking--0.01em text-white">
                 Compliance that <br className="hidden sm:inline" />
                 <span className="italic">actually works.</span>
               </h1>
@@ -208,28 +208,15 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-12 w-full max-w-92">
               {/* Button 1: Our Services (Gold Gradient) */}
               <Link
-                href="#services"
+                href="/services"
                 className="group relative flex w-full sm:w-44 h-14 items-center justify-between pl-6 pr-4 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 shadow-lg shadow-amber-500/10 hover:shadow-amber-500/20 hover:scale-1.02 transition-all duration-300"
               >
                 <span className="font-space-grotesk text--base font-bold text-brand-900">
                   Our Services
                 </span>
-                <div className="w-7 h-7 rounded-full bg-brand-900 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <div className="w-7 h-7 rounded-full bg-brand-900 flex items-center justify-center ">
 
-                  <Image src={arrow} />
-                </div>
-              </Link>
-
-              {/* Button 2: Contact Us (Outline) */}
-              <Link
-                href="#contact"
-                className="group flex w-full sm:w-42 h-14 items-center justify-between pl-6 pr-4 rounded-full border border-white hover:bg-white hover:border-white transition-all duration-300 hover:scale-1.02 hover:shadow-lg hover:shadow-white/5"
-              >
-                <span className="font-space-grotesk text--base font-bold text-white transition-colors duration-300 group-hover:text-brand-900">
-                  Contact Us
-                </span>
-                <div className="w-7 h-7 rounded-full text-black  flex items-center justify-center border border-white transition-all duration-300 group-hover:bg-brand-900 group-hover:border-brand-900">
-                  {/* <svg
+                  <svg
                     width="12"
                     height="12"
                     viewBox="0 0 12 12"
@@ -238,15 +225,42 @@ export default function Home() {
                     className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
                   >
                     <path
-                      d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
-                      stroke="#1A1A1A"
+                      d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
+                      stroke="white"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="transition-colors duration-300 group-hover:stroke-white"
                     />
-                  </svg> */}
-                  <Image src={arrow} alt="our service" />
+                  </svg>
+                </div>
+              </Link>
+
+              {/* Button 2: Contact Us (Outline) */}
+              <Link
+                href="/contact-us"
+                className="group flex w-full sm:w-42 h-14 items-center justify-between pl-6 pr-4 rounded-full border border-white hover:bg-white hover:border-white transition-all duration-300 hover:scale-1.02 hover:shadow-lg hover:shadow-white/5"
+              >
+                <span className="font-space-grotesk text--base font-bold text-white transition-colors duration-300 group-hover:text-brand-900">
+                  Contact Us
+                </span>
+                <div className="w-7 h-7 rounded-full text-black  flex items-center justify-center border border-white transition-all duration-300 group-hover:bg-brand-900 group-hover:border-brand-900">
+
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
+                  >
+                    <path
+                      d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
+                      stroke="white"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </div>
               </Link>
             </div>
@@ -267,7 +281,7 @@ export default function Home() {
                   </span>
 
                   {/* Heading */}
-                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-15 tracking--0.01em text-brand-900 mt-6">
+                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.01em text-brand-900 mt-6">
                     "Most advisors know the rules. We've lived them."
                   </h2>
 
@@ -321,7 +335,7 @@ export default function Home() {
                   </div>
 
                   {/* Overlaid Premium Stat Card */}
-                  <div className="absolute -left-4 sm:-left-8 bottom-8 w-68 h-24  bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300  flex items-center px-6 py-6">
+                  <div className="absolute -left-4 sm:-left-8 bottom-8 w-68 h-24  bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300  flex items-center px-6 py-6">
                     <div className="flex items-center gap-4">
                       <span className="font-space-grotesk font-medium text--2xl text-brand-900 tracking--0.04em">
                         22
@@ -349,7 +363,7 @@ export default function Home() {
                   </span>
 
                   {/* Heading */}
-                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-15 tracking--0.01em text-white mt-6">
+                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.01em text-white mt-6">
                     Three things nobody else in this space can say.
                   </h2>
 
@@ -369,13 +383,13 @@ export default function Home() {
                       className="group relative bg-white rounded-sm p-8 sm:p-10 shadow-md border border-black/5 hover:border-amber-400/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-6"
                     >
                       {/* Big faint number */}
-                      <div className="font-space-grotesk font-medium text--4xl leading-none text-slate-900/10 group-hover:text-amber-500/20 transition-colors duration-300">
+                      <div className="font-space-grotesk font-medium text--7xl leading-none text-slate-900/10 group-hover:text-amber-500/20 transition-colors duration-300">
                         {card.number}
                       </div>
 
                       {/* Content */}
                       <div className="flex flex-col gap-4">
-                        <h3 className="font-gelasio font-medium text--xl text-brand-900">
+                        <h3 className="font-gelasio font-medium text--2xl text-brand-900">
                           {card.title}
                         </h3>
                         <p className="font-inter font-normal text--base text-slate-500 leading-relaxed">
@@ -384,7 +398,7 @@ export default function Home() {
                       </div>
 
                       {/* Subtle bottom gold border line that expands on hover */}
-                      <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
+                      <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-l from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
                     </div>
                   ))}
                 </div>
@@ -393,7 +407,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="services" className="w-full bg-brand-gray-100  text-slate-900 relative">
+        <section id="services" className="w-full bg-white text-slate-900 relative">
           <div className="container--boxed">
 
 
@@ -404,7 +418,7 @@ export default function Home() {
                 <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
                   YOUR JOURNEY
                 </span>
-                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-15 tracking--0.01em text-brand-900 mt-6 max-w-125">
+                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.01em text-brand-900 mt-6 ">
                   Two phases. <br className="xs:hidden" />One long-term partner.
                 </h2>
               </div>
@@ -416,12 +430,12 @@ export default function Home() {
                 <div className="group relative bg-white border border-black/10 rounded-4px p-8 sm:p-12  flex flex-col justify-between min-h-192 ">
                   <div className="flex flex-col">
                     {/* Phase Watermark */}
-                    <div className="font-space-grotesk font-medium text--4xl sm:text--5xl tracking--0.03em text-black/15 leading-none">
+                    <div className="font-space-grotesk font-medium text--7xl sm:text--8xl tracking--0.03em text-black/15 leading-none">
                       Phase 01
                     </div>
 
                     {/* Heading & Paragraph */}
-                    <h3 className="font-gelasio font-medium text--2xl sm:text-32px text-brand-900 mt-6 tracking--0.01em">
+                    <h3 className="font-gelasio font-medium text--2xl sm:text--4xl text-brand-900 mt-6 tracking--0.01em">
                       Get Cleared.
                     </h3>
                     <p className="font-inter font-normal text--base text-brand-gray-500 mt-4 leading-relaxed max-w-122">
@@ -448,18 +462,32 @@ export default function Home() {
                   {/* CTA Button */}
                   <div className="mt-12">
                     <Link
-                      href="#contact"
-                      className="group/btn relative flex w-full h-13 items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-brand-900 border border-brand-900 hover:bg-transparent transition-all duration-300 hover:scale-1.01 hover:shadow-md hover:shadow-black/5"
+                      href="/contact-us"
+                      className="group/btn relative flex w-full h-13 items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-brand-900 border border-brand-900 hover:bg-transparent transition-all duration-300 hover:scale-1.01"
                     >
                       <span className="font-space-grotesk text--base font-medium text-white group-hover/btn:text-brand-900 transition-colors duration-300">
                         See Phase 1 Services
                       </span>
-                      <div className="w-7 h-7 rounded-full bg-white flex items-center justify-center transition-all duration-300 group-hover/btn:bg-brand-900">
-                        <Image
-                          src={arrow}
-                          alt="phase 1"
-                          className="brightness-0"
-                        />
+
+                      <div className="w-7 h-7 rounded-full flex items-center justify-center border border-white transition-all duration-300 group-hover:bg-brand-900 group-hover:border-brand-900">
+
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
+                        >
+                          <path
+                            d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
                       </div>
                     </Link>
                   </div>
@@ -469,12 +497,12 @@ export default function Home() {
                 <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 border border-black/5 rounded-4px p-8 sm:p-12  flex flex-col justify-between min-h-192">
                   <div className="flex flex-col text-white">
                     {/* Phase Watermark */}
-                    <div className="font-space-grotesk font-medium text--4xl sm:text--5xl tracking--0.03em text-white/20 leading-none">
+                    <div className="font-space-grotesk font-medium text--7xl sm:text--8xl tracking--0.03em text-white/20 leading-none">
                       Phase 02
                     </div>
 
                     {/* Heading & Paragraph */}
-                    <h3 className="font-gelasio font-medium text--2xl sm:text-32px text-white mt-6 tracking--0.01em">
+                    <h3 className="font-gelasio font-medium text--2xl sm:text--4xl text-white mt-6 tracking--0.01em">
                       Stay Cleared.
                     </h3>
                     <p className="font-inter font-normal text--base text-white/70 mt-4 leading-relaxed max-w-122">
@@ -501,8 +529,8 @@ export default function Home() {
                   {/* CTA Button */}
                   <div className="mt-12">
                     <Link
-                      href="#contact"
-                      className="group/btn relative flex w-full h-13 items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 hover:shadow-lg hover:shadow-amber-500/20 transition-all duration-300"
+                      href="/contact-us"
+                      className="group/btn relative flex w-full h-13 items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 hover:shadow-lg hover:shadow-amber-500/20 transition-all duration-300"
                     >
                       <span className="font-space-grotesk text--base font-medium text-brand-900">
                         Talk About Phase 2
@@ -514,10 +542,10 @@ export default function Home() {
                           viewBox="0 0 12 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transition-transform duration-300 group-hover/btn:translate-x-px group-hover/btn:-translate-y-px"
+                          className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
                         >
                           <path
-                            d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
+                            d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                             stroke="white"
                             strokeWidth="1.5"
                             strokeLinecap="round"
@@ -532,6 +560,93 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* ── Partner Network Section ── */}
+        <section className="w-full bg-white text-slate-900 relative" style={{ marginTop: "-2px" }}>
+          <div className="container--boxed">
+            <div className="max-w-360 mx-auto section-2xl">
+
+              {/* Header Container: Two Column on Large Screens */}
+              <div className="max-w-320 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-16 lg:mb-20">
+                <div className="flex flex-col justify-center w-full">
+                  <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
+                    PARTNER NETWORK
+                  </span>
+                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.01em text-brand-900 mt-6 max-w-142">
+                    More than compliance - a growing ecosystem for Tranche 2 businesses.
+                  </h2>
+                </div>
+                <div className="w-full flex flex-col justify-end h-full">
+                  <p className="font-space-grotesk font-normal text--base sm:text--lg text-brand-gray-500 leading-relaxed max-w-142">
+                    Getting compliant is the starting point. Once it's done, the same infrastructure opens doors — outsourced operations capacity, and new revenue lines like cross-border payments. We're building formal partnerships to bring these to Cleared clients.
+
+                  </p>
+                </div>
+              </div>
+
+              {/* Cards Grid */}
+              <div className="max-w-320 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+
+                {/* Card 1: Ascent Solutions */}
+                <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 rounded-4px p-8 sm:p-10 flex flex-col justify-between shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex flex-col gap-6">
+                    {/* Logo Box */}
+                    <div className="relative w-full h-56 bg-white/5 border border-white/5 rounded-4px flex items-center justify-center overflow-hidden">
+                      {/* Pill */}
+                      <span className="absolute top-4 left-4 bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 text-brand-900 font-space-grotesk font-medium text--2xs tracking-1.1px uppercase px-3 py-1 rounded-full">
+                        Cleared Partner
+                      </span>
+
+                      <span className="font-gelasio font-medium text-2xl sm:text-3xl text-white tracking--0.01em">
+                        Ascent Solutions Logo
+                      </span>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-gelasio font-medium text--2xl text-white">
+                        Ascent Solutions
+                      </h3>
+                      <p className="font-inter font-normal text--base text-white/70 leading-relaxed">
+                        Outsourced KYC/AML operations and managed compliance support — extra delivery capacity for Cleared Ops when clients need more hands than a fractional team provides.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 2: Unipayce */}
+                <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 rounded-4px p-8 sm:p-10 flex flex-col justify-between shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex flex-col gap-6">
+                    {/* Logo Box */}
+                    <div className="relative w-full h-56 bg-white/5 border border-white/5 rounded-4px flex items-center justify-center overflow-hidden">
+                      {/* Pill */}
+                      <span className="absolute top-4 left-4 bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 text-brand-900 font-space-grotesk font-medium text--2xs tracking-1.1px uppercase px-3 py-1 rounded-full">
+                        Cleared Partner
+                      </span>
+
+                      {/* UniPayce SVG Logo */}
+                      <div className="flex items-center gap-3 select-none">
+                        <Image src={unipayce} alt="" />
+
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                      <h3 className="font-gelasio font-medium text--2xl text-white">
+                        Unipayce
+                      </h3>
+                      <p className="font-inter font-normal text--base text-white/70 leading-relaxed">
+                        Cross-border payments infrastructure — a new revenue line for Tranche 2 businesses (e.g. real estate agencies, trust & company providers) handling international client funds.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         <section className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800  text-white relative">
           <div className="container--boxed" >
 
@@ -546,7 +661,7 @@ export default function Home() {
                     WHO WE HELP
                   </span>
 
-                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight md:leading-52.8px tracking--0.01em text-white mt-6">
+                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight  tracking--0.01em text-white mt-6">
                     Five sectors. <br />One deadline.
                   </h2>
 
@@ -568,11 +683,11 @@ export default function Home() {
                           <div className="flex flex-col gap-2 pr-4">
                             {/* Sector Title */}
                             {isActive ? (
-                              <h3 className="font-gelasio font-medium text--xl sm:text--xl tracking--0.01em bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent transition-all duration-300">
+                              <h3 className="font-gelasio font-medium text--2xl sm:text--2xl tracking--0.01em bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent transition-all duration-300">
                                 {sector.name}
                               </h3>
                             ) : (
-                              <h3 className="font-gelasio font-medium text--xl sm:text--xl tracking--0.01em text-white group-hover:text-amber-300 transition-colors duration-300">
+                              <h3 className="font-gelasio font-medium text--2xl sm:text--2xl tracking--0.01em text-white group-hover:text-amber-300 transition-colors duration-300">
                                 {sector.name}
                               </h3>
                             )}
@@ -586,7 +701,7 @@ export default function Home() {
                           {/* Arrow Circle */}
                           <div
                             className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${isActive
-                              ? "bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 text-brand-900 scale-105"
+                              ? "bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 text-brand-900 scale-105"
                               : "border border-white/30 text-white/70 group-hover:border-white group-hover:text-white"
                               }`}
                           >
@@ -596,17 +711,24 @@ export default function Home() {
                               viewBox="0 0 12 12"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className={`transition-transform duration-300 ${isActive ? "translate-x-px -translate-y-px" : "group-hover:translate-x-px group-hover:-translate-y-px"
+                              className={`transition-transform duration-300 ${isActive
+                                ? "translate-x-px"
+                                : "group-hover:translate-x-px"
                                 }`}
                             >
                               <path
-                                d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
+                                d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                                 stroke="currentColor"
+                                className={`transition-colors duration-300 ${isActive
+                                  ? "text-brand-900"
+                                  : "text-white group-hover:text-brand-900"
+                                  }`}
                                 strokeWidth="1.5"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                               />
                             </svg>
+
                           </div>
                         </div>
                       );
@@ -622,7 +744,7 @@ export default function Home() {
                     <span className="font-space-grotesk font-medium text--xs sm:text--base tracking-1.1px text-white/90 uppercase">
                       29 JULY 2026
                     </span>
-                    <h3 className="font-gelasio font-medium text--xl sm:text--2xl text-white mt-4 tracking--0.01em">
+                    <h3 className="font-gelasio font-medium text--2xl sm:text--2xl text-white mt-4 tracking--0.01em">
                       AUSTRAC Enrolment Deadline
                     </h3>
 
@@ -630,7 +752,7 @@ export default function Home() {
                     <div className="flex items-center justify-center gap-4 sm:gap-6 mt-10 mb-10">
                       {/* Days */}
                       <div className="flex flex-col items-center">
-                        <span className="font-space-grotesk font-medium text--2xl sm:text--4xl tracking--0.03em text-white">
+                        <span className="font-space-grotesk font-medium text--2xl sm:text--7xl tracking--0.03em text-white">
                           {timeLeft.days}
                         </span>
                         <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px text-white/70 uppercase mt-2">
@@ -645,7 +767,7 @@ export default function Home() {
 
                       {/* Hours */}
                       <div className="flex flex-col items-center">
-                        <span className="font-space-grotesk font-medium text--2xl sm:text--4xl tracking--0.03em text-white">
+                        <span className="font-space-grotesk font-medium text--2xl sm:text--7xl tracking--0.03em text-white">
                           {String(timeLeft.hours).padStart(2, "0")}
                         </span>
                         <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px text-white/70 uppercase mt-2">
@@ -660,7 +782,7 @@ export default function Home() {
 
                       {/* Minutes */}
                       <div className="flex flex-col items-center">
-                        <span className="font-space-grotesk font-medium text--2xl sm:text--4xl tracking--0.03em text-white">
+                        <span className="font-space-grotesk font-medium text--2xl sm:text--7xl tracking--0.03em text-white">
                           {String(timeLeft.minutes).padStart(2, "0")}
                         </span>
                         <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px text-white/70 uppercase mt-2">
@@ -671,8 +793,8 @@ export default function Home() {
 
                     {/* CTA Button */}
                     <Link
-                      href="#contact"
-                      className="group/btn relative flex w-full h-13 items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 hover:shadow-lg hover:shadow-amber-500/20 transition-all duration-300"
+                      href="/contact-us"
+                      className="group/btn relative flex w-full h-13 items-center justify-center gap-2 py-3 pr-4 pl-6 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 hover:shadow-lg hover:shadow-amber-500/20 transition-all duration-300"
                     >
                       <span className="font-space-grotesk text--base font-medium text-brand-900">
                         Book a call to check your status
@@ -684,11 +806,12 @@ export default function Home() {
                           viewBox="0 0 12 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transition-transform duration-300 group-hover/btn:translate-x-px group-hover/btn:-translate-y-px"
+                          className="transition-transform duration-300 group-hover/btn:translate-x-px"
                         >
                           <path
-                            d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
-                            stroke="white"
+                            d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
+                            stroke="currentColor"
+                            className="text-white"
                             strokeWidth="1.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -709,91 +832,90 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full bg-white  text-slate-900 relative">
+
+        <section className="w-full bg-white  text-slate-900" >
           <div className="container--boxed">
-
-
-            <div className="max-w-360 mx-auto section-2xl">
-              <div className="max-w-320 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-
-                {/* Left Column: Left Profile Card (col-span 4) */}
-                <div className="col-span-1 lg:col-span-4 flex justify-center w-full">
-                  <div className="w-full max-w-95 bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 border border-brand-blue-900/5 rounded-4px px-8 py-12 flex flex-col items-center text-center shadow-lg">
-
-                    {/* Avatar with Outside Gold Gradient Border */}
-                    <div className="w-55 h-55 rounded-full p-3 bg-gradient-to-r from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 flex items-center justify-center shadow-md">
-                      <div className="w-50 h-50 rounded-full overflow-hidden relative bg-slate-950">
-                        <Image
-                          src="/ritesh_singh.png"
-                          alt="Ritesh Singh"
-                          fill
-                          sizes="200px"
-                          priority
-                          className="object-cover rounded-full"
-                        />
-                      </div>
+            <div className="max-w-360 mx-auto section-2xl w-full">
+              <div className="max-w-320 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
+                {/* Profile Card */}
+                <div className="w-full lg:w-95 bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 border border-white/10 flex flex-col items-center p-10 shrink-0 rounded-4px our-team__shadow-card-light relative">
+                  {/* Profile Image with 10px Gold Gradient Border */}
+                  <div className="w-50 h-50 rounded-full p-3 bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 mb-8">
+                    <div className="w-full h-full rounded-full overflow-hidden bg-brand-blue-900 relative">
+                      <Image
+                        src="/ritesh_singh.png"
+                        alt="Ritesh Singh"
+                        fill
+                        sizes="200px"
+                        className="object-cover"
+                        priority
+                      />
                     </div>
-
-                    {/* Name & Title */}
-                    <h3 className="font-gelasio font-semibold text--xl text-white mt-8 tracking--0.01em">
-                      Ritesh Singh
-                    </h3>
-                    <span className="font-space-grotesk font-normal text--2xs sm:text--xs tracking-1.1px text-white/90 uppercase mt-2">
-                      FOUNDER, CLEARED ADVISORY
-                    </span>
-
-                    {/* Horizontal Divider & Credentials List */}
-                    <div className="w-full border-t border-white/10 mt-8 pt-8 text-left">
-                      <ul className="flex flex-col gap-4">
-                        {credentials.map((cred, idx) => (
-                          <li key={idx} className="flex items-start gap-3">
-                            <span className="font-inter font-normal text--base text-white select-none">
-                              •
-                            </span>
-                            <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">
-                              {cred}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
                   </div>
+
+                  <h3 className="font-gelasio font-semibold text--2xl tracking--0.24px text-white text-center">
+                    Ritesh Singh
+                  </h3>
+                  <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/80 text-center mt-2 uppercase">
+                    FOUNDER, CLEARED ADVISORY
+                  </span>
+
+                  <div className="w-full h-px bg-white/10 my-8"></div>
+
+                  <ul className="flex flex-col gap-4 w-full">
+                    <li className="flex items-start gap-3">
+                      <span className="text-white/50 mt-0.5">•</span>
+                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS — ACAMS 2019</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-white/50 mt-0.5">•</span>
+                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS-Audit — in progress</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-white/50 mt-0.5">•</span>
+                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">MBA — Melbourne Business School 2025</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-white/50 mt-0.5">•</span>
+                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">Former MLRO: AUSTRAC · DIA · AFSL</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-white/50 mt-0.5">•</span>
+                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">22 years APAC compliance</span>
+                    </li>
+                  </ul>
                 </div>
+                {/* Right Content */}
+                <div className="flex-1 flex flex-col gap-8  pt-4 lg:pt-8">
+                  <div className="border-l-4 border-l-brand-blue-900 ">
+                    <h2 className="font-gelasio font-medium text--2xl lg:pt-5 pl-4 lg:pl-10 sm:text--4xl leading-tight sm:leading-[50.4px] tracking--0.36px text-brand-900">
+                      &quot;I didn&apos;t build {" "}
+                      <span className="font-normal page__highlight-text-gold bg-clip-text text-transparent">
+                        Cleared Advisory
+                      </span>{" "}
+                      to be another compliance firm. I built it because businesses deserve access to the same expertise the big banks have — without the $500/hour price tag.&quot;
+                    </h2>
+                  </div>
 
-                {/* Right Column: Quote & Bio Content (col-span 8) */}
-                <div className="col-span-1 lg:col-span-8 flex flex-col justify-start lg:pl-4">
-                  {/* Quote block */}
-
-                  <h2 className="font-gelasio font-medium text--xl sm:text--2xl md:text-32px leading-relaxed md:leading-50.4px tracking--0.01em text-brand-900 border-l-4 pl-3 page__border-image-blue">
-                    "I didn't build{" "}
-                    <span className="font-normal page__highlight-text-gold bg-clip-text text-transparent">
-                      Cleared Advisory
-                    </span>{" "}
-                    to be another compliance firm. I built it because businesses deserve access to the same expertise the big banks have — without the $500/hour price tag."
-                  </h2>
-
-                  {/* Biography Paragraphs */}
-                  <div className="flex flex-col gap-6 mt-10 ">
-                    <p className="font-inter font-normal text--base sm:text--lg text-slate-500 leading-relaxed">
+                  <div className="flex flex-col gap-6 max-w-180 ml-9">
+                    <p className="font-inter font-normal text--base leading-6 text-brand-gray-500">
                       22 years. Multiple MLRO roles. AUSTRAC, DIA, AFSL. Built programs from zero. Been audited against them. Turned around loss-making businesses. Managed de-banking threats. Built teams from 8 to 60 people across 4 countries.
                     </p>
-                    <p className="font-inter font-normal text--base sm:text--lg text-slate-500 leading-relaxed">
-                      I've seen what happens when compliance is treated as a cost centre. And what's possible when it's built into the business from day one. That's what Cleared Advisory delivers.
+                    <p className="font-inter font-normal text--base leading-6 text-brand-gray-500">
+                      I&apos;ve seen what happens when compliance is treated as a cost centre. And what&apos;s possible when it&apos;s built into the business from day one. That&apos;s what Cleared Advisory delivers.
                     </p>
+                    <div className="mt-10">
+                      <Link
+                        href="/contact-us"
+                        className="inline-block font-inter font-semibold text-15px text-brand-900 border-b border-brand-900 pb-0.5 transition-all duration-300 hover:text-brand-gold-500 hover:border-brand-gold-500 hover:translate-x-0.5"
+                      >
+                        Read our full story →
+                      </Link>
+                    </div>
                   </div>
 
-                  {/* Underlined CTA Text Link */}
-                  <div className="mt-10">
-                    <Link
-                      href="#contact"
-                      className="inline-block font-inter font-semibold text-15px text-brand-900 border-b border-brand-900 pb-0.5 transition-all duration-300 hover:text-brand-gold-500 hover:border-brand-gold-500 hover:translate-x-0.5"
-                    >
-                      Read our full story →
-                    </Link>
-                  </div>
+                  {/* Stats Cards */}
                 </div>
-
               </div>
             </div>
           </div>
@@ -809,11 +931,11 @@ export default function Home() {
 
                 {/* Left Side Content */}
                 <div className="flex flex-col justify-start max-w-142 w-full">
-                  <span className="font-space-grotesk font-medium text--xs tracking-1.4px text-slate-500 uppercase">
+                  <span className="font-space-grotesk font-medium text--xs tracking--1.4px text-slate-500 uppercase">
                     For Compliance Professionals
                   </span>
 
-                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight tracking--0.01em text-brand-900 mt-6">
+                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight tracking--0.01em text-brand-900 mt-6">
                     Join our practitioner network.
                   </h2>
 
@@ -839,7 +961,7 @@ export default function Home() {
                           className="transition-transform duration-300 group-hover/btn:translate-x-px group-hover/btn:-translate-y-px"
                         >
                           <path
-                            d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
+                            d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                             stroke="currentColor"
                             className="text-white group-hover/btn:text-brand-900 transition-colors duration-300"
                             strokeWidth="1.5"
@@ -861,7 +983,7 @@ export default function Home() {
 
                   {/* Card 1: What we're looking for */}
                   <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 border border-white/10 p-8 sm:p-12 shadow-2xl text-white hover:border-white/20 hover:scale-1.01 transition-all duration-300 rounded-4px">
-                    <h3 className="font-gelasio font-medium text--xl text-white tracking--0.01em">
+                    <h3 className="font-gelasio font-medium text--2xl text-white tracking--0.01em">
                       What we're looking for
                     </h3>
 
@@ -881,7 +1003,7 @@ export default function Home() {
 
                   {/* Card 2: Registration captures */}
                   <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 border border-white/10 p-8 sm:p-12 shadow-2xl text-white hover:border-white/20 hover:scale-1.01 transition-all duration-300 rounded-4px">
-                    <h3 className="font-gelasio font-medium text--xl  tracking--0.01em">
+                    <h3 className="font-gelasio font-medium text--2xl  tracking--0.01em">
                       Registration captures
                     </h3>
 
@@ -913,10 +1035,10 @@ export default function Home() {
               {/* Header Row */}
               <div className="max-w-300 mx-auto flex flex-col md:flex-row md:justify-between md:items-end mb-12 gap-4">
                 <div className="flex flex-col">
-                  <span className="font-space-grotesk font-medium text--xs tracking-1.4px text-slate-500 uppercase">
+                  <span className="font-space-grotesk font-medium text--xs tracking--1.4px text-slate-500 uppercase">
                     RESOURCES
                   </span>
-                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-tight tracking--0.01em text-brand-900 mt-3">
+                  <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight tracking--0.01em text-brand-900 mt-3">
                     Insights & Guides
                   </h2>
                 </div>
@@ -950,7 +1072,7 @@ export default function Home() {
                       <span className="font-space-grotesk font-normal text--xs text-slate-500">
                         {leftHeroPost.date}
                       </span>
-                      <h3 className="font-gelasio font-medium text--xl sm:text-28px leading-snug tracking--0.01em text-brand-900 group-hover:text-amber-600 transition-colors duration-300">
+                      <h3 className="font-gelasio font-medium text--2xl sm:text--3xl leading-snug tracking--0.01em text-brand-900 group-hover:text-amber-600 transition-colors duration-300">
                         {leftHeroPost.title}
                       </h3>
                       <p className="font-space-grotesk font-normal text--base text-slate-500 leading-relaxed">
@@ -987,7 +1109,7 @@ export default function Home() {
                           <span className="font-space-grotesk font-normal text--xs text-slate-500">
                             {post.date}
                           </span>
-                          <h3 className="font-gelasio font-medium text--xl sm:text-22px leading-snug tracking--0.01em text-brand-900 group-hover:text-amber-600 transition-colors duration-300">
+                          <h3 className="font-gelasio font-medium text--2xl sm:text-22px leading-snug tracking--0.01em text-brand-900 group-hover:text-amber-600 transition-colors duration-300">
                             {post.title}
                           </h3>
                         </div>
@@ -1015,7 +1137,7 @@ export default function Home() {
                         <span className="font-space-grotesk font-normal text--xs text-slate-500">
                           {bottomWidePost.date}
                         </span>
-                        <h3 className="font-gelasio font-medium text--xl sm:text-24px leading-snug tracking--0.01em text-brand-900 group-hover:text-amber-600 transition-colors duration-300 max-w-85">
+                        <h3 className="font-gelasio font-medium text--2xl sm:text--2xl leading-snug tracking--0.01em text-brand-900 group-hover:text-amber-600 transition-colors duration-300 max-w-85">
                           {bottomWidePost.title}
                         </h3>
                       </div>
@@ -1055,8 +1177,8 @@ export default function Home() {
 
         <Cta />
 
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
 

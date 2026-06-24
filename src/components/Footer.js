@@ -7,7 +7,7 @@ export default function Footer() {
     { name: "Why Cleared", href: "/why-cleared" },
     { name: "What we do", href: "/what-we-do" },
     { name: "Tranche 2", href: "/tranche-2" },
-    { name: "Services", href: "#services" },
+    { name: "Services", href: "/services" },
     { name: "About", href: "/about" },
     { name: "Our Team", href: "#team" },
     { name: "Contact Us", href: "/contact-us" },
@@ -27,7 +27,7 @@ export default function Footer() {
               <div className="w-9 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                 <Image src={Logo} alt="Logo" width={35} height={40} />
               </div>
-              <span className="font-gelasio font-semibold text--xl tracking--0.48px text-white">
+              <span className="font-gelasio font-semibold text--2xl tracking--0.48px text-white">
                 Cleared Advisory
               </span>
             </Link>
@@ -65,41 +65,27 @@ export default function Footer() {
                 CONNECT
               </h4>
               <div className="flex flex-col gap-6">
-                {/* Email */}
-                <div className="flex flex-col gap-1">
-                  <span className="font-space-grotesk font-medium text--2xs tracking-1.1px text-white/40 uppercase">
-                    EMAIL
-                  </span>
-                  <Link
-                    href="mailto:ritesh@clearedadvisory.com.au"
-                    className="font-space-grotesk font-normal text--base text-white/60 hover:text-white transition-colors duration-300 break-all"
-                  >
-                    ritesh@clearedadvisory.com.au
-                  </Link>
-                </div>
 
-                {/* Phone */}
-                <div className="flex flex-col gap-1">
-                  <span className="font-space-grotesk font-medium text--2xs tracking-1.1px text-white/40 uppercase">
-                    PHONE
-                  </span>
-                  <Link
-                    href="tel:+61410450511"
-                    className="font-space-grotesk font-normal text--base text-white/60 hover:text-white transition-colors duration-300"
-                  >
-                    +61 410 450 511
-                  </Link>
-                </div>
+                <Link
+                  href="mailto:ritesh@clearedadvisory.com.au"
+                  className="font-space-grotesk font-normal text--base text-white/60 hover:text-white transition-colors duration-300 break-all"
+                >
+                  ritesh@clearedadvisory.com.au
+                </Link>
 
-                {/* Location */}
-                <div className="flex flex-col gap-1">
-                  <span className="font-space-grotesk font-medium text--2xs tracking-1.1px text-white/40 uppercase">
-                    LOCATION
-                  </span>
-                  <span className="font-space-grotesk font-normal text--base text-white/60">
-                    Sydney, NSW
-                  </span>
-                </div>
+
+                <Link
+                  href="tel:+61410450511"
+                  className="font-space-grotesk font-normal text--base text-white/60 hover:text-white transition-colors duration-300"
+                >
+                  +61 410 450 511
+                </Link>
+
+
+                <span className="font-space-grotesk font-normal text--base text-white/60">
+                  Sydney, NSW
+                </span>
+
               </div>
             </div>
 

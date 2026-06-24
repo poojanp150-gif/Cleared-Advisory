@@ -7,6 +7,9 @@
 
 .services__highlight-text-blue {
   background: linear-gradient(180deg, #010132 0%, #1D1D81 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .services__shadow-gold {

@@ -32,7 +32,7 @@ export default function Cta() {
     <section className="w-full bg-white  text-slate-900 relative" style={{ marginTop: "-1px" }}>
       <div className="container--boxed">
         <div className="max-w-360 mx-auto section-2xl">
-          <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16  lg:items-start">
 
             {/* Left Side Content */}
             <div className="flex flex-col justify-start max-w-142 w-full">
@@ -40,7 +40,7 @@ export default function Cta() {
                 GET STARTED
               </span>
 
-              <h2 className="font-gelasio font-medium text--2xl sm:text--4xl md:text--6xl leading-tight md:leading-70.4px tracking--0.01em text-brand-900 mt-6">
+              <h2 className="font-gelasio font-medium text--2xl sm:text--7xl md:text--9xl leading-tight  tracking--0.01em text-brand-900 mt-6">
                 Book a free <br className="hidden sm:inline" />
                 <span className="italic font-normal cta__highlight-text-gold bg-clip-text text-transparent">
                   30-minute
@@ -81,7 +81,7 @@ export default function Cta() {
 
             {/* Right Side Dark Card */}
             <div className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 border border-white/10 p-8 sm:p-12 shadow-2xl text-white">
-              <h3 className="font-gelasio font-medium text--xl text-white tracking--0.01em">
+              <h3 className="font-gelasio font-medium text--2xl text-white tracking--0.01em">
                 What To Expect on The Call
               </h3>
 
@@ -94,7 +94,7 @@ export default function Cta() {
                       <div className="w-2 h-2 rounded-full bg-white mt-3 shrink-0" />
 
                       {/* Text */}
-                      <span className="font-space-grotesk font-normal text--base text-white/90 leading-normal">
+                      <span className="font-space-grotesk font-normal text--base text-white/60 leading-normal">
                         {text}
                       </span>
                     </li>
@@ -105,7 +105,7 @@ export default function Cta() {
               {/* Email Pill Button */}
               <div className="mt-10">
                 <Link
-                  href="mailto:ritesh@clearedadvisory.com.au"
+                  href="/contact-us"
                   className="group flex w-full h-14 items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-white shadow-md hover:scale-1.01 transition-transform duration-300"
                 >
                   <span className="font-space-grotesk text--base font-medium text-brand-900">
@@ -122,7 +122,7 @@ export default function Cta() {
                       className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
                     >
                       <path
-                        d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5"
+                        d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                         stroke="white"
                         strokeWidth="1.5"
                         strokeLinecap="round"
@@ -136,7 +136,7 @@ export default function Cta() {
               {/* OR CALL text under button */}
               <div className="mt-6 text-center">
                 <Link
-                  href="tel:+61410450511"
+                  href="/contact-us"
                   className="inline-block font-space-grotesk font-medium text--base tracking-0.5px text-white/80 hover:text-white hover:underline transition-colors duration-300"
                 >
                   OR CALL +61 410 450 511
