@@ -31,9 +31,15 @@
   padding-right: 1rem
 }
 
-.section-2xl {
+@utility section-1xl {
+  padding: 20px 16px;
+}
+
+@utility section-2xl {
   padding: 120px 40px;
 }
+
+
 
 .logo-text {
   font-size: 24px;
@@ -46,5 +52,15 @@
 
   .width-lg {
     width: 270px;
+  }
+}
+
+@media (max-width: 470px) {
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .width-lg {
+    width: 150px;
   }
 }
