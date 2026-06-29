@@ -36,7 +36,7 @@ export default function Cta() {
 
             {/* Left Side Content */}
             <div className="flex flex-col justify-start max-w-142 w-full">
-              <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-500/60 uppercase">
+              <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-black/60 uppercase">
                 GET STARTED
               </span>
 
@@ -106,7 +106,7 @@ export default function Cta() {
               <div className="mt-10">
                 <Link
                   href="/contact-us"
-                  className="group flex w-full h-14 items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-white shadow-md hover:scale-1.01 transition-transform duration-300"
+                  className="group flex w-full h-14 button--secondary"
                 >
                   <span className="font-space-grotesk text--base font-medium text-brand-900">
                     Send us an email now

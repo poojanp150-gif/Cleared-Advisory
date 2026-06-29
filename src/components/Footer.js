@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/logo.png";
+import Logo from "../../public/logo.svg";
 export default function Footer() {
   const companyLinks = [
     { name: "Why Cleared", href: "/why-cleared" },
@@ -94,7 +94,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright & Border Section */}
-      <div className="max-w-360 mx-auto border-t border-white/10 pt-8 mt-2 rounded-3xl px-6 md:px-10 lg:px-20">
+      <div className="max-w-360 mx-auto border-t border-white/10 pt-8 mt-2 sm:rounded-3xl px-6 md:px-10 lg:px-20">
         <div className="max-w-320 mx-auto  flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-space-grotesk font-normal text--xs md:text--base text-white/80 text-center md:text-left">
             © 2026 Cleared Advisory · ABN 28 867 326 033

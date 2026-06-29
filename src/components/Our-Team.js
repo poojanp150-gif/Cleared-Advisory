@@ -5,6 +5,7 @@ import './Our-Team.css';
 import Link from "next/link";
 import Cta from "./Cta";
 import Image from "next/image";
+import riteshsingh from "../../public/ritesh_singh.png";
 
 export default function OurTeam() {
     return (
@@ -28,6 +29,7 @@ export default function OurTeam() {
                 </div>
             </div>
 
+
             <section className="w-full bg-white  text-slate-900" >
                 <div className="container--boxed">
                     <div className="max-w-360 mx-auto section-2xl w-full">
@@ -38,7 +40,7 @@ export default function OurTeam() {
                                 <div className="w-50 h-50 rounded-full p-3 bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 mb-8">
                                     <div className="w-full h-full rounded-full overflow-hidden bg-brand-blue-900 relative">
                                         <Image
-                                            src="/ritesh_singh.png"
+                                            src={riteshsingh}
                                             alt="Ritesh Singh"
                                             fill
                                             sizes="200px"
@@ -55,30 +57,31 @@ export default function OurTeam() {
                                     FOUNDER, CLEARED ADVISORY
                                 </span>
 
-                                <div className="w-full h-px bg-white/10 my-8"></div>
+                                <div className="w-full  border-t border-black/10  mt-5 p-6">
 
-                                <ul className="flex flex-col gap-4 w-full">
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-white/50 mt-0.5">•</span>
-                                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS — ACAMS 2019</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-white/50 mt-0.5">•</span>
-                                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS-Audit — in progress</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-white/50 mt-0.5">•</span>
-                                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">MBA — Melbourne Business School 2025</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-white/50 mt-0.5">•</span>
-                                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">Former MLRO: AUSTRAC · DIA · AFSL</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <span className="text-white/50 mt-0.5">•</span>
-                                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">22 years APAC compliance</span>
-                                    </li>
-                                </ul>
+                                    <ul className="list-disc text-white flex flex-col gap-4 w-full">
+                                        <li className="">
+                                            {/* <span className="text-white/50 mt-0.5">•</span> */}
+                                            <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS — ACAMS 2019</span>
+                                        </li>
+                                        <li className="">
+                                            {/* <span className="text-white/50 mt-0.5">•</span> */}
+                                            <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS-Audit — in progress</span>
+                                        </li>
+                                        <li className="">
+                                            {/* <span className="text-white/50 mt-0.5">•</span> */}
+                                            <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">MBA — Melbourne Business School 2025</span>
+                                        </li>
+                                        <li className="">
+                                            {/* <span className="text-white/50 mt-0.5">•</span> */}
+                                            <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">Former MLRO: AUSTRAC · DIA · AFSL</span>
+                                        </li>
+                                        <li className="">
+                                            {/* <span className="text-white/50 mt-0.5">•</span> */}
+                                            <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">22 years APAC compliance</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             {/* Right Content */}
                             <div className="flex-1 flex flex-col gap-8  pt-4 lg:pt-8">
@@ -127,7 +130,7 @@ export default function OurTeam() {
                 <div className="container--boxed">
                     <div className="  mx-auto section-2xl w-full">
                         <div className=" mx-auto grid grid-cols-1 xl:grid-cols-2  items-stretch">
-                            <div className="bg-brand-bg-white  border-t border-b border-l border-r md:border-r-0 border-brand-gold-600 p-12 flex flex-col gap-6 justify-between">
+                            <div className="bg-brand-bg-white  max-w-[600px] border-t border-b border-l border-r md:border-r-0 border-brand-gold-600 p-12 flex flex-col gap-6 justify-between">
                                 <div>
                                     <h3 className="font-gelasio font-medium text--3xl text-brand-gray-800 leading-snug tracking--0.28px mb-4">
                                         Advisory Board — Forming
@@ -152,7 +155,7 @@ export default function OurTeam() {
                                 </Link>
                             </div>
                             {/* inline-block font-inter font-semibold text-15px text-brand-900 border-b border-brand-900 pb-0.5 transition-all duration-300 hover:text-brand-gold-500 hover:border-brand-gold-500 hover:translate-x-0.5 */}
-                            <div className="bg-brand-bg-white border border-brand-gold-600 p-12 flex flex-col gap-6 justify-start">
+                            <div className="bg-brand-bg-white max-w-[600px] border border-brand-gold-600 p-12 flex flex-col gap-6 justify-start">
                                 <div>
                                     <h3 className="font-gelasio font-medium text--3xl text-brand-gray-800 leading-snug tracking--0.28px mb-4">
                                         Associate Compliance Practitioners
@@ -173,7 +176,7 @@ export default function OurTeam() {
 
 
                     <div className="max-w-360 mx-auto section-2xl w-full flex flex-col items-center">
-                        <div className="flex flex-col items-center text-center max-w-200 mb-12 sm:mb-12">
+                        <div className="flex flex-col items-center text-center  max-w-150 mb-12 sm:mb-12">
                             <span className="font-space-grotesk font-bold text--xs tracking--1.4px text-brand-gold-600 uppercase">
                                 OUR NETWORK
                             </span>

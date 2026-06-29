@@ -86,13 +86,13 @@ export default function WhatWeDo() {
                     <div className="max-w-360 mx-auto section-2xl w-full">
                         {/* Header */}
                         <div className="max-w-300 mx-auto flex flex-col items-start text-left mb-12 sm:mb-16">
-                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
+                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-[#666666] uppercase">
                                 Our clients
                             </span>
                             <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight tracking--0.48px text-brand-900 mt-4">
                                 Who we work with
                             </h2>
-                            <p className="font-space-grotesk font-normal text--base sm:text--lg md:text-18px leading-7 text-brand-gray-500 max-w-195 mt-4">
+                            <p className="font-space-grotesk font-normal text--base sm:text--lg md:text-18px leading-7 text-[#666666] max-w-195 mt-4">
                                 For 20 years, businesses needing compliance help had three options. None of them worked particularly well.
                             </p>
                         </div>
@@ -117,14 +117,16 @@ export default function WhatWeDo() {
                                                 {client.title}
                                             </h3>
                                             {client.tag && (
-                                                <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-red-600 uppercase">
-                                                    {client.tag}
-                                                </span>
+                                                <div className='px-3 py-1 rounded-full bg-gradient-to-l from-[#CCAB51] via-[#D5B45F] to-[#E7C77C]'>
+                                                    <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px bg-gradient-to-l from-brand-blue-900 to-brand-blue-800 bg-clip-text text-transparent uppercase select-none">
+                                                        {client.tag}
+                                                    </span>
+                                                </div>
                                             )}
                                         </div>
 
                                         {/* Description */}
-                                        <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6 max-w-249">
+                                        <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6 max-w-249">
                                             {client.description}
                                         </p>
                                     </div>
@@ -174,14 +176,16 @@ export default function WhatWeDo() {
                                                 {pillar.title}
                                             </h3>
                                             {pillar.tag && (
-                                                <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px bg-gradient-to-l from-brand-blue-900 to-brand-blue-800 bg-clip-text text-transparent uppercase select-none">
-                                                    {pillar.tag}
-                                                </span>
+                                                <div className='px-3 py-1 rounded-full bg-gradient-to-l from-[#CCAB51] via-[#D5B45F] to-[#E7C77C]'>
+                                                    <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px bg-gradient-to-l from-brand-blue-900 to-brand-blue-800 bg-clip-text text-transparent uppercase select-none">
+                                                        {pillar.tag}
+                                                    </span>
+                                                </div>
                                             )}
                                         </div>
 
                                         {/* Description */}
-                                        <p className="font-inter font-normal text--base text-brand-gray-500 leading-6">
+                                        <p className="font-inter font-normal text--base text-[#666666] leading-6">
                                             {pillar.description}
                                         </p>
                                     </div>

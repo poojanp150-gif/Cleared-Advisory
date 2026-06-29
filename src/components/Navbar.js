@@ -2,8 +2,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/logo.png";
-import arrow from "../../public/button_arrow.svg"
+import Logo from "../../public/logo.svg";
+
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -44,7 +44,7 @@ export default function Navbar() {
 
             {/* Column 2: Nav Links (Desktop) */}
             {/* Desktop Navigation */}
-            <nav className="hidden min-[1100px]:flex flex-1 items-center justify-center gap-6 xl:gap-8 font-space-grotesk text--base font-medium text-white/90">
+            <nav className="hidden min-[1100px]:flex flex-1 items-center justify-center gap-6 xl:gap-8 font-space-grotesk text--base font-medium text-white">
                 <Link href="/why-cleared" className="hover:text-amber-400 transition-colors duration-200">
                     Why Cleared
                 </Link>
@@ -139,47 +139,47 @@ export default function Navbar() {
 
             {/* Mobile Drawer Overlay */}
             {isOpen && (
-                <div className="absolute top-22 left-0 w-full bg-slate-950/95 backdrop-blur-md border-b border-white/20 flex flex-col py-6 px-8 gap-4 min-[1100px]:hidden animate-in fade-in slide-in-from-top-5 duration-200">
+                <div className="absolute top-22 left-0  w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 items-center backdrop-blur-md border-b border-white/20 flex flex-col py-6 px-8 gap-4 min-[1100px]:hidden animate-in fade-in slide-in-from-top-5 duration-200">
 
                     <Link
                         href="/why-cleared"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2 text-center"
                     >
                         Why Cleared
                     </Link>
                     <Link
                         href="/what-we-do"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2 text-center"
                     >
                         What We Do
                     </Link>
                     <Link
                         href="/tranche-2"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2 text-center"
                     >
                         Tranche 2
                     </Link>
                     <Link
                         href="/services"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2 text-center"
                     >
                         Services
                     </Link>
                     <Link
                         href="/about"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2 text-center"
                     >
                         About
                     </Link>
                     <Link
                         href="/our-team"
                         onClick={() => setIsOpen(false)}
-                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2"
+                        className="font-space-grotesk text--lg font-medium text-white hover:text-amber-400 transition-colors py-2 text-center"
                     >
                         Our Team
                     </Link>

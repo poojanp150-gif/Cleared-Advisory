@@ -308,7 +308,7 @@ export default function Services() {
                                 {/* Main Image */}
                                 <div className="relative w-full aspect-568/600 max-h-150 overflow-hidden bg-slate-900">
                                     <Image
-                                        src="/three_colleagues.png"
+                                        src="/ritesh_singhimg2.png"
                                         alt="Three colleagues discussing compliance operations in front of a laptop"
                                         fill
                                         className="object-cover"

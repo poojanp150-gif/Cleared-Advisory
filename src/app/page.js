@@ -7,22 +7,24 @@ import { useState, useEffect } from "react";
 import Faq from "@/components/Faq";
 import Cta from "@/components/Cta";
 import unipayce from "../../public/unipayce.png"
-
+import RiteshImage from "../../public/ritesh_singh.png"
+import ritesh_singhimg2 from "../../public/ritesh_singhimg2.png"
 export default function Home() {
   const phase1Services = [
-    { name: "Template pack", price: "From $497" },
-    { name: "Compliance health check", price: "$1,500–$2,500" },
-    { name: "Full program build", price: "$5,000–$10,000" },
-    { name: "Sector workshop", price: "$750–$1,500/pp" },
-    { name: "Independent audit May 2026", price: "From $2,500" },
+    { name: "Template pack", price: "$597-$997", dec: "DIY documents — sector specific" },
+    { name: "Compliance health check", price: "$1,500–$2,800", dec: "DIY documents — sector specific" },
+    { name: "AML Program Builder", price: "From $1800", dec: "Guided platform build, reviewed and refined by a Cleared practitioner" },
+    { name: "Full program build", price: "$5000–$12,000", dec: "End-to-end: risk assessment, program, training, AUSTRAC enrolment" },
+    { name: "Sector workshop", price: "$750-$1500/pp", dec: "3-hour sector-specific training" },
+    { name: "AUSTRAC Readiness Review", price: "From $2500", dec: "Optional pre-readiness assurance — for Tranche 1 & Tranche 2" },
   ];
 
   const phase2Services = [
-    { name: "Fractional MLRO", price: "$3,500–$6,000/mo" },
-    { name: "KYC/CDD operations", price: "Retainer" },
-    { name: "Transaction monitoring", price: "Retainer" },
-    { name: "SMR drafting & submission", price: "Retainer" },
-    { name: "Annual independent audit", price: "From $2,500" },
+    { name: "Fractional MLRO", price: "$4,500–$8,500/mo", dec: "Ongoing compliance leadership on retainer" },
+    { name: "KYC/CDD operations", price: "Retainer - from $800/mo ", dec: "Onboarding, screening, ongoing monitoring" },
+    { name: "Transaction monitoring", price: "Retainer - from $800/mo", dec: "Alert review and adjudication" },
+    { name: "SMR drafting & submission", price: "Retainer", dec: "Suspicious matter report support" },
+    { name: "Annual independent audit", price: "$2,500-$10,000 ", dec: "By Cleared Audit — CAMS-Audit certified practitioners" },
   ];
   const sectors = [
     {
@@ -209,7 +211,7 @@ export default function Home() {
               {/* Button 1: Our Services (Gold Gradient) */}
               <Link
                 href="/services"
-                className="group relative flex w-54  sm:w-54 h-14 items-center justify-center gap-2 pl-6 pr-4 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 shadow-lg shadow-amber-500/10 hover:shadow-amber-500/20 hover:scale-1.02 transition-all duration-300"
+                className="group relative flex w-54  sm:w-54 h-14 button--primary"
               >
                 <span className="font-space-grotesk text--base font-bold text-brand-900">
                   Our Services
@@ -270,23 +272,23 @@ export default function Home() {
         <section className="w-full bg-white  text-slate-900 relative">
           <div className="container--boxed">
 
-            <div className="max-w-360 mx-auto section-1xl sm:section-2xl">
-              <div className="max-w-320 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-12 lg:gap-16 items-center">
+            <div className="mx-auto section-1xl sm:section-2xl">
+              <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-12 lg:gap-16 items-center">
 
                 {/* Left Column: Text Content & Stats */}
                 <div className="flex flex-col justify-center max-w-142 w-full">
                   {/* Tagline */}
-                  <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-500 uppercase">
+                  <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-[#666666] uppercase">
                     Our Difference
                   </span>
 
                   {/* Heading */}
                   <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.01em text-brand-900 mt-6">
-                    "Most advisors know the rules. We've lived them."
+                    Most advisors know the rules. We've lived them.
                   </h2>
 
                   {/* Description */}
-                  <p className="font-space-grotesk font-normal text--base sm:text--lg text-slate-500 mt-6 leading-relaxed">
+                  <p className="font-space-grotesk font-normal text--base sm:text--lg text-[#666666] mt-6 leading-relaxed">
                     As MLROs and risk officers, accountable to AUSTRAC, building
                     programs that work in the real world. We don't complicate
                     compliance to create dependency. We make it simple, practical,
@@ -325,7 +327,7 @@ export default function Home() {
                   {/* Main Image */}
                   <div className="relative w-full aspect-568/600 max-h-150  overflow-hidden bg-brand-bg-light">
                     <Image
-                      src="/three_colleagues.png"
+                      src={ritesh_singhimg2}
                       alt="Three colleagues discussing compliance operations in front of a laptop"
                       fill
                       priority
@@ -352,11 +354,11 @@ export default function Home() {
         </section>
         <section className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 text-white relative">
           <div className="container--boxed">
-            <div className="max-w-360 mx-auto section-1xl sm:section-2xl">
-              <div className="max-w-320 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <div className=" section-1xl sm:section-2xl max-w-7xl mx-auto">
+              <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
                 {/* Left Column: Heading Content */}
-                <div className="flex flex-col justify-start lg:sticky lg:top-24 max-w-144 w-full">
+                <div className="flex flex-col justify-start lg:sticky lg:top-24 lg:max-w-154 w-full">
                   {/* Tagline */}
                   <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-white/70 uppercase">
                     WHY US
@@ -380,10 +382,10 @@ export default function Home() {
                   {cards.map((card, idx) => (
                     <div
                       key={idx}
-                      className="group relative bg-white rounded-sm p-5 sm:p-10 shadow-md border border-black/5 hover:border-amber-400/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4 sm:gap-6"
+                      className="group relative bg-white rounded-sm p-5 sm:p-10 shadow-md border border-black/5 hover:border-amber-700/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4 sm:gap-6"
                     >
                       {/* Big faint number */}
-                      <div className="font-space-grotesk font-medium text--5xl sm:text--7xl leading-none text-slate-900/10 group-hover:text-amber-500/20 transition-colors duration-300">
+                      <div className="font-space-grotesk font-medium text--5xl sm:text--7xl leading-none text-slate-900/10 group-hover:text-amber-700/20 transition-colors duration-300">
                         {card.number}
                       </div>
 
@@ -444,12 +446,18 @@ export default function Home() {
 
                     {/* Services Table List */}
                     <div className="mt-12">
-                      <ul className="divide-y divide-black/10">
+                      <ul className="divide-y divide-black/10 border-t border-black/10">
                         {phase1Services.map((service, idx) => (
                           <li key={idx} className="flex justify-between items-center py-3 sm:py-6">
-                            <span className="font-space-grotesk font-normal text--2xs sm:text--base text-brand-900">
-                              {service.name}
-                            </span>
+                            <div className="flex flex-col">
+                              <span className="font-space-grotesk font-normal text--2xs sm:text--base text-brand-900">
+                                {service.name}
+                              </span>
+
+                              <span className="font-space-grotesk font-normal text--xs text-[#666666] mt-1 max-w-80">
+                                {service.dec}
+                              </span>
+                            </div>
                             <span className="font-space-grotesk font-medium text--2xs sm:text--base text-brand-900">
                               {service.price}
                             </span>
@@ -513,15 +521,26 @@ export default function Home() {
 
                     {/* Services Table List */}
                     <div className="mt-12">
-                      <ul className="divide-y divide-white/10">
+                      <ul className="divide-y divide-white/10 border-t border-white/10">
                         {phase2Services.map((service, idx) => (
-                          <li key={idx} className="flex justify-between items-center py-3 sm:py-6">
-                            <span className="font-space-grotesk font-normal text--2xs sm:text--base text-white">
-                              {service.name}
-                            </span>
+                          <li key={idx} className="flex justify-between items-start py-3 sm:py-6">
+
+                            {/* Left side */}
+                            <div className="flex flex-col max-w-60">
+                              <span className="font-space-grotesk font-normal text--2xs sm:text--base text-white">
+                                {service.name}
+                              </span>
+
+                              <span className="font-space-grotesk font-normal text--xs text-white/60 mt-1">
+                                {service.dec}
+                              </span>
+                            </div>
+
+                            {/* Right side */}
                             <span className="font-inter font-semibold text--2xs sm:text--base text-white">
                               {service.price}
                             </span>
+
                           </li>
                         ))}
                       </ul>
@@ -532,7 +551,7 @@ export default function Home() {
                   <div className="mt-7 sm:mt-12">
                     <Link
                       href="/contact-us"
-                      className="group/btn relative flex w-full h-13 items-center justify-center gap-2 pl-8 pr-4 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 hover:shadow-lg hover:shadow-amber-500/20 transition-all duration-300"
+                      className="group/btn relative flex w-full h-13 button--primary"
                     >
                       <span className="font-space-grotesk text--base font-medium text-brand-900">
                         Talk About Phase 2
@@ -659,7 +678,7 @@ export default function Home() {
 
                 {/* Left Column: Title & Sectors List */}
                 <div className="flex flex-col justify-center max-w-142 w-full">
-                  <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-white/70 uppercase">
+                  <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-white uppercase">
                     WHO WE HELP
                   </span>
 
@@ -796,7 +815,7 @@ export default function Home() {
                     {/* CTA Button */}
                     <Link
                       href="/contact-us"
-                      className="group/btn relative flex w-full sm:h-13 items-center justify-center gap-2 py-3 pr-4 pl-6 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 hover:shadow-lg hover:shadow-amber-500/20 transition-all duration-300"
+                      className="group/btn relative flex w-full sm:h-13 button--primary"
                     >
                       <span className="font-space-grotesk text--base font-medium text-brand-900">
                         Book a call to check your status
@@ -842,15 +861,13 @@ export default function Home() {
                 {/* Profile Card */}
                 <div className="w-full lg:w-95 bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 border border-white/10 flex flex-col items-center p-5 sm:p-10 shrink-0 rounded-4px our-team__shadow-card-light relative">
                   {/* Profile Image with 10px Gold Gradient Border */}
-                  <div className="w-50 h-50 rounded-full p-3 bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 mb-4 sm:mb-8">
-                    <div className="w-full h-full rounded-full overflow-hidden bg-brand-blue-900 relative">
+                  <div className="w-50 h-50 rounded-full p-3 bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 mb-4 sm:mb-6">
+                    <div className="relative w-full h-full overflow-hidden rounded-full">
                       <Image
-                        src="/ritesh_singh.png"
+                        src={RiteshImage}
                         alt="Ritesh Singh"
                         fill
-                        sizes="200px"
-                        className="object-cover"
-                        priority
+                        className="object-cover object-[80%_center]"
                       />
                     </div>
                   </div>
@@ -858,34 +875,35 @@ export default function Home() {
                   <h3 className="font-gelasio font-semibold text--2xl tracking--0.24px text-white text-center">
                     Ritesh Singh
                   </h3>
-                  <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/80 text-center mt-2 uppercase">
+                  <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white text-center mt-2 uppercase">
                     FOUNDER, CLEARED ADVISORY
                   </span>
 
-                  <div className="w-full h-px bg-white/10 my-4 sm:my-8"></div>
+                  <div className="w-full  border-t border-black/10  mt-5 p-6">
 
-                  <ul className="flex flex-col gap-2 sm:gap-4 w-full">
-                    <li className="flex items-start gap-3">
-                      <span className="text-white/50 mt-0.5">•</span>
-                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS — ACAMS 2019</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-white/50 mt-0.5">•</span>
-                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS-Audit — in progress</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-white/50 mt-0.5">•</span>
-                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">MBA — Melbourne Business School 2025</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-white/50 mt-0.5">•</span>
-                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">Former MLRO: AUSTRAC · DIA · AFSL</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-white/50 mt-0.5">•</span>
-                      <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">22 years APAC compliance</span>
-                    </li>
-                  </ul>
+                    <ul className="list-disc text-white   flex flex-col gap-2 sm:gap-4 ">
+                      <li className="">
+                        {/* <span className="text-white/50 mt-0.5">•</span> */}
+                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS — ACAMS 2019</span>
+                      </li>
+                      <li className=" ">
+                        {/* <span className="text-white/50 mt-0.5">•</span> */}
+                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">CAMS-Audit — in progress</span>
+                      </li>
+                      <li className=" ">
+                        {/* <span className="text-white/50 mt-0.5">•</span> */}
+                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">MBA — Melbourne Business School 2025</span>
+                      </li>
+                      <li className="">
+                        {/* <span className="text-white/50 mt-0.5">•</span> */}
+                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">Former MLRO: AUSTRAC · DIA · AFSL</span>
+                      </li>
+                      <li className="">
+                        {/* <span className="text-white/50 mt-0.5">•</span> */}
+                        <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/70">22 years APAC compliance</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 {/* Right Content */}
                 <div className="flex-1 flex flex-col gap-8 pt-4 lg:pt-8">
@@ -942,7 +960,7 @@ export default function Home() {
 
                 {/* Left Side Content */}
                 <div className="flex flex-col justify-start max-w-142 w-full">
-                  <span className="font-space-grotesk font-medium text--xs tracking--1.4px text-slate-500 uppercase">
+                  <span className="font-space-grotesk font-medium text--xs tracking--1.4px text-black/60 uppercase">
                     For Compliance Professionals
                   </span>
 
@@ -957,12 +975,12 @@ export default function Home() {
                   <div className="mt-10 max-w-91 w-full">
                     <Link
                       href="mailto:ritesh@clearedadvisory.com.au?subject=Practitioner Network Registration"
-                      className="group/btn flex w-full h-13 items-center justify-center gap-2 pl-6 pr-4 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 shadow-lg shadow-amber-500/10 hover:shadow-amber-500/20 hover:scale-1.01 transition-all duration-300"
+                      className="group/btn flex w-full h-13 button--primary"
                     >
                       <span className="font-space-grotesk text--base font-bold text-brand-900">
                         Register your interest
                       </span>
-                      <div className="w-8 h-8 rounded-full bg-brand-900 flex items-center justify-center transition-all duration-300 group-hover/btn:bg-white shrink-0">
+                      <div className="w-8 h-8 rounded-full bg-brand-900 flex items-center justify-center ">
                         <svg
                           width="12"
                           height="12"
@@ -974,7 +992,7 @@ export default function Home() {
                           <path
                             d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                             stroke="currentColor"
-                            className="text-white group-hover/btn:text-brand-900 transition-colors duration-300"
+                            className="text-white"
                             strokeWidth="1.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -993,7 +1011,7 @@ export default function Home() {
                 <div className="flex flex-col gap-8 w-full max-w-142">
 
                   {/* Card 1: What we're looking for */}
-                  <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 border border-white/10 p-8 sm:p-12 shadow-2xl text-white hover:border-white/20 hover:scale-1.01 transition-all duration-300 rounded-4px">
+                  <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 border border-white/10 p-8 sm:p-12 shadow-2xl text-white hover:border-white/20 hover:scale-1.01 transition-all duration-300 rounded-4px cursor-pointer">
                     <h3 className="font-gelasio font-medium text--2xl text-white tracking--0.01em">
                       What we're looking for
                     </h3>
@@ -1013,7 +1031,7 @@ export default function Home() {
                   </div>
 
                   {/* Card 2: Registration captures */}
-                  <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 border border-white/10 p-8 sm:p-12 shadow-2xl text-white hover:border-white/20 hover:scale-1.01 transition-all duration-300 rounded-4px">
+                  <div className="group relative bg-gradient-to-br from-brand-blue-900 to-brand-blue-800 border border-white/10 p-8 sm:p-12 shadow-2xl text-white hover:border-white/20 hover:scale-1.01 transition-all duration-300 rounded-4px cursor-pointer">
                     <h3 className="font-gelasio font-medium text--2xl  tracking--0.01em">
                       Registration captures
                     </h3>
@@ -1046,7 +1064,7 @@ export default function Home() {
               {/* Header Row */}
               <div className="max-w-300 mx-auto flex flex-col md:flex-row md:justify-between md:items-end mb-12 gap-4">
                 <div className="flex flex-col">
-                  <span className="font-space-grotesk font-medium text--xs tracking--1.4px text-slate-500 uppercase">
+                  <span className="font-space-grotesk font-medium text--xs tracking--1.4px text-gray-500 uppercase">
                     RESOURCES
                   </span>
                   <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight tracking--0.01em text-brand-900 mt-3">
@@ -1065,7 +1083,7 @@ export default function Home() {
               <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-12  items-stretch">
 
                 {/* LEFT COLUMN: Large Hero Card */}
-                <div className="col-span-1 lg:col-span-5 bg-white border border-slate-200  overflow-hidden flex flex-col justify-between    group">
+                <div className="col-span-1 lg:col-span-5 bg-white border border-slate-200  overflow-hidden flex flex-col justify-between group cursor-pointer">
                   <div className="flex flex-col">
                     {/* Image Container */}
                     <div className="relative w-full aspect-543/280 overflow-hidden bg-slate-100">
@@ -1110,7 +1128,7 @@ export default function Home() {
                 <div className="col-span-1 lg:col-span-7 flex flex-col  justify-between">
 
                   {/* Top Row: 2 Small Text Cards */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2  items-stretch flex-1">
+                  <div className="grid grid-cols-1 sm:grid-cols-2  items-stretch flex-1 cursor-pointer">
                     {smallPosts.map((post, idx) => (
                       <div
                         key={idx}
@@ -1141,7 +1159,7 @@ export default function Home() {
                   </div>
 
                   {/* Bottom Row: 1 Wide Card with right-aligned image */}
-                  <div className="bg-white border border-slate-200  overflow-hidden flex flex-col sm:flex-row items-stretch  group">
+                  <div className="bg-white border border-slate-200  overflow-hidden flex flex-col sm:flex-row items-stretch  group cursor-pointer">
                     {/* Content on Left */}
                     <div className="p-8 flex flex-col justify-between flex-1">
                       <div className="flex flex-col gap-4">

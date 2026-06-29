@@ -49,7 +49,7 @@ export default function Faq() {
 
           {/* Header Container */}
           <div className="max-w-320 mx-auto flex flex-col items-center text-center mb-16">
-            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-white/70 uppercase">
+            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-white uppercase">
               COMMON QUESTIONS
             </span>
             <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight  tracking--0.01em text-white mt-6 max-w-150">

@@ -47,15 +47,15 @@ export default function Tranche2Explained() {
 
                     {/* ── Content Wrapper (Frame 687) ── */}
                     <div className="flex-1 flex items-center justify-center px-6 lg:px-20 py-16 lg:py-30">
-                        <div className="flex flex-col items-center text-center gap-6 max-w-211 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
+                        <div className="flex flex-col items-center text-center  max-w-211 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
 
                             {/* Tagline: "About us" — gold gradient */}
-                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px uppercase bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent">
+                            <span className="font-space-grotesk font-medium text--xs pb-2 tracking-1.1px uppercase text-[#D4AF37]">
                                 Tranche 2 explained
                             </span>
 
                             {/* Heading: Mixed Roman + Italic */}
-                            <h1 className="font-gelasio font-medium text--2xl sm:text--7xl md:text--9xl leading-tight md:leading-19 tracking--0.48px text-white">
+                            <h1 className="font-gelasio font-medium text--4xl sm:text--7xl md:text--9xl leading-tight md:leading-19  tracking--0.48px text-white">
                                 What is Tranche 2 and {" "}
                                 <br className="hidden sm:inline" />
                                 <span className="italic font-medium tranche-2__highlight-text-gold bg-clip-text text-transparent">do you need to act?</span>
@@ -71,11 +71,11 @@ export default function Tranche2Explained() {
 
                 {/* ── Stats Banner (Frame 691) ── */}
                 <div className="w-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 py-7">
-                    <div className="max-w-360 mx-auto w-full px-6 lg:px-20">
+                    <div className="max-w-360 mx-auto w-full md:px-6 lg:px-20">
                         <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black/10">
                             {/* Card 1 */}
-                            <div className="py-4 md:py-0 flex flex-col items-center justify-center text-center">
-                                <span className="font-space-grotesk font-medium text--5xl leading-12 tracking--1.44px text-slate-900">
+                            <div className="py-2 md:py-0 flex flex-col items-center justify-center text-center">
+                                <span className="font-space-grotesk font-medium text--xl sm:text--5xl leading-12 tracking--1.44px text-slate-900">
                                     80,000+
                                 </span>
                                 <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-800/70 uppercase mt-2">
@@ -84,8 +84,8 @@ export default function Tranche2Explained() {
                             </div>
 
                             {/* Card 2 */}
-                            <div className="py-4 md:py-0 flex flex-col items-center justify-center text-center">
-                                <span className="font-space-grotesk font-medium text--5xl leading-12 tracking--1.44px text-slate-900">
+                            <div className="py-2 md:py-0 flex flex-col items-center justify-center text-center">
+                                <span className="font-space-grotesk font-medium text--xl sm:text--5xl leading-12 tracking--1.44px text-slate-900">
                                     1 Jul 2026
                                 </span>
                                 <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-800/70 uppercase mt-2">
@@ -94,8 +94,8 @@ export default function Tranche2Explained() {
                             </div>
 
                             {/* Card 3 */}
-                            <div className="py-4 md:py-0 flex flex-col items-center justify-center text-center">
-                                <span className="font-space-grotesk font-medium text--5xl leading-12 tracking--1.44px text-slate-900">
+                            <div className="py-2 md:py-0 flex flex-col items-center justify-center text-center">
+                                <span className="font-space-grotesk font-medium text--xl sm:text--5xl leading-12 tracking--1.44px text-slate-900">
                                     29 Jul 2026
                                 </span>
                                 <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-800/70 uppercase mt-2">
@@ -111,17 +111,17 @@ export default function Tranche2Explained() {
                     <div className="container--boxed">
 
 
-                        <div className="max-w-300 mx-auto w-full flex flex-col section-2xl">
+                        <div className="max-w-300 mx-auto w-full flex flex-col section-1xl sm:section-2xl">
 
                             {/* Section Header */}
-                            <div className="flex flex-col mb-12 md:mb-16 gap-4">
-                                <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-500 uppercase mb-3">
+                            <div className="flex flex-col mb-6   sm:mb-12 md:mb-16 gap-4">
+                                <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px text-slate-500 uppercase sm:mb-3">
                                     Our clients
                                 </span>
-                                <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl text-slate-900 tracking--0.48px mb-4">
+                                <h2 className="font-gelasio font-medium text--3xl sm:text--2xl md:text--7xl text-slate-900 tracking--0.48px sm:mb-4">
                                     Who we work with
                                 </h2>
-                                <p className="font-space-grotesk font-normal text--base sm:text--lg text-slate-500 leading-relaxed ">
+                                <p className="font-space-grotesk font-normal text--xs sm:text--lg text-slate-500 leading-relaxed ">
                                     For 20 years, businesses needing compliance help had three options. None of them worked particularly well.
                                 </p>
                             </div>
@@ -131,10 +131,10 @@ export default function Tranche2Explained() {
                                 {sectors.map((client, idx) => (
                                     <div
                                         key={idx}
-                                        className="group relative bg-white p-8 sm:p-10 md:p-12  border border-b border-slate-200 rounded-sm   z-10 flex flex-col md:flex-row gap-6 md:gap-12 items-start"
+                                        className="group relative bg-white p-6 sm:p-10 md:p-12  border border-b border-slate-200 rounded-sm   z-10 flex flex-col md:flex-row gap-6 md:gap-12 items-start"
                                     >
                                         {/* Large Muted Number */}
-                                        <span className="font-space-grotesk font-medium text--7xl leading-none tracking--1.44px text-black/10 select-none ">
+                                        <span className="font-space-grotesk font-medium text--4xl sm:text--7xl leading-none tracking--1.44px text-black/10 select-none ">
                                             {client.number}
                                         </span>
 
@@ -142,13 +142,15 @@ export default function Tranche2Explained() {
                                         <div className="flex-1 flex flex-col gap-3">
                                             {/* Title & Tag */}
                                             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-                                                <h3 className="font-gelasio font-medium text--2xl text-brand-900 tracking--0.24px">
+                                                <h3 className="font-gelasio font-medium text--xl sm:text--2xl text-brand-900 tracking--0.24px">
                                                     {client.title}
                                                 </h3>
                                                 {client.badge && (
-                                                    <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-red-600 uppercase">
-                                                        {client.badge}
-                                                    </span>
+                                                    <div className='px-3 py-1 rounded-full bg-gradient-to-l from-[#CCAB51] via-[#D5B45F] to-[#E7C77C]'>
+                                                        <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px bg-gradient-to-l from-brand-blue-900 to-brand-blue-800 bg-clip-text text-transparent uppercase select-none">
+                                                            {client.badge}
+                                                        </span>
+                                                    </div>
                                                 )}
                                             </div>
 
@@ -158,11 +160,11 @@ export default function Tranche2Explained() {
                                             </p>
                                         </div>
                                         {/* Image */}
-                                        <div className="  relative shrink-0 overflow-hidden   ">
+                                        <div className="w-70 h-32 md:w-55 md:h-30 relative shrink-0 overflow-hidden">
                                             <img
                                                 src={client.image}
                                                 alt={client.title}
-                                                className=" object-cover transition-transform duration-500"
+                                                className="w-full h-full object-cover"
                                             />
                                         </div>
                                     </div>
@@ -173,7 +175,7 @@ export default function Tranche2Explained() {
                             <div className="flex justify-center mt-16">
                                 <a
                                     href="/contact-us"
-                                    className="group inline-flex items-center gap-3 justify-center bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 text-slate-900 font-space-grotesk font-medium text--base rounded-full pt-3 pr-4 pb-3 pl-6 hover:shadow-lg hover:scale-1.02 active:scale-0.98 transition-all duration-300 cursor-pointer max-w-80 sm:max-w-150 w-full"
+                                    className="group inline-flex  text-slate-900 font-space-grotesk font-medium text--xs sm:text--base button--primary max-w-85 sm:max-w-150 w-full"
                                 >
                                     <span>Book a free call to confirm your obligations</span>
                                     <div className="bg-slate-900 w-8 h-8 rounded-full flex items-center justify-center shrink-0 ml-4 transition-transform group-hover:translate-x-1 duration-300">

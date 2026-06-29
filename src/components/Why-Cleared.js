@@ -1,12 +1,12 @@
 "use client";
 import './Why-Cleared.css';
-
-
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/logo.png";
-import Union from "../../public/Union.png";
+import Logo from "../../public/logo.svg";
+import Union from "../../public/Union.svg";
 import Cta from "./Cta";
+import wrong from "../../public/Wrong.svg"
+import Right from "../../public/Right.svg"
 
 export default function WhyCleared() {
     return (
@@ -48,13 +48,13 @@ export default function WhyCleared() {
                     <div className="max-w-360 mx-auto section-2xl w-full">
                         {/* Header */}
                         <div className="max-w-320 mx-auto flex flex-col items-center text-center mb-12 sm:mb-16">
-                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
+                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-[#666666] uppercase">
                                 OUR DIFFERENCE
                             </span>
                             <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.48px text-brand-900 mt-6">
                                 What businesses have always been told to do.
                             </h2>
-                            <p className="font-space-grotesk font-normal text--base sm:text--lg md:text-18px leading-7 text-brand-gray-500 max-w-195 mx-auto mt-6">
+                            <p className="font-space-grotesk font-normal text--base sm:text--lg md:text-18px leading-7 text-[#666666] max-w-195 mx-auto mt-6">
                                 For 20 years, businesses needing compliance help had three options. None of them worked particularly well.
                             </p>
                         </div>
@@ -66,7 +66,7 @@ export default function WhyCleared() {
                                 <h3 className="font-gelasio font-medium text--2xl text-brand-900">
                                     Hire a law firm
                                 </h3>
-                                <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6">
+                                <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6">
                                     $400–$600/hour. Lawyers who understand the legal framework but have never run a compliance program, never been the MLRO, never sat across the table from AUSTRAC when something went wrong. Beautiful documents. Handsome invoices. Then they disappear.
                                 </p>
                                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-l from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
@@ -77,7 +77,7 @@ export default function WhyCleared() {
                                 <h3 className="font-gelasio font-medium text--2xl text-brand-900">
                                     Hire a big consulting firm
                                 </h3>
-                                <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6">
+                                <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6">
                                     A junior consultant reads the AUSTRAC guidance and builds something generic with your logo on it. It looks professional. It ticks boxes. Nobody in your business actually understands it, uses it, or knows what to do when a suspicious transaction lands on their desk.
                                 </p>
                                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-l from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
@@ -88,7 +88,7 @@ export default function WhyCleared() {
                                 <h3 className="font-gelasio font-medium text--2xl text-brand-900">
                                     Rely on software alone
                                 </h3>
-                                <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6">
+                                <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6">
                                     Templates, checklists, a help centre, maybe a webinar. But nobody to call when a real regulatory question arises. Nobody who has been through an AUSTRAC audit and knows what they really look for.
                                 </p>
                                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-l from-brand-gold-500 to-brand-gold-300 group-hover:w-full transition-all duration-300" />
@@ -134,13 +134,13 @@ export default function WhyCleared() {
                             </div>
 
                             {/* Quote Text */}
-                            <blockquote className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-relaxed md:leading-50.4px tracking--0.36px text-white">
+                            <p className="font-gelasio font-medium text--2xl sm:text--2xl md:text--4xl leading-relaxed md:leading-12 tracking--0.36px text-white">
                                 "The dirty secret of the compliance industry is that{" "}
                                 <span className="text-brand-gold-500">
                                     most compliance programs are built by people who have never actually been accountable to a regulator.
                                 </span>{" "}
                                 They know the rules. They don't know what it feels like when the rules are tested. And when they are tested — that's exactly when you find out if your program actually works."
-                            </blockquote>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ export default function WhyCleared() {
                     <div className="max-w-360 mx-auto section-2xl w-full">
                         {/* Header */}
                         <div className="max-w-320 mx-auto flex flex-col items-center text-center mb-12 sm:mb-16">
-                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
+                            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-[#666666] uppercase">
                                 THE CLEARED ADVISORY DIFFERENCE
                             </span>
                             <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.48px text-brand-900 mt-6">
@@ -326,13 +326,13 @@ export default function WhyCleared() {
 
                             {/* Header Content */}
                             <div className="flex flex-col items-start text-left w-full gap-4 sm:gap-6">
-                                <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
+                                <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-[#666666] uppercase">
                                     WHAT GOOD LOOKS LIKE
                                 </span>
                                 <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight md:leading-15 tracking--0.48px text-brand-900">
                                     What makes a compliance program that actually survives an AUSTRAC audit.
                                 </h2>
-                                <p className="font-space-grotesk font-normal text--base sm:text--base leading-relaxed text-brand-gray-500 max-w-175">
+                                <p className="font-space-grotesk font-normal text--base sm:text--base leading-relaxed text-[#666666] max-w-175">
                                     Most AML/CTF programs fail in practice — not because they don't exist, but because they
                                     were built for the shelf, not the business. Here's what we build instead.
                                 </p>
@@ -368,13 +368,13 @@ export default function WhyCleared() {
                                             }`}
                                     >
                                         <div className="w-6 h-6 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 flex items-center justify-center flex-shrink-0 text-white font-sans text--2xs shadow-sm">
-                                            ✓
+                                            <Image src={Right} alt='Right' />
                                         </div>
                                         <div className="flex flex-col gap-2">
                                             <h4 className="font-gelasio font-medium text--2xl leading-tight tracking--0.24px text-brand-900">
                                                 {item.title}
                                             </h4>
-                                            <p className="font-space-grotesk font-normal text--base text-brand-gray-500 leading-6">
+                                            <p className="font-space-grotesk font-normal text--base text-[#666666] leading-6">
                                                 {item.desc}
                                             </p>
                                         </div>
@@ -402,8 +402,8 @@ export default function WhyCleared() {
                                             key={idx}
                                             className="flex items-center gap-4 py-4 border-b border-slate-200 last:border-b-0"
                                         >
-                                            <div className="w-5 h-5 rounded-4px bg-brand-red-600/10 flex items-center justify-center flex-shrink-0 text-brand-red-600 font-sans text-10px font-bold">
-                                                ✗
+                                            <div className="w-5 h-5 rounded   bg-red-700/10 flex items-center justify-center flex-shrink-0 text-brand-red-600 font-sans text-10px font-bold">
+                                                <Image src={wrong} alt="wrong" />
                                             </div>
                                             <span className="font-space-grotesk font-normal text--base text-brand-900 leading-6">
                                                 {sign}

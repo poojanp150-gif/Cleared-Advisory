@@ -331,7 +331,7 @@ export default function Aboutus() {
                           Get Started
                         </span>
 
-                        <div className="w-8 h-8 rounded-full bg-brand-900 flex items-center justify-center transition-all duration-300 group-hover/btn:bg-white group-hover/btn:scale-105 shrink-0">
+                        <div className="w-8 h-8 rounded-full bg-brand-900 flex items-center justify-center transition-all duration-300">
                           <svg
                             width="10"
                             height="10"
@@ -343,7 +343,7 @@ export default function Aboutus() {
                             <path
                               d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
                               stroke="currentColor"
-                              className="text-white group-hover/btn:text-brand-900 transition-colors duration-300"
+                              className="text-white"
                               strokeWidth="1.5"
                               strokeLinecap="round"
                               strokeLinejoin="round"
