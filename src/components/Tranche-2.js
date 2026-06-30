@@ -46,7 +46,7 @@ export default function Tranche2Explained() {
                 <div className="w-full min-h-124 bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 flex flex-col relative overflow-hidden pt-22">
 
                     {/* ── Content Wrapper (Frame 687) ── */}
-                    <div className="flex-1 flex items-center justify-center px-6 lg:px-20 py-16 lg:py-30">
+                    <div className="flex-1 flex items-center justify-center px-6 lg:px-20 py-15 lg:py-30">
                         <div className="flex flex-col items-center text-center  max-w-211 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
 
                             {/* Tagline: "About us" — gold gradient */}

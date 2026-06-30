@@ -31,33 +31,33 @@ export default function Cta() {
   return (
     <section className="w-full bg-white  text-slate-900 relative" style={{ marginTop: "-1px" }}>
       <div className="container--boxed">
-        <div className="max-w-360 mx-auto section-2xl">
+        <div className="max-w-360 mx-auto section-1xl sm:section-2xl">
           <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16  lg:items-start">
 
             {/* Left Side Content */}
-            <div className="flex flex-col justify-start max-w-142 w-full">
-              <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-black/60 uppercase">
+            <div className="flex flex-col justify-start  max-w-142 sm:max-w-none lg:max-w-142 w-full">
+              <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px text-black/60 uppercase">
                 GET STARTED
               </span>
 
-              <h2 className="font-gelasio font-medium text--2xl sm:text--7xl md:text--9xl leading-tight  tracking--0.01em text-brand-900 mt-6">
-                Book a free <br className="hidden sm:inline" />
+              <h2 className="font-gelasio font-medium text--4xl  sm:text--7xl lg:text--9xl leading-tight  tracking--0.01em text-brand-900  mt-4 sm:mt-6">
+                Book a free <br className="hidden lg:inline" />
                 <span className="italic font-normal cta__highlight-text-gold bg-clip-text text-transparent">
                   30-minute
-                </span> <br className="hidden sm:inline" />
+                </span> <br className="hidden lg:inline" />
                 consultation.
               </h2>
 
-              <p className="font-space-grotesk font-normal text--base text-slate-500 mt-6 leading-relaxed max-w-121">
+              <p className="font-space-grotesk font-normal text--xs sm:text--base text-slate-500 mt-6 leading-relaxed max-w-121  sm:max-w-none lg:max-w-121">
                 No sales pitch. No commitment. A plain-English conversation about where you stand and what you need to do before 1 July 2026. You'll leave with at least 3 practical actions.
               </p>
 
               {/* Contact Grid */}
-              <div className=" pt-8 flex flex-col gap-6">
+              <div className=" pt-8 flex flex-col gap-4 sm:gap-6">
                 {contactInfo.map((item, idx) => (
-                  <div key={idx} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0">
+                  <div key={idx} className="flex flex-row sm:items-center gap-0 sm:gap-0">
                     {/* Label */}
-                    <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-slate-500/60 uppercase w-28 shrink-0">
+                    <span className="font-space-grotesk font-medium text--xs sm:tracking-1.1px text-slate-500/60 uppercase w-28 shrink-0">
                       {item.label}
                     </span>
 
@@ -80,13 +80,13 @@ export default function Cta() {
             </div>
 
             {/* Right Side Dark Card */}
-            <div className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 border border-white/10 p-8 sm:p-12 shadow-2xl text-white">
-              <h3 className="font-gelasio font-medium text--2xl text-white tracking--0.01em">
+            <div className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 border border-white/10 p-6 sm:p-12 shadow-2xl text-white">
+              <h3 className="font-gelasio font-medium text-xl sm:text--2xl text-white tracking--0.01em mb-6 sm:mb-0">
                 What To Expect on The Call
               </h3>
 
               {/* Bullet Points with Dividers */}
-              <div className="mt-8 border-t border-white/10 pt-6">
+              <div className="sm:mt-8 border-t border-white/10 pt-6">
                 <ul className="flex flex-col gap-5">
                   {expectations.map((text, idx) => (
                     <li key={idx} className="flex items-start gap-4">
@@ -108,7 +108,7 @@ export default function Cta() {
                   href="/contact-us"
                   className="group flex w-full h-14 button--secondary"
                 >
-                  <span className="font-space-grotesk text--base font-medium text-brand-900">
+                  <span className="font-space-grotesk text--xs sm:text--base font-medium text-brand-900">
                     Send us an email now
                   </span>
 
@@ -134,10 +134,10 @@ export default function Cta() {
               </div>
 
               {/* OR CALL text under button */}
-              <div className="mt-6 text-center">
+              <div className="mt-3 sm:mt-6 text-center">
                 <Link
                   href="/contact-us"
-                  className="inline-block font-space-grotesk font-medium text--base tracking-0.5px text-white/80 hover:text-white hover:underline transition-colors duration-300"
+                  className="inline-block font-space-grotesk font-medium text--base tracking-0.5px text-white hover:text-white hover:underline transition-colors duration-300"
                 >
                   OR CALL +61 410 450 511
                 </Link>

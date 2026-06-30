@@ -55,7 +55,7 @@
 }
 
 @utility tracking--0.01em {
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
 }
 
 @utility tracking--0.02em {
@@ -71,15 +71,15 @@
 }
 
 @utility tracking--0.4px {
-    letter-spacing: 0.4px;
+    letter-spacing: -0.4px;
 }
 
 @utility tracking--0.24px {
-    letter-spacing: 0.24px;
+    letter-spacing: -0.24px;
 }
 
 @utility tracking--0.28px {
-    letter-spacing: 0.28px;
+    letter-spacing: -0.28px;
 }
 
 @utility tracking--0.32px {
@@ -91,11 +91,11 @@
 }
 
 @utility tracking--0.48px {
-    letter-spacing: 0.48px;
+    letter-spacing: -0.48px;
 }
 
 @utility tracking--0.64px {
-    letter-spacing: 0.64px;
+    letter-spacing: -0.64px;
 }
 
 

@@ -117,27 +117,27 @@ export default function Aboutus() {
 
   return (
     <div className="w-full flex flex-col">
-      {/* ── Hero Section (Frame 688) ── */}
+      {/* ── Hero Section  ── */}
       <div className="w-full min-h-124 bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 flex flex-col relative overflow-hidden pt-22">
 
-        {/* ── Content Wrapper (Frame 687) ── */}
-        <div className="flex-1 flex items-center justify-center px-6 lg:px-20 py-16 lg:py-30">
-          <div className="flex flex-col items-center text-center gap-6 max-w-211 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
+        {/* ── Content Wrapper  ── */}
+        <div className="flex-1 flex items-center justify-center px-6 lg:px-20 py-15 lg:py-30">
+          <div className="flex flex-col items-center text-center  max-w-211 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
 
-            {/* Tagline: "About us" — gold gradient */}
-            <span className="font-space-grotesk font-medium text--xs tracking-1.1px uppercase bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent">
-              Services
+            {/* Tagline: "Services & pricing" — gold gradient */}
+            <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px uppercase bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 bg-clip-text text-transparent">
+              Services & pricing
             </span>
 
             {/* Heading: Mixed Roman + Italic */}
-            <h1 className="font-gelasio font-medium text--2xl sm:text--7xl md:text--9xl leading-tight md:leading-19 tracking--0.48px text-white">
+            <h1 className="font-gelasio font-medium text--4xl sm:text--7xl md:text--9xl leading-tight md:leading-19 sm:tracking--0.48px text-white">
               Transparent pricing.{" "}
               <br className="hidden sm:inline" />
               <span className="italic font-medium services__highlight-text-gold bg-clip-text text-transparent">No surprises.</span>
             </h1>
 
             {/* Subtitle / Description */}
-            <p className="font-space-grotesk font-medium text--base sm:text--lg md:text-18px leading-7 text-white/80 max-w-211">
+            <p className="font-space-grotesk font-medium text--xs sm:text--lg md:text-18px leading-7 text-white/80 max-w-211">
               Every engagement scoped before you commit. No hidden fees. No scope creep. No disappearing.
             </p>
           </div>
@@ -148,14 +148,14 @@ export default function Aboutus() {
       <section className="w-full bg-white text-slate-900 flex flex-col items-center">
         <div className="container--boxed">
 
-          <div className="max-w-360 mx-auto section-2xl w-full flex flex-col items-center">
+          <div className="max-w-360 mx-auto section-1xl sm:section-2xl w-full flex flex-col items-center">
 
             {/* Header */}
-            <div className="flex flex-col items-center text-center mb-16 max-w-200">
-              <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-brand-gray-500 uppercase">
+            <div className="flex flex-col w-full items-start sm:items-center sm:text-center mb-4 sm:mb-16 max-w-200">
+              <span className="font-space-grotesk font-medium text--2xs sm:text--xs tracking-1.1px text-[#D4AF37] uppercase">
                 Phase 1 — Get Cleared
               </span>
-              <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight tracking--0.48px text-brand-900 mt-4">
+              <h2 className="font-gelasio font-medium text--3xl sm:text--2xl md:text--7xl leading-tight tracking--0.48px text-brand-900 sm:mt-4">
                 Advisory services
               </h2>
             </div>
@@ -166,7 +166,7 @@ export default function Aboutus() {
                 {services.map((service) => (
                   <div
                     key={service.id}
-                    className={`group relative flex flex-col justify-between  py-8 px-6 sm:px-8 sm:py-10 min-h-131 transition-all duration-300 ${service.featured
+                    className={`group relative flex flex-col justify-between py-6 px-6 sm:px-8 sm:py-10 max-h-131 w-full transition-all duration-300 ${service.featured
                       ? "bg-white border-2 border-brand-gold-600 services__shadow-gold services__shadow-gold-hover"
                       : "bg-brand-bg-white border border-brand-gray-200 hover:bg-white hover:border-brand-gold-500/30 services__shadow-card-hover"
                       }`}
@@ -181,14 +181,14 @@ export default function Aboutus() {
                       </div>
                     )}
 
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col ">
                       {/* Title */}
-                      <h3 className="font-gelasio font-medium text--2xl sm:text--3xl text-brand-900 tracking--0.28px leading-snug">
+                      <h3 className="font-gelasio font-medium text--xl sm:text--3xl text-brand-900 tracking--0.28px leading-snug pb-3">
                         {service.title}
                       </h3>
 
                       {/* Description */}
-                      <p className="font-space-grotesk font-normal text--base text-brand-gray-600 leading-6">
+                      <p className="font-space-grotesk font-normal pb-4 sm:pb-0 text--xs sm:text--base text-brand-gray-600 leading-6">
                         {service.description}
                       </p>
 
@@ -196,9 +196,9 @@ export default function Aboutus() {
                     </div>
 
                     {/* Pricing Info & Button */}
-                    <div className="mt-8 flex flex-col gap-6">
+                    <div className="sm:mt-8 flex flex-col gap-6">
                       <div className="flex flex-col gap-3">
-                        <div className="border-l-3px border-brand-gold-600 bg-brand-900/[0.02] p-5 flex flex-col gap-2 rounded-r-sm">
+                        <div className="border-l-3 border-brand-gold-600 bg-brand-900/[0.02] p-5 flex flex-col gap-2 rounded-r-sm">
                           <span className="font-space-grotesk font-bold text--2xs tracking--1.4px text-brand-900 uppercase">
                             BEST FOR:
                           </span>
@@ -206,7 +206,7 @@ export default function Aboutus() {
                             {service.bestFor}
                           </span>
                         </div>
-                        <span className="pt-8 font-space-grotesk font-bold text--2xl sm:text--4xl text-brand-900 leading-none">
+                        <span className="pt-8 font-space-grotesk font-bold text--3xl sm:text--4xl text-brand-900 leading-none">
                           {service.price}
                         </span>
                         {service.priceSub && (
@@ -218,7 +218,7 @@ export default function Aboutus() {
 
                       <Link
                         href={`mailto:ritesh@clearedadvisory.com.au?subject=Inquiry regarding ${encodeURIComponent(service.title)}`}
-                        className="group/btn flex w-full h-13 items-center justify-center gap-2 pl-6 pr-3 rounded-full bg-brand-900 hover:bg-brand-gold-500 hover:scale-1.01 transition-all duration-300"
+                        className="group/btn flex w-full h-13 items-center justify-center gap-2 pl-6 pr-4 py-2  sm:pl-6 sm:pr-3 rounded-full bg-brand-900 hover:bg-brand-gold-500 hover:scale-1.01 transition-all duration-300"
                       >
                         <span className="font-space-grotesk text--xs sm:text--base font-medium text-white group-hover/btn:text-brand-900 transition-colors duration-300">
                           Get Started
@@ -259,26 +259,26 @@ export default function Aboutus() {
       <section className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 text-white flex flex-col items-center">
         <div className="container--boxed">
 
-          <div className="max-w-360 mx-auto section-2xl w-full flex flex-col items-center">
-            <div className="flex flex-col items-center w-full max-w-300 mb-12 sm:mb-16">
-              <span className="font-space-grotesk font-bold text--xs tracking--1.4px text-brand-gold-600 uppercase">
+          <div className="max-w-360 mx-auto section-1xl sm:section-2xl w-full flex flex-col items-center">
+            <div className="flex flex-col items-center w-full max-w-300 mb-4 sm:mb-16">
+              <span className="font-space-grotesk font-bold text--2xs sm:text--xs tracking--1.4px text-brand-gold-600 uppercase">
                 PHASE 2 — STAY CLEARED
               </span>
-              <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight text-white mt-4">
+              <h2 className="font-gelasio font-medium text--3xl  md:text--7xl leading-tight text-white mt-4">
                 Ongoing services
               </h2>
             </div>
 
             <div className="w-full max-w-300 mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-8 items-stretch w-full">
                 {phase2Services.map((service) => (
                   <div
                     key={service.id}
-                    className="group relative flex flex-col justify-between py-8 px-6 sm:px-8 sm:py-10 transition-all duration-300 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-gold-500/30 services__shadow-card-dark-hover"
+                    className="group relative flex flex-col sm:justify-between py-6 px-6 sm:px-8 sm:py-10 transition-all duration-300 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-gold-500/30 services__shadow-card-dark-hover"
                   >
                     {service.badge && (
                       <div
-                        className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 font-space-grotesk font-bold text--2xs tracking-0.7px px-6 py-2 rounded-full uppercase services__shadow-badge z-20 whitespace-nowrap bg-brand-gold-600"
+                        className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 font-space-grotesk font-bold text--2xs tracking-0.7px px-6 py-2 rounded-full uppercase services__shadow-badge z-20 whitespace-nowrap bg-gradient-to-l from-[#CCAB51] via-[#D5B45F] to-[#E7C77C]"
                       >
                         <span className="services__highlight-text-blue bg-clip-text text-transparent">
                           {service.badge}
@@ -286,25 +286,22 @@ export default function Aboutus() {
                       </div>
                     )}
 
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col ">
                       {/* Title */}
-                      <h3 className="font-gelasio font-medium text--2xl sm:text--3xl text-white tracking--0.28px leading-snug">
+                      <h3 className="font-gelasio font-medium text--xl lg:text--3xl text-white tracking--0.28px leading-snug pb-3">
                         {service.title}
                       </h3>
 
                       {/* Description */}
-                      <p className="font-space-grotesk font-normal text--base text-white/80 leading-6">
+                      <p className="font-space-grotesk font-normal pb-4 sm:pb-0 text--xs sm:text--base text-white/80 leading-6">
                         {service.description}
                       </p>
-
-                      {/* Best For Box */}
-
                     </div>
 
                     {/* Pricing Info & Button */}
-                    <div className="mt-8 flex flex-col gap-6">
-                      <div className="pt-6  flex flex-col gap-1">
-                        <div className="border-l-3px border-brand-gold-600 bg-white/5 py-4 px-6 flex flex-col gap-2 rounded-r-sm">
+                    <div className="sm:mt-8 flex flex-col gap-6">
+                      <div className="sm:pt-6  flex flex-col gap-1">
+                        <div className="border-l-3 border-brand-gold-600 bg-white/5 py-4 px-6 flex flex-col gap-2 rounded-r-sm">
                           <span className="font-space-grotesk font-bold text--2xs tracking--1.4px text-white/60 uppercase">
                             BEST FOR:
                           </span>
@@ -313,7 +310,7 @@ export default function Aboutus() {
                           </span>
                         </div>
 
-                        <span className="pt-8 font-space-grotesk font-bold text--2xl sm:text--4xl text-white leading-none">
+                        <span className="pt-8 font-space-grotesk font-bold text--3xl lg:text--4xl text-white leading-none">
                           {service.price}
                         </span>
                         {service.priceSub && (
@@ -325,7 +322,7 @@ export default function Aboutus() {
 
                       <Link
                         href={`mailto:ritesh@clearedadvisory.com.au?subject=Inquiry regarding ${encodeURIComponent(service.title)}`}
-                        className="group/btn flex w-full h-13 items-center justify-center gap-2 pl-6 pr-3 rounded-full bg-gradient-to-l from-brand-gold-500 via-brand-gold-400 to-brand-gold-300 hover:scale-1.01 transition-all duration-300"
+                        className="group/btn flex w-full h-13 button--primary"
                       >
                         <span className="font-space-grotesk text--xs sm:text--base font-semibold text-brand-900">
                           Get Started
