@@ -29,14 +29,14 @@ export default function Navbar() {
             {/* Column 1: Logo & Brand */}
             <Link
                 href="/"
-                className="flex items-center pl-6 xl:pl-20 width-lg  xl:w-100 flex-shrink-0 border-r border-white/20 group"
+                className="flex items-center pl-6 xl:pl-20 width-md  xl:w-100 flex-shrink-0 xl:border-r border-white/20 group"
             >
                 <div className="flex items-center gap-3">
                     {/* Logo Mark: Premium stylized check/shield representing compliance & security */}
                     <div className="w-9 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                         <Image src={Logo} alt="Logo" width={35} height={40} />
                     </div>
-                    <span className="font-gelasio font-semibold  logo-text tracking--0.02em text-white">
+                    <span className="font-gelasio font-semibold  logo-text text--xl lg:text--2xl tracking--0.02em text-white">
                         Cleared Advisory
                     </span>
                 </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
 
             {/* Column 2: Nav Links (Desktop) */}
             {/* Desktop Navigation */}
-            <nav className="hidden min-[1100px]:flex flex-1 items-center justify-center gap-6 xl:gap-8 font-space-grotesk text--base font-medium text-white">
+            <nav className="hidden xl:flex flex-1 items-center justify-center gap-6 xl:gap-8 font-space-grotesk text--base font-medium text-white">
                 <Link href="/why-cleared" className="hover:text-amber-400 transition-colors duration-200">
                     Why Cleared
                 </Link>
@@ -72,7 +72,7 @@ export default function Navbar() {
 
             {/* Column 3: Call to Action (Desktop) */}
             {/* Desktop CTA */}
-            <div className="hidden min-[1100px]:block w-60 xl:w-77 flex-shrink-0 border-l border-white/20">
+            <div className="hidden xl:block w-60 xl:w-77 flex-shrink-0 border-l border-white/20">
                 <Link
                     href="/contact-us"
                     className="flex h-full items-center justify-between px-6 xl:px-20 group hover:bg-white/[0.02] transition-colors duration-200"
@@ -105,18 +105,13 @@ export default function Navbar() {
 
 
             {/* Mobile Right Controls */}
-            <div className="flex min-[1100px]:hidden items-center justify-end flex-1 pr-6 gap-4">
-                <Link
-                    href="/contact-us"
-                    className="px-4 py-2 rounded-full border border-white/50 text--xs font-bold font-space-grotesk hover:border-amber-400 hover:text-amber-400 transition-all duration-200"
-                >
-                    Book Call
-                </Link>
+            <div className="flex xl:hidden items-center justify-end flex-1 pr-6 gap-4">
+
 
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle menu"
-                    className="w-10 h-10 flex items-center justify-center border border-white/20 rounded-md hover:bg-white/10 transition-colors"
+                    className="w-10 h-10 flex items-center justify-center border border-white/20 rounded-full hover:bg-white/10 transition-colors"
                 >
                     <svg
                         width="24"
@@ -139,7 +134,7 @@ export default function Navbar() {
 
             {/* Mobile Drawer Overlay */}
             {isOpen && (
-                <div className="absolute top-22 left-0  w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 items-center backdrop-blur-md border-b border-white/20 flex flex-col py-6 px-8 gap-4 min-[1100px]:hidden animate-in fade-in slide-in-from-top-5 duration-200">
+                <div className="absolute top-22 left-0  w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 items-center backdrop-blur-md border-b border-white/20 flex flex-col py-6 px-8 gap-4 xl:hidden animate-in fade-in slide-in-from-top-5 duration-200">
 
                     <Link
                         href="/why-cleared"
@@ -183,6 +178,37 @@ export default function Navbar() {
                     >
                         Our Team
                     </Link>
+
+
+                    <Link
+                        href="/contact-us"
+                        className="group relative flex w-54  sm:w-54 h-14 button--primary"
+                    >
+                        <span className="font-space-grotesk text--base font-bold text-brand-900">
+                            Book Call
+                        </span>
+                        <div className="w-7 h-7 rounded-full bg-brand-900 flex items-center justify-center ">
+
+                            <svg
+                                width="12"
+                                height="12"
+                                viewBox="0 0 12 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="transition-transform duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
+                            >
+                                <path
+                                    d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10"
+                                    stroke="white"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </Link>
+
+
                 </div>
             )}
         </header>

@@ -7,10 +7,10 @@ import Image from "next/image";
 import Cta from "./Cta";
 import Container from "../../public/Container.png"
 
-export default function Services() {
+export default function Aboutus() {
     return (
         <div className="w-full flex flex-col">
-            {/* ── Services Hero Section (Frame 688) ── */}
+            {/* ──  Hero Section (Frame 688) ── */}
             <div className="w-full min-h-132 bg-gradient-to-b from-brand-blue-900 to-brand-blue-800 flex flex-col relative overflow-hidden pt-22">
 
 

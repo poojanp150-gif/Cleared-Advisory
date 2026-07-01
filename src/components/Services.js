@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Cta from "./Cta";
 
-export default function Aboutus() {
+export default function Services() {
   const services = [
     {
       id: "template-pack",
@@ -166,7 +166,7 @@ export default function Aboutus() {
                 {services.map((service) => (
                   <div
                     key={service.id}
-                    className={`group relative flex flex-col justify-between py-6 px-6 sm:px-8 sm:py-10 max-h-131 w-full transition-all duration-300 ${service.featured
+                    className={`group relative flex flex-col justify-between py-6 px-6 sm:px-8 sm:py-10  w-full transition-all duration-300 ${service.featured
                       ? "bg-white border-2 border-brand-gold-600 services__shadow-gold services__shadow-gold-hover"
                       : "bg-brand-bg-white border border-brand-gray-200 hover:bg-white hover:border-brand-gold-500/30 services__shadow-card-hover"
                       }`}

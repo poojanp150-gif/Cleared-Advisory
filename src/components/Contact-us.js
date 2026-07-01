@@ -48,17 +48,17 @@ export default function Contactus() {
                                 </span>
 
                                 {/* Heading */}
-                                <h2 className="font-gelasio font-medium text--4xl sm:text--2xl md:text--9xl sm:text-center lg:text-start leading-tight tracking--0.64px text-slate-900 mt-4">
+                                <h2 className="font-gelasio font-medium text--4xl sm:text--2xl md:text--9xl sm:text-center lg:text-start leading-tight tracking--0.64px text-slate-900 mt-2">
                                     Let's talk.
                                 </h2>
 
                                 {/* Description */}
-                                <p className="font-space-grotesk font-normal sm:text-center lg:text-start text--xs sm:text--base text-slate-600 leading-relaxed max-w-120 sm:mx-auto lg:mx-0 mt-6">
+                                <p className="font-space-grotesk font-normal sm:text-center lg:text-start text--xs sm:text--base text-slate-600 leading-relaxed max-w-120 sm:mx-auto lg:mx-0 mt-2">
                                     30 minutes, no charge, no commitment. We'll confirm whether you're captured, walk through what you need to do, and give you at least 3 practical actions you can take immediately.
                                 </p>
 
                                 {/* Contact Grid */}
-                                <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 divide-y divide-slate-200 sm:divide-y-0  overflow-hidden">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 mt-7 divide-y divide-slate-200 sm:divide-y-0  overflow-hidden">
                                     {/* Cell 1: Email */}
                                     <div className="p-3.5!  flex flex-col gap-2 border border-slate-200  sm:border-r sm:border-b sm:border-slate-200">
                                         <span className="font-space-grotesk font-bold text--xs sm:text--2xs tracking-1.1px text-slate-500 uppercase">
@@ -141,7 +141,7 @@ export default function Contactus() {
                                             "You leave with at least 3 practical actions you can take immediately",
                                             "If there's a fit for further work, we discuss it — only if it makes sense for you"
                                         ].map((text, idx) => (
-                                            <li key={idx} className="flex items-start gap-4 text-white/80 font-space-grotesk text--xs sm:text--base leading-relaxed">
+                                            <li key={idx} className="flex items-start gap-4 text-white font-space-grotesk text--xs sm:text--base leading-relaxed">
                                                 <span className="w-1.5 h-1.5 rounded-full bg-white mt-2.5 flex-shrink-0" />
                                                 <span>{text}</span>
                                             </li>
@@ -155,7 +155,7 @@ export default function Contactus() {
                                             className="group w-full h-14 button--secondary"
                                         >
                                             <span className="font-space-grotesk font-bold text--xs sm:text--base">Send us an email now</span>
-                                            <div className="w-7 h-7 bg-brand-900 rounded-full flex items-center justify-center group-hover:bg-brand-gold-500 transition-colors duration-300">
+                                            <div className="w-7 h-7 bg-brand-900 rounded-full flex items-center justify-center">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1.5 6H10.5M10.5 6L6.5 2M10.5 6L6.5 10" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>

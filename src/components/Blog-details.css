@@ -1,0 +1,55 @@
+/* Blog Details Stylesheet */
+
+.blog-details {
+  background-color: #FCFCFC;
+}
+
+
+
+/* Blockquote Left Border & Accent Styling */
+
+
+/* Custom styles for lists */
+.blog-details__list li {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.blog-details__list li::marker {
+  color: #D4AF37;
+}
+
+/* Related Insights Bento Grid */
+.blog-details__bento-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.blog-details__bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+/* Interactive hover animation for Read Article link */
+.blog-details__bento-card a {
+  transition: all 0.25s ease;
+}
+
+.blog-details__bento-card:hover a {
+  color: #D4AF37 !important;
+  border-color: #D4AF37 !important;
+  padding-left: 0.25rem;
+}
+
+/* Specific wide card adjustments */
+.blog-details__bento-card--wide {
+  min-height: 280px;
+}
+
+/* CSS Grid layout helper if needed */
+@media (min-width: 1024px) {
+  .blog-details__bento-grid {
+    display: flex;
+  }
+}

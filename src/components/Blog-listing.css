@@ -1,0 +1,47 @@
+.bloag-listing__highlight-text-gold {
+  background: linear-gradient(271.02deg, #CCAB51 0.83%, #D5B45F 51.73%, #E7C77C 99.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bloag-listing__card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.bloag-listing__card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+}
+
+.bloag-listing__featured-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.bloag-listing__featured-card:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 30px 60px rgba(212, 175, 55, 0.08);
+}
+
+.bloag-listing__search-container {
+  position: relative;
+}
+
+.bloag-listing__search-input {
+  transition: all 0.3s ease;
+}
+
+.bloag-listing__search-input:focus {
+  border-color: rgba(212, 175, 55, 0.8);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+/* Micro-animations */
+.bloag-listing__link-arrow {
+  transition: transform 0.2s ease;
+}
+
+.bloag-listing__link:hover .bloag-listing__link-arrow {
+  transform: translateX(4px);
+}

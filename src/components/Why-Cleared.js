@@ -125,7 +125,7 @@ export default function WhyCleared() {
                                     <h3 className="font-gelasio font-semibold text--2xl text-white tracking--0.24px">
                                         Ritesh Singh
                                     </h3>
-                                    <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white/80 uppercase">
+                                    <span className="font-space-grotesk font-normal text--xs tracking-1.1px text-white uppercase">
                                         FOUNDER, CLEARED ADVISORY
                                     </span>
                                 </div>
@@ -187,23 +187,7 @@ export default function WhyCleared() {
                                     ].map((item, idx) => (
                                         <li
                                             key={idx}
-                                            className="
-        relative
-        py-4 sm:py-6
-        w-full
-        font-space-grotesk
-        font-normal
-        text--xs sm:text--base
-        text-brand-900
-        leading-6
-        before:absolute
-        before:left-0
-        before:top-0
-        before:w-full
-        before:h-px
-        before:bg-black/10
-        before:content-['']
-      "
+                                            className="  relative py-4 sm:py-6  w-full  font-space-grotesk  font-normal text--xs sm:text--base  text-brand-900  leading-6  before:absolute before:left-0  before:top-0 before:w-full before:h-px  before:bg-black/10 before:content-['']"
                                         >
                                             {item}
                                         </li>
@@ -257,8 +241,8 @@ export default function WhyCleared() {
                 <div className="container--boxed">
 
 
-                    <div className="max-w-360 mx-auto section-1xl sm:section-2xl w-full">
-                        <div className="max-w-320 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-start">
+                    <div className="max-w-320 mx-auto section-1xl sm:section-2xl w-full">
+                        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-start">
 
                             {/* Left Column: Heading Content */}
                             <div className="flex flex-col  lg:sticky lg:top-24 max-w-144 w-full ">
@@ -397,7 +381,7 @@ export default function WhyCleared() {
                             </div>
 
                             {/* Warning Box: Signs your current program isn't working */}
-                            <div className="w-full bg-#F9F9F9 border border-slate-200 rounded-4px p-6 sm:p-12 flex flex-col sm:gap-8 mt-0 sm:mt-4 bg-gray-50">
+                            <div className="w-full border border-slate-200 rounded-4px p-6 sm:p-12 flex flex-col sm:gap-8 mt-0 sm:mt-4 bg-gray-50">
                                 <h3 className="font-gelasio font-medium text--xl sm:text--2xl text-brand-red-600 tracking--0.24px">
                                     SIGNS YOUR CURRENT PROGRAM ISN'T WORKING
                                 </h3>

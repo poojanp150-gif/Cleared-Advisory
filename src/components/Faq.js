@@ -45,14 +45,14 @@ export default function Faq() {
     <section className="w-full bg-gradient-to-b from-brand-blue-900 to-brand-blue-800  text-white relative">
       <div className="container--boxed">
 
-        <div className="max-w-360 mx-auto section-2xl">
+        <div className="max-w-320 mx-auto section-1xl sm:section-2xl">
 
           {/* Header Container */}
-          <div className="max-w-320 mx-auto flex flex-col items-center text-center mb-16">
-            <span className="font-space-grotesk font-medium text--xs tracking-1.1px text-white uppercase">
+          <div className=" mx-auto flex flex-col items-start sm:items-center text-left sm:text-center mb-4 sm:mb-16">
+            <span className="font-space-grotesk font-medium text--2xs  sm:text--xs tracking-1.1px text-white uppercase">
               COMMON QUESTIONS
             </span>
-            <h2 className="font-gelasio font-medium text--2xl sm:text--2xl md:text--7xl leading-tight  tracking--0.01em text-white mt-6 max-w-150">
+            <h2 className="font-gelasio font-medium text--3xl  md:text--7xl leading-tight  tracking--0.01em text-white mt-3 sm:mt-6 max-w-150">
               Got questions? <br className="xs:hidden" />We have answers.
             </h2>
           </div>
@@ -67,7 +67,7 @@ export default function Faq() {
                     onClick={() => toggleFaq(idx)}
                     className="w-full flex justify-between items-center text-left group gap-6 focus:outline-none cursor-pointer"
                   >
-                    <span className="font-gelasio font-medium text--lg sm:text--2xl md:text--2xl text-white group-hover:text-amber-300 transition-colors duration-300">
+                    <span className="font-gelasio font-medium text--base  sm:text--2xl md:text--2xl text-white group-hover:text-amber-300 transition-colors duration-300">
                       {faq.question}
                     </span>
 
@@ -90,11 +90,11 @@ export default function Faq() {
 
                   {/* Animated Answer Body */}
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-40 mt-6" : "max-h-0 mt-0"
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-60 mt-6 pr-14 lg:pr-0" : "max-h-0 mt-0"
                       }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="font-inter font-normal text--base text-white/80 leading-6 max-w-170">
+                      <p className="font-inter font-normal text--xs sm:text--base text-white leading-6 max-w-170">
                         {faq.answer}
                       </p>
                     </div>
